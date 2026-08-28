@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-cormorant: 'Cormorant Garamond', serif;
+    --font-rozha: 'Rozha One', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #faf7f2;
+    color: #26180f;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  html.dark body {
+    background-color: #0c0805;
+    color: #f2ebe1;
+  }
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-cormorant {
+  font-family: var(--font-cormorant);
+}
+
+.font-rozha {
+  font-family: var(--font-rozha);
+}
+
+/* Custom scrollbar matching Light Heritage Parchment & Dark Obsidian Terracotta */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf7f2;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #0c0805;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8c7b4;
+  border-radius: 4px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #382618;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8501c;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #e06c30;
+}
+
+/* Heritage patterns & ambient lighting */
+.bg-parchment-pattern {
+  background-color: #faf7f2;
+  background-image: radial-gradient(rgba(184, 80, 28, 0.05) 1px, transparent 0),
+                    radial-gradient(rgba(140, 83, 37, 0.04) 1px, #faf7f2 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+html.dark .bg-parchment-pattern {
+  background-color: #0c0805;
+  background-image: radial-gradient(rgba(224, 108, 48, 0.07) 1px, transparent 0),
+                    radial-gradient(rgba(200, 130, 70, 0.05) 1px, #0c0805 1px);
+}
+
+.text-orange-gradient {
+  background: linear-gradient(135deg, #b8501c 0%, #d97706 60%, #c2410c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #9a5223 0%, #b45309 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.dark .text-gold-gradient {
+  background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heritage-card {
+  background-color: #ffffff;
+  border: 1px solid #e8decb;
+  box-shadow: 0 4px 20px -2px rgba(100, 60, 20, 0.05);
+}
+
+html.dark .heritage-card {
+  background-color: #17100b;
+  border: 1px solid #332014;
+  box-shadow: 0 4px 25px -2px rgba(0, 0, 0, 0.4);
+}
+
+.heritage-card-warm {
+  background-color: #fdfbf7;
+  border: 1px solid #eadfcb;
+}
+
+html.dark .heritage-card-warm {
+  background-color: #1a120c;
+  border: 1px solid #382417;
+}
+
+/* Seamless Dark Mode Utility Overrides for Heritage Components */
+html.dark .bg-white {
+  background-color: #17100b !important;
+}
+
+html.dark .bg-\[\#faf7f2\] {
+  background-color: #0c0805 !important;
+}
+
+html.dark .bg-\[\#faf6ee\],
+html.dark .bg-\[\#fdfbf7\],
+html.dark .bg-\[\#fdf8f0\],
+html.dark .bg-\[\#faf4ec\],
+html.dark .bg-\[\#fbf7f0\] {
+  background-color: #1f150f !important;
+}
+
+html.dark .bg-\[\#f4ebd9\],
+html.dark .bg-\[\#f2e7d8\],
+html.dark .bg-\[\#eddcc7\] {
+  background-color: #2b1d14 !important;
+}
+
+html.dark .border-\[\#ebdcc7\],
+html.dark .border-\[\#e8decb\],
+html.dark .border-\[\#eadfcb\],
+html.dark .border-\[\#f0e6d6\],
+html.dark .border-\[\#e2cca8\],
+html.dark .border-\[\#e2d5c3\] {
+  border-color: #382417 !important;
+}
+
+html.dark .text-\[\#23170f\],
+html.dark .text-\[\#26180f\],
+html.dark .text-\[\#241810\] {
+  color: #f5eee4 !important;
+}
+
+html.dark .text-\[\#5d4c3f\],
+html.dark .text-\[\#5e4d3f\],
+html.dark .text-\[\#6b584a\],
+html.dark .text-\[\#5b4a3c\] {
+  color: #c4b3a3 !important;
+}
+
+html.dark .text-\[\#7c6958\],
+html.dark .text-\[\#8c7a6b\],
+html.dark .text-\[\#8c5225\],
+html.dark .text-\[\#9a5223\] {
+  color: #df9e67 !important;
+}
+
+html.dark header.fixed {
+  background-color: rgba(12, 8, 5, 0.92) !important;
+  border-color: #2e1d13 !important;
+}
+
+html.dark #indiaMainlandGrad stop:nth-child(1) {
+  stop-color: #1e140d;
+}
+html.dark #indiaMainlandGrad stop:nth-child(2) {
+  stop-color: #18100a;
+}
+html.dark #indiaMainlandGrad stop:nth-child(3) {
+  stop-color: #120c07;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-5px) rotate(0.4deg); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix Student Innovation: India\u0027s Living Heritage",
+  "description": "A premium cultural-tech innovation platform celebrating India\u0027s living traditions, Grandma\u0027s archive, architectural wonders, crafts, and AI-powered lost words \u0026 local language grandmother.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
