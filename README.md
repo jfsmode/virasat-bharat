@@ -7,7 +7,7 @@
 [![Express](https://img.shields.io/badge/Express-4.21.2-000000?logo=express&logoColor=white)](https://expressjs.com/)
 [![Google Gemini AI](https://img.shields.io/badge/Gemini_API-3.7_Flash-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6.2.3-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 ---
 
@@ -291,7 +291,7 @@ Contributions celebrating Indian heritage, regional languages, folk arts, and cr
 
 ## 📜 License
 
-Distributed under the **GNU GENERAL PUBLIC LICENSE**. See `LICENSE` for details.
+Distributed under the **GNU General Public License v3.0 (GPLv3)**. See [`LICENSE`](LICENSE) for the complete license terms and conditions.
 
 ---
 
