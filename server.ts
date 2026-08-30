@@ -33,41 +33,80 @@ app.get("/api/health", (req, res) => {
   res.json({ status: "ok", timestamp: new Date().toISOString() });
 });
 
-// AI Local Language Translator endpoint (Grandma personality)
+// AI Local Language Translator & Interactive Grandma Chat endpoint
 app.post("/api/gemini/translate", async (req, res) => {
   try {
-    const { text, stateName, language } = req.body;
-    if (!text) {
+    const { 
+      text, 
+      targetState, 
+      targetLanguage, 
+      stateName, 
+      language, 
+      grandmaTitle, 
+      replyMode, 
+      persona,
+      chatHistory 
+    } = req.body;
+
+    const queryText = text || req.body.query;
+    if (!queryText) {
       return res.status(400).json({ error: "Text is required" });
     }
+
+    const state = targetState || stateName || "India";
+    const targetLang = targetLanguage || language || "Hindi";
+    const title = grandmaTitle || "Dadi";
+    const mode = replyMode || "bilingual"; // 'bilingual' | 'pure_local' | 'romanized' | 'storytelling'
+    const tone = persona || "loving"; // 'loving' | 'proverbs' | 'kitchen_nuskhe' | 'playful'
 
     const ai = getAIClient();
     if (!ai) {
       // Graceful fallback if no API key
       return res.json({
-        englishMeaning: `Translation of "${text}" in the context of ${stateName || 'India'}`,
-        nativeWord: text,
-        pronunciation: text,
-        language: language || "Regional Language",
-        culturalExplanation: "Translations often carry deeper emotional value when spoken by elders at home. In many Indian households, words for affection and daily life have special warmth.",
-        grandmaNote: "Beta, always remember that in our heritage, how you say it with respect and warmth matters just as much as the word itself!",
-        verified: false
+        originalText: queryText,
+        translatedText: `Jeete raho, beta! (${queryText})`,
+        pureLocalReply: `जीते रहो बेटा! खूब खुश रहो और तरक्की करो।`,
+        phoneticPronunciation: `Jee-tey Rah-ho, Bay-tah`,
+        nativeScript: `जीते रहो बेटा`,
+        dialectName: `${targetLang} (${state})`,
+        englishMeaning: `Affectionate elder blessing: May you live long and thrive`,
+        culturalContext: `In ${state}, elders greet children with endearing blessings reflecting warmth and heritage.`,
+        grandmaNote: `Always speak with love, beta. Sweet words bring harmony to every home! 🪔`,
+        literalBreakdown: `Jeete (live long) + Raho (remain) + Beta (dear child)`
       });
     }
 
-    const prompt = `You are a loving, wise Indian grandmother (Dadi/Nani/Ammachi/Aaji) teaching younger generations about India's rich languages.
-Selected State/Region: ${stateName || "India"}
-Local Language / Dialect context: ${language || "Regional Language of the state"}
-User input to translate/explain: "${text}"
+    const personaInstructions = {
+      loving: `You are ${title}, overflowing with motherly/grandmotherly love, giving warm blessings and tender endearments (like Beta, Bachha, Kanna, Shona, Bangaram, Mol, Kano) appropriate to ${targetLang}.`,
+      proverbs: `You are ${title}, a sage elder who loves explaining traditional folk proverbs (kahawat / muhavare / pazhamozhi), ancient wisdom, and life morals from ${state}.`,
+      kitchen_nuskhe: `You are ${title}, a traditional grandmother who loves kitchen wisdom, secret grandma home remedies (nuskhe/kashayam), herbs, spices, and warm culinary love from ${state}.`,
+      playful: `You are ${title}, a witty, cheerful, teasing grandmother who cracks wholesome jokes, uses funny colloquial slang from ${state}, and makes the student laugh!`
+    };
 
-Please provide a structured JSON response with:
-1. "nativeWord": the word/phrase in native script (Devanagari, Tamil, Bengali, Telugu, Kannada, Malayalam, Gujarati, Gurmukhi, Odia, etc. if applicable) and Romanized transliteration.
-2. "englishMeaning": accurate English meaning and nuanced translation.
-3. "pronunciation": phonetic pronunciation guide easy for students to read.
-4. "language": specific language/dialect name.
-5. "culturalExplanation": 2-3 sentences explaining the cultural background, when it is used (e.g. festivals, greeting elders, kitchen, folk rituals).
-6. "exampleSentence": an authentic everyday sentence in the local language with English translation in parentheses.
-7. "grandmaNote": a short, warm, endearing grandmotherly piece of advice or affection (using terms like 'Beta', 'Bachha', 'Kanna', 'Mol', 'Kano', etc. appropriate to the region).
+    const modeInstructions = {
+      bilingual: `Provide the reply in the authentic local language (${targetLang}) script + Romanized transliteration + English meaning + endearing Grandma note.`,
+      pure_local: `CRITICAL: Formulate the primary "translatedText" and "pureLocalReply" ENTIRELY in the original native script of ${targetLang} (e.g. Devanagari, Tamil, Bengali, Telugu, Kannada, Malayalam, Gujarati, Gurmukhi, Odia, etc.) as if Grandma is speaking directly in her mother tongue!`,
+      romanized: `Provide the reply primarily in conversational Romanized script (Hinglish/Tanglish/Banglish/etc.) so anyone can read and pronounce it easily, with English meaning.`,
+      storytelling: `Reply as ${title} by weaving a miniature 2-sentence traditional folk tale or memory from her village in ${state} related to the user's topic.`
+    };
+
+    const prompt = `You are ${title} (${personaInstructions[tone as keyof typeof personaInstructions] || personaInstructions.loving}), the wise and loving Indian grandmother representing ${state} and speaking the ${targetLang} language.
+
+User's input / question: "${queryText}"
+Selected Target Language: ${targetLang}
+Selected Mode: ${mode} (${modeInstructions[mode as keyof typeof modeInstructions] || modeInstructions.bilingual})
+Recent conversation history: ${JSON.stringify(chatHistory || [])}
+
+Please generate an authentic, emotionally resonant grandmother reply in JSON format with:
+1. "translatedText": The main response. If mode is "pure_local", write it purely in ${targetLang} native script. If mode is "bilingual" or "romanized", provide the authentic local phrasing.
+2. "nativeScript": The phrase/sentence in the official native script of ${targetLang} (Devanagari, Tamil, Bengali, Telugu, Kannada, Malayalam, Gujarati, Gurmukhi, Odia, etc.).
+3. "pureLocalReply": A 2-3 sentence complete paragraph spoken purely in native ${targetLang} script in ${title}'s affectionate voice.
+4. "englishMeaning": Clear English translation of what Grandma said.
+5. "phoneticPronunciation": Clear phonetic reading guide (e.g. "Namaskara, chennagiddira?").
+6. "dialectName": Specific regional dialect name (e.g. "Awadhi Hindi", "Madurai Tamil", "Kolkata Bengali", "Dharwad Kannada", "Malabar Malayalam", etc.).
+7. "culturalContext": 2 sentences explaining the cultural custom, tradition, or household significance of this phrase in ${state}.
+8. "grandmaNote": A warm, endearing personal advice or reaction from ${title} with appropriate regional terms of affection.
+9. "literalBreakdown": Word-by-word breakdown showing how the sentence is constructed in ${targetLang}.
 
 Respond ONLY with valid JSON.`;
 
@@ -76,12 +115,24 @@ Respond ONLY with valid JSON.`;
       contents: prompt,
       config: {
         responseMimeType: "application/json",
-        systemInstruction: "You are Grandma Dadi/Ammachi, a knowledgeable, affectionate elder sharing India's rich regional linguistic heritage. Always respond in strict JSON format."
+        systemInstruction: `You are an authentic Indian regional grandmother (${title}). You speak ${targetLang} with immense cultural depth, warmth, regional idioms, and genuine affection.`
       }
     });
 
     const parsed = JSON.parse(response.text || "{}");
-    res.json({ ...parsed, verified: true });
+    res.json({
+      originalText: queryText,
+      translatedText: parsed.translatedText || parsed.nativeWord || queryText,
+      nativeScript: parsed.nativeScript || parsed.nativeWord || "",
+      pureLocalReply: parsed.pureLocalReply || parsed.translatedText || "",
+      englishMeaning: parsed.englishMeaning || "",
+      phoneticPronunciation: parsed.phoneticPronunciation || parsed.pronunciation || "",
+      dialectName: parsed.dialectName || `${targetLang} (${state})`,
+      culturalContext: parsed.culturalContext || parsed.culturalExplanation || "",
+      grandmaNote: parsed.grandmaNote || "",
+      literalBreakdown: parsed.literalBreakdown || "",
+      verified: true
+    });
   } catch (error: any) {
     console.error("Translation API error:", error);
     res.status(500).json({
@@ -190,6 +241,106 @@ Return valid JSON with:
   } catch (error: any) {
     console.error("Folklore story error:", error);
     res.status(500).json({ error: "Failed to generate story" });
+  }
+});
+
+// Grandma's Knowledge AI: Heritage Buildings, Ancient Architecture & Indigenous Craftsmanship
+app.post("/api/gemini/grandma-knowledge", async (req, res) => {
+  try {
+    const { 
+      question, 
+      domain = 'monuments', // 'monuments' | 'crafts' | 'general'
+      selectedState, 
+      targetLanguage, 
+      grandmaTitle,
+      contextItemName,
+      chatHistory 
+    } = req.body;
+
+    const query = question || "Tell me about our heritage";
+    const state = selectedState || "India";
+    const lang = targetLanguage || "Hindi";
+    const title = grandmaTitle || "Dadi";
+
+    const ai = getAIClient();
+    if (!ai) {
+      return res.json({
+        title: `${query} (${state})`,
+        nativeGreeting: `जीते रहो बेटा! (${title})`,
+        localLanguageExplanation: `हमारे भारत के प्राचीन शिल्प और धरोहर में हमारे पूर्वजों का हज़ारों साल का ज्ञान समाया हुआ है। जब कारीगर हाथ से काम करते हैं या कारीगरी से मंदिर बनाते हैं, तो वे सिर्फ पत्थर नहीं तराशते बल्कि संस्कृति को संजोते हैं।`,
+        nativeScriptExcerpt: `हस्तशिल्प और वास्तुकला हमारे पूर्वजों की अमर देन है।`,
+        phoneticExcerpt: `Hastashilp aur vaastukala hamare poorvajo ki amar den hai`,
+        englishBreakdown: `In ${state} and across India, our ancient monuments and handicrafts reflect centuries of artisanal mastery, sacred geometry, natural organic materials, and living cultural continuity.`,
+        grandmaSecretWisdom: `Beta, did you know that ancient builders mixed jaggery, bael fruit pulp, lime, and lentil paste into mortar to make it earthquake-resistant and withstand centuries of weather!`,
+        historicalFact: `Traditional Indian craftsmanship techniques and architectural styles have been preserved through generation-to-generation oral apprenticeships (Guru-Shishya parampara).`,
+        culturalSignificance: `Each monument and handloom pattern connects directly to regional festivals, climate resilience, and sacred stories.`,
+        domain: domain,
+        targetLanguage: lang,
+        grandmaTitle: title,
+        stateOrRegion: state,
+        verified: false
+      });
+    }
+
+    const domainFocus = domain === 'monuments' 
+      ? `Indian architectural monuments, stepwells, fortresses, rock-cut temples, sacred geometry, acoustic chambers, weather-cooling jaalis, and ancient structural engineering`
+      : domain === 'crafts'
+      ? `Traditional Indian handlooms, GI-tagged crafts, master artisan techniques, natural dyeing processes, lost-wax metallurgy, wood carving, sacred tribal paintings, and embroidery`
+      : `Indian cultural heritage, monuments, and indigenous craftsmanship`;
+
+    const prompt = `You are ${title}, a deeply knowledgeable, revered Indian grandmother and master storyteller with encyclopedic ancestral wisdom about ${domainFocus} across India and specifically ${state}.
+
+The student asks: "${query}"
+Context / Topic: ${contextItemName || 'General Heritage & Craft'}
+Target Language: ${lang} (Provide explanations in this regional language)
+Selected State/Region: ${state}
+Domain: ${domain}
+Prior Chat History: ${JSON.stringify(chatHistory || [])}
+
+Provide an authentic, culturally rich, deeply insightful response in valid JSON format:
+{
+  "title": "A concise evocative title for this heritage or craft topic",
+  "nativeGreeting": "An affectionate elder greeting in ${lang} native script + romanized in parentheses (e.g. जीते रहो बेटा / Nalla irukkiya Kanna / Bhalo acho to Shona)",
+  "localLanguageExplanation": "A rich 2-3 paragraph explanation spoken purely in the authentic native script of ${lang} (Devanagari, Tamil, Bengali, Telugu, Kannada, Malayalam, Gujarati, Gurmukhi, Odia, etc.), explaining the history, craft method, stone technique, or architectural genius as Grandma lovingly explains it.",
+  "nativeScriptExcerpt": "A key memorable proverb, craftsman phrase, or architectural verse in ${lang} native script",
+  "phoneticExcerpt": "Phonetic reading guide for the excerpt",
+  "englishBreakdown": "A clear, beautifully written 2-paragraph English summary explaining the exact historical, architectural, or artisanal details so anyone can understand every nuance.",
+  "grandmaSecretWisdom": "A fascinating 'Grandma Secret' or oral heritage revelation (e.g. how artisans created natural indigo that never fades, why stone pillars ring with musical notes, how stepwells maintain microclimates, secret herb mixtures used in temple mortar, or symbolism hidden in handloom motifs).",
+  "historicalFact": "An authentic historical, dynastic (Chola, Mughal, Maurya, Vijayanagara, etc.), or GI-tag geographic fact.",
+  "culturalSignificance": "1-2 sentences on why this craft or monument is a living soul of ${state}'s heritage."
+}
+
+Ensure high accuracy, warmth, regional idioms, and respectful elder authority. Respond ONLY with valid JSON.`;
+
+    const response = await ai.models.generateContent({
+      model: "gemini-3.7-flash",
+      contents: prompt,
+      config: {
+        responseMimeType: "application/json",
+        systemInstruction: `You are Grandma's Knowledge AI (${title}), a loving guardian of Indian architecture, monuments, master handicrafts, and oral folklore. You explain complex heritage in simple, affectionate terms in ${lang} and English.`
+      }
+    });
+
+    const parsed = JSON.parse(response.text || "{}");
+    res.json({
+      title: parsed.title || query,
+      nativeGreeting: parsed.nativeGreeting || `जीते रहो बेटा!`,
+      localLanguageExplanation: parsed.localLanguageExplanation || "",
+      nativeScriptExcerpt: parsed.nativeScriptExcerpt || "",
+      phoneticExcerpt: parsed.phoneticExcerpt || "",
+      englishBreakdown: parsed.englishBreakdown || "",
+      grandmaSecretWisdom: parsed.grandmaSecretWisdom || "",
+      historicalFact: parsed.historicalFact || "",
+      culturalSignificance: parsed.culturalSignificance || "",
+      domain: domain,
+      targetLanguage: lang,
+      grandmaTitle: title,
+      stateOrRegion: state,
+      verified: true
+    });
+  } catch (error: any) {
+    console.error("Grandma Knowledge API error:", error);
+    res.status(500).json({ error: "Failed to query Grandma's Knowledge", message: error.message });
   }
 });
 

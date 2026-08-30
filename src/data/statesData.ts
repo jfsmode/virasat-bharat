@@ -228,7 +228,7 @@ export const statesData: StateCulturalData[] = [
         name: "Jaipur Blue Pottery",
         category: "Pottery",
         region: "Jaipur & Sanganer",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrHU2fig_c1e5zcnjOAHtR4LMj78jf2RmYPKPU6yV-H1qs5w1wgs33sxA&s=10",
         materials: [
           "Quartz powder",
           "Fuller’s earth (Multani Mitti)",
@@ -258,7 +258,7 @@ export const statesData: StateCulturalData[] = [
         name: "Kripal Singh Shekhawat (Legacy Studio)",
         craftType: "Blue Pottery & Fresco Master",
         location: "Jaipur, Rajasthan",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Bhairon_Singh_Shekhawat_presenting_Shilp_Guru_Award_to_Smt._Rehana_Begum_of_Uttar_Pradesh_for_Mastery_in_Chikon_Embroidery%2C_in_New_Delhi._The_Union_Minister_for_Textiles%2C_Shri_Shankersinh_Vaghela_is_also_seen.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxz7OZFewwi5TPlgUy3NVLH0lGHCDPeYwrXLeuHIvrUn9lBIjgB9A3Buk&s=10",
         quote: "Pottery is the art of giving immortality to humble quartz dust through color and patience.",
         story: "Padma Shri awardee who single-handedly resurrected the dying art of Jaipur Blue Pottery in the 1960s by introducing 25+ new colors beyond traditional turquoise blue.",
         yearsOfExperience: "60+ Years Legacy",
@@ -276,7 +276,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Chennai",
     zone: "South",
     tagline: "Cradle of Classical Sangam Literature, Chola Granitic Gopurams & Kanchipuram Wefts",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Minakshi.jpg/960px-Minakshi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9czOynuxLXU9zB7DB_GIUYZYFOT_tWzT_70GpoCzV78eyPZszCjJ2tl0&s=10",
     languages: {
       nativeLanguage: "Tamil (தமிழ்)",
       dialects: [
@@ -330,7 +330,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Authentic Thanjavur Sambhar & Medu Vada",
         nativeName: "தஞ்சாவூர் சாம்பார் மற்றும் மெது வடை",
-        image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH9QxeYwNwaHmYFZB0zyJFN1j_W_XGJZshFQqANOSuovl_K-WFQjfW3_c&s=10",
         courseType: "Breakfast & Feast",
         dietary: "Vegetarian",
         prepTime: "45 mins",
@@ -357,7 +357,7 @@ export const statesData: StateCulturalData[] = [
         category: "Sacred Art & Ritual",
         description: "Women draw geometrical mandala grids on threshold floors using coarse rice flour to welcome Goddess Lakshmi and feed ants and birds.",
         significance: "A daily practice of charity, sacred geometry, and mental focus.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKTVnoxZD9IXLww99GzWK43T3XJspRo0qfTUro3iylWFtUcjgOiaZyxlA&s=10"
       }
     ],
     childhoodGames: [
@@ -381,7 +381,7 @@ export const statesData: StateCulturalData[] = [
         location: "Thanjavur, Tamil Nadu",
         historicalPeriod: "1010 CE (Great Chola Dynasty)",
         builtBy: "Emperor Raja Raja Chola I",
-        image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_HRxLsY-ywB2ER57ApDB3NBTfuN2W11BzD3p7NTM3TTmrsiWdno_C2-M&s=10",
         historicalBackground: "A world-heritage crowning jewel of Dravidian architecture celebrating the supreme spiritual dominion of Lord Shiva.",
         architecturalSignificance: "Built entirely of 130,000 tonnes of granite without mortar. The vimana tower rises 216 feet capped by an 80-tonne monolithic Kumbam carved from a single stone block.",
         culturalImportance: "Preserves the oldest extant Chola frescos, bronze casting iconography, and epigraphic records of temple dancers.",
@@ -403,7 +403,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "பொங்கல் திருநாள்",
         whenCelebrated: "Mid-January (Thai Month)",
         whereCelebrated: "Across Tamil Nadu",
-        image: "https://images.unsplash.com/photo-1605221943033-0245037e8c33?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ltD8KQGcaLORvNdMLz7HY2HPp5NRjjp-_6LbrrhwIQjtL6xHCI6S696h&s=10",
         origins: "Ancient solar thanksgiving festival celebrating the northward journey of the sun (Uttarayana) and honoring cattle.",
         culturalSignificance: "Boiling freshly harvested rice, milk, and jaggery in clay pots until it overflows, accompanied by the joyful chant \"Pongalo Pongal!\"",
         traditionalFood: "Sweet Sakkarai Pongal, Ven Pongal, Medu Vada, sugarcane.",
@@ -420,7 +420,7 @@ export const statesData: StateCulturalData[] = [
         name: "Kanchipuram Silk Weaving",
         category: "Weaving",
         region: "Kanchipuram",
-        image: "https://images.unsplash.com/photo-1533094602577-198d356ce086?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsU5GcH7Drg2PzRZuqTgReD2oEFhe6NTyQO2av7-6ymuIyKd5dJJonYk8&s=10",
         materials: [
           "Pure Mulberry Silk",
           "Silver Zari thread electroplated with 24k gold",
@@ -447,7 +447,7 @@ export const statesData: StateCulturalData[] = [
         name: "B. Krishnamoorthy",
         craftType: "Master Kanchipuram Handloom Weaver",
         location: "Kanchipuram, Tamil Nadu",
-        image: "https://images.unsplash.com/photo-1555021200-a0808a3d132b?auto=format&fit=crop&w=800&q=80",
+        image: "https://th-i.thgim.com/public/society/history-and-culture/74quob/article35582709.ece/alternates/FREE_1200/29MPWeaverKirhsnamoorthysaridesigncatalogue",
         quote: "A true Kanchi saree is woven not with threads, but with prayers, mathematics, and devotion.",
         story: "National award-winning master weaver whose family has kept the complex Korvai three-shuttle interlocking technique alive for six generations.",
         yearsOfExperience: "50+ Years",
@@ -465,7 +465,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Kolkata",
     zone: "East",
     tagline: "Land of Baul Mystics, Terracotta Terraces, Durga Puja Art & Rabindrasangeet",
-    heroImage: "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-zQSuU86dPya_Tu6xn4Q85_R4GY0E8Mwp1LPkP9UPpLUoinC2QBvwC1i4&s=10",
     languages: {
       nativeLanguage: "Bengali (বাংলা)",
       dialects: [
@@ -518,7 +518,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Kosha Mangsho & Luchi",
         nativeName: "কষা মাংস ও ফুলকো লুচি",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3bp2u8B0z1ZoO3EyHHtDND0Ir1sSQ577XJ3SsoAqfUYIT3K_-vZMGBImp&s=10",
         courseType: "Main Course / Festive",
         dietary: "Specialty",
         prepTime: "75 mins",
@@ -544,7 +544,7 @@ export const statesData: StateCulturalData[] = [
         category: "Ritual Art & Dance",
         description: "Women paint flowing white rice-paste motifs on floors, while youth perform ecstatic dances holding smoking clay censers with burning coconut husk and camphor.",
         significance: "Performed before Goddess Durga to invoke courage, dispelling negative energies.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGigb4-YmKgulsUkMtBpyLAGGVShzoz74dTReM--mBPuwvpd-aY1tHXjub&s=10"
       }
     ],
     childhoodGames: [
@@ -568,7 +568,7 @@ export const statesData: StateCulturalData[] = [
         location: "Bankura, West Bengal",
         historicalPeriod: "17th–18th Century CE (Malla Dynasty)",
         builtBy: "Malla Kings of Mallabhum",
-        image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcwf511JPK5vhX-1iaQwS668mqlaaBI6RZrtqJWEtNyRrm2eKFFmqx3fam&s=10",
         historicalBackground: "When stone was unavailable in alluvial Bengal plains, Malla kings transformed local river clay into breathtaking burnt terracotta temple tiles.",
         architecturalSignificance: "Features the unique curved roof Chala style (mimicking thatched bamboo huts) decorated with intricate terracotta relief tiles of Mahabharata scenes.",
         culturalImportance: "Epicenter of Vaishnavite temple culture and the classical Bishnupur Gharana of music.",
@@ -590,7 +590,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "শারদোৎসব দুর্গাপূজা",
         whenCelebrated: "September / October (Ashwin Month)",
         whereCelebrated: "Kolkata & Across Bengal",
-        image: "https://images.unsplash.com/photo-1543330091-272283b050ab?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRukc4n0FLBPVhTVGRJtIbFV-pFLtEqRfYFMlHViee4z6Xt9vfYW4vEbxe4&s=10",
         origins: "Commemorates the triumph of Goddess Durga over the demon Mahishasura, symbolizing the eternal victory of good over evil.",
         culturalSignificance: "The world's largest public art festival where neighborhoods create colossal architectural pandals, welcoming the Goddess as a beloved daughter coming home.",
         traditionalFood: "Bhog Khichuri, Labra, Payesh, Rosogolla, Sandesh.",
@@ -607,7 +607,7 @@ export const statesData: StateCulturalData[] = [
         name: "Nakshi Kantha Quilt Embroidery",
         category: "Embroidery",
         region: "Bolpur & Murshidabad",
-        image: "https://images.unsplash.com/photo-1584553421349-355b24132049?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUyQG--lVnuY7ZAHpSjB4hzSCkEFtyk90d8A8nPZW3jQ&s=10",
         materials: [
           "Recycled old cotton sarees",
           "Colored cotton threads",
@@ -634,7 +634,7 @@ export const statesData: StateCulturalData[] = [
         name: "Sanatan Rudra Paul (Kumartuli)",
         craftType: "Master Clay Idol Sculptor",
         location: "Kumartuli, Kolkata",
-        image: "https://images.unsplash.com/photo-1581452481014-a957fc8f7956?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYWoa2jaNY5iqHTlDkePGEHa6Uk6fuAjgWVwQba1QpvvS09bgfza5TEUA&s=10",
         quote: "We breathe life into sacred Ganga clay so that millions may experience divine grace.",
         story: "Renowned master idol maker whose workshop in Kumartuli has sculpted Durga idols for prime pandals across the world for over 45 years.",
         yearsOfExperience: "48 Years",
@@ -652,7 +652,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Thiruvananthapuram",
     zone: "South",
     tagline: "God’s Own Country, Kathakali Mask Dramas, Backwaters & Sacred Groves",
-    heroImage: "https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNVOixtc0Y1-m0ZKmkW-CdsFM-qQawiDMVv1_GqB1TPH7XPMz225y504g&s=10",
     languages: {
       nativeLanguage: "Malayalam (മലയാളം)",
       dialects: [
@@ -703,7 +703,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Grand Onam Sadya Feast (Avial & Payasam)",
         nativeName: "ഓണ സദ്യ (അവിയൽ & അടപ്രഥമൻ)",
-        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRVYSc-zKlbPWAS0f35fwEBXbPj2juVG8_4qk7y7FJLV3vDw4EgsVLoToj&s=10",
         courseType: "Plantain Leaf Festive Banquet",
         dietary: "Vegetarian",
         prepTime: "90 mins",
@@ -730,7 +730,7 @@ export const statesData: StateCulturalData[] = [
         category: "Ritual Performance",
         description: "Performers from indigenous communities undergo arduous fasting, wear towering sacred crowns (Mudi) up to 30 feet tall, and incarnate ancestral deities in village shrines.",
         significance: "An ancient pre-Vedic ritual that breaks caste hierarchies as all devotees seek blessings from the performer.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEGMqRKq9-wrAsH0sffxVdohtLq0qTVU05DePjOjI-E6p2DKD1cqdQj7-5&s=10"
       }
     ],
     childhoodGames: [
@@ -753,7 +753,7 @@ export const statesData: StateCulturalData[] = [
         location: "Thiruvananthapuram, Kerala",
         historicalPeriod: "8th–18th Century CE (Travancore Dynasty)",
         builtBy: "Marthanda Varma & Chera Kings",
-        image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSksxIGlwpUcaQHpqrtO74YkjiWAoQzyixu7AEOBYcQGgSFiRDkQBoOai_m&s=10",
         historicalBackground: "The principal shrine of the Travancore Royal Family, who famously surrendered their kingdom to rule as \"Padmanabha Dasas\" (servants of the Lord).",
         architecturalSignificance: "A dramatic fusion of Kerala timber architecture and Tamil Dravidian stone Gopurams with 365 carved granite pillars.",
         culturalImportance: "Regarded as one of the world's wealthiest religious institutions holding centuries of consecrated gold and diamond treasures.",
@@ -775,7 +775,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "തിരുവോണം",
         whenCelebrated: "August / September (Chingam Month)",
         whereCelebrated: "Across Kerala",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXq7_Gsh4JkQXfWj_t3Eu6Vk2HcEZS2rkNs3cmV7N78BGnBVhujnnubNA&s=10",
         origins: "Mythological homecoming of King Mahabali, during whose reign all citizens were said to be joyful, truthful, and free of sorrow.",
         culturalSignificance: "10 days of laying floral carpet mandalas (Pookalam), snake boat races, Pulikkali tiger dances, and eating the 24-dish Onam Sadya.",
         traditionalFood: "Avial, Sambar, Olan, Thoran, Kalan, Ada Pradhaman, Banana chips.",
@@ -792,7 +792,7 @@ export const statesData: StateCulturalData[] = [
         name: "Aranmula Kannadi (Sacred Metal Mirror)",
         category: "Metalwork",
         region: "Aranmula, Pathanamthitta",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80",
+        image: "https://aranmulakannadi.org/wp-content/uploads/2020/07/AMS1510.png",
         materials: [
           "Secret copper-tin alloy (Speculum metal)",
           "Earthen clay moulds",
@@ -820,7 +820,7 @@ export const statesData: StateCulturalData[] = [
         name: "G. Radhakrishnan Achari",
         craftType: "Master Metal Mirror Caster (Aranmula Kannadi)",
         location: "Aranmula, Kerala",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMtIQ6WFfR2HwMbHzhkFT_jRuep1085FtyOKey2u3EPWjNXgYc6BNEUB6M&s=10",
         quote: "The mirror does not lie, and neither does the fire. When the metal alloy is pure, the reflection shines like the sun.",
         story: "Senior national master craftsman who has preserved the 500-year-old front-surface metallurgical mirror technique.",
         yearsOfExperience: "45 Years",
@@ -838,7 +838,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Chandigarh",
     zone: "North",
     tagline: "Land of Five Rivers, Golden Temple Sanctum, Phulkari Embroidery & Bhangra Beats",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Ministry_of_Railways_India.svg/960px-Ministry_of_Railways_India.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0mU6LElqcyRTEPJW3nIlYdzEmIXZ6tk6-ZksI6hc2Vg&s=10",
     languages: {
       nativeLanguage: "Punjabi (ਪੰਜਾਬੀ)",
       dialects: [
@@ -846,6 +846,7 @@ export const statesData: StateCulturalData[] = [
         "Doabi",
         "Malwai",
         "Powadhi"
+
       ],
       phrases: [
         {
@@ -891,7 +892,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Sarson Da Saag & Makki Di Roti with White Butter",
         nativeName: "ਸਰ੍ਹੋਂ ਦਾ ਸਾਗ ਅਤੇ ਮੱਕੀ ਦੀ ਰੋਟੀ",
-        image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlQJT2Ga22L_puBf46vKsVLLOp3IIDB-0xwP1_y0CMfa3WvDd4_UP1boOB&s=10",
         courseType: "Winter Heritage Feast",
         dietary: "Vegetarian",
         prepTime: "60 mins",
@@ -919,7 +920,7 @@ export const statesData: StateCulturalData[] = [
         category: "Community Practice",
         description: "Every Gurdwara serves free, freshly cooked vegetarian meals to hundreds and thousands of visitors daily, regardless of religion, caste, or wealth.",
         significance: "Instituted by Guru Nanak Dev Ji to establish equality, humility, and selfless service (Seva).",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZfz9GTiFCiKQz46uBT9L58db91NQFOLW89MRt8aSnQGRCMDoQMunpBg&s=10"
       }
     ],
     childhoodGames: [
@@ -943,7 +944,7 @@ export const statesData: StateCulturalData[] = [
         location: "Amritsar, Punjab",
         historicalPeriod: "1577–1604 CE (Sikh Gurus Era)",
         builtBy: "Guru Ram Das Ji & Guru Arjan Dev Ji",
-        image: "https://images.unsplash.com/photo-1621831700684-7a31eb246f68?auto=format&fit=crop&w=800&q=80",
+        image: "https://s7ap1.scene7.com/is/image/incredibleindia/1-sri-harmandir-sahib-(golden-temple)-amritsar-punjab-attr-hero?qlt=82&ts=1726662069037",
         historicalBackground: "The spiritual heart of Sikhism, designed with entrances on all four sides to welcome people from every direction and walk of life.",
         architecturalSignificance: "Built on a lower level than the surrounding land so devotees step downward in humility; covered in 500 kg of pure 24-karat gold leaf by Maharaja Ranjit Singh.",
         culturalImportance: "Houses the sacred Guru Granth Sahib; operates the world’s largest free kitchen feeding 100,000+ souls daily.",
@@ -965,7 +966,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "ਵੈਸਾਖੀ",
         whenCelebrated: "April 13 / 14",
         whereCelebrated: "Across Punjab",
-        image: "https://images.unsplash.com/photo-1605221943033-0245037e8c33?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFXt8Q2hStMQTNxuTqz2kxBhdgmnGQlPB6LfItKNwPU7AgnX9v39J0xwqP&s=10",
         origins: "Marks the winter rabi harvest and commemorates the founding of the Khalsa Panth by Guru Gobind Singh Ji in 1699.",
         culturalSignificance: "Farmers celebrate bountiful golden crops, perform energetic Bhangra and Giddha dances, and attend grand Nagar Kirtan processions.",
         traditionalFood: "Kada Prasad, Makki di Roti, Lassi, Kheer, Chole Bhature.",
@@ -982,7 +983,7 @@ export const statesData: StateCulturalData[] = [
         name: "Phulkari Silk Embroidery",
         category: "Embroidery",
         region: "Patiala & Amritsar",
-        image: "https://images.unsplash.com/photo-1533094602577-198d356ce086?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaU37p6cAqhpVufW7VyYwdKN8uITmN2c3m5DR_pvoq7nCWul8xevm5qmm2&s=10",
         materials: [
           "Khaddar (Coarse homespun cotton cloth)",
           "Pat (Untwisted lustrous floss silk thread)",
@@ -1008,7 +1009,7 @@ export const statesData: StateCulturalData[] = [
         name: "Harjeet Kaur",
         craftType: "Master Phulkari Artisan",
         location: "Patiala, Punjab",
-        image: "https://images.unsplash.com/photo-1555021200-a0808a3d132b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5fXGXGKf7rLTNIC9L7AZrJRLgvUqN160xRjw73wjYuEHXUznMXI-Pyoq9&s=10",
         quote: "Each stitch on the khaddar is a blessing for the daughter who will wear it.",
         story: "Has trained over 300 rural women in Patiala to revive ancient counted-thread Bagh Phulkari patterns without synthetic stencils.",
         yearsOfExperience: "38 Years",
@@ -1026,7 +1027,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Gandhinagar",
     zone: "West",
     tagline: "Land of the White Rann, Rani ki Vav Stepwell, Patola Double Ikat & Garba Ecstasy",
-    heroImage: "https://images.unsplash.com/photo-1596422846543-75c6ff416766?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbAEXmHQh8e0GeINhGOIM4ZyTw3Q56I2y8qvYQIfukPcNIr1gpERhTIl4&s=10",
     languages: {
       nativeLanguage: "Gujarati (ગુજરાતી)",
       dialects: [
@@ -1072,7 +1073,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Gujarati Undhiyu & Puri",
         nativeName: "ઊંધિયું અને પૂરી",
-        image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCFCCYNZP7ky5kiHRQc10JXG8X2Szl7-PoozfUhOr4etL_7q_H_LXJtTJZ&s=10",
         courseType: "Winter Festival Stew",
         dietary: "Vegetarian",
         prepTime: "60 mins",
@@ -1099,7 +1100,7 @@ export const statesData: StateCulturalData[] = [
         category: "Community Dance",
         description: "World's longest dance festival where millions dance in concentric circles around an earthen lamp (Garbha Deep).",
         significance: "Celebrates the victory of the Mother Goddess over inner darkness.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://images.hindustantimes.com/img/2022/09/26/1600x900/20220924-KPT-SK-MN-54-0_1664180820199_1664180820199_1664180981399_1664180981399.JPG"
       }
     ],
     childhoodGames: [
@@ -1123,7 +1124,7 @@ export const statesData: StateCulturalData[] = [
         location: "Patan, Gujarat",
         historicalPeriod: "1063 CE (Solanki Dynasty)",
         builtBy: "Queen Udayamati in memory of King Bhima I",
-        image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXRKk9RFxXmtdvDOw-4CAcquLG4uluiVMK4T5f3igvf_PBYdlJKQ04Ygay&s=10",
         historicalBackground: "Designed as an inverted subterranean temple worshipping the sacred sanctity of water in drought-prone western India.",
         architecturalSignificance: "Seven levels of stepped stairs decorated with over 500 principal sculptures and 1,000 minor mythological panels carved in Maru-Gurjara style.",
         culturalImportance: "UNESCO World Heritage site demonstrating ancient water engineering, filtration, and sacred underground art.",
@@ -1145,7 +1146,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "નવરાત્રી મહોત્સવ",
         whenCelebrated: "September / October & January 14 (Uttarayan)",
         whereCelebrated: "Across Gujarat",
-        image: "https://images.unsplash.com/photo-1543330091-272283b050ab?auto=format&fit=crop&w=800&q=80",
+        image: "https://www.ravenouslegs.com/uploads/4/2/3/4/42340821/img-0660_1_orig.jpg",
         origins: "Nine sacred nights invoking the cosmic power of Goddess Durga.",
         culturalSignificance: "High-energy dancing with wooden Dandiya sticks, mirror-work chaniya cholis, and midnight feasts of jalebi and fafda.",
         traditionalFood: "Fafda Jalebi, Undhiyu, Sev Khamani, Handvo.",
@@ -1162,7 +1163,7 @@ export const statesData: StateCulturalData[] = [
         name: "Patan Patola Double Ikat Weaving",
         category: "Weaving",
         region: "Patan, Gujarat",
-        image: "https://images.unsplash.com/photo-1584553421349-355b24132049?auto=format&fit=crop&w=800&q=80",
+        image: "https://kapaaskatha.in/cdn/shop/files/red-blue-handloom-silk-double-ikat-dupatta-05.jpg?v=1734087937&width=1024",
         materials: [
           "Pure Mulberry Silk",
           "Natural dyes (Indigo, Turmeric, Madder, Pomegranate skin)"
@@ -1186,7 +1187,7 @@ export const statesData: StateCulturalData[] = [
         name: "Master Rohit Salvi (Patolawala)",
         craftType: "Patan Patola Double Ikat Master",
         location: "Patan, Gujarat",
-        image: "https://images.unsplash.com/photo-1581452481014-a957fc8f7956?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6zNYF1DTl3EZ7M9Q6q3rOvr1VKEr1AJNsPgYsINyyDYH1FC0P0v_RtPE&s=10",
         quote: "In Double Ikat, we do not weave patterns on cloth; we calculate the mathematics of threads before weaving even begins.",
         story: "Custodian of the 900-year-old double ikat lineage invited by King Kumarapala in the 12th century.",
         yearsOfExperience: "40+ Years",
@@ -1204,7 +1205,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Amaravati",
     zone: "South",
     tagline: "The Rice Bowl of India",
-    heroImage: "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMu9a9l36dpTgV62Ckd-f3qzalov9OPUO_IPILNGOPDJ1lVkByjbZ310JT&s=10",
     languages: {
       nativeLanguage: "Telugu",
       dialects: [
@@ -1238,7 +1239,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Gongura Pachadi",
         nativeName: "గోంగుర పచ్చడి",
-        image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtdy54TUheNVuLedBdV4Jff4w5foY2i8vDJ5QQB_CWpQ-Jw1vgrkVJGG8&s=10",
         courseType: "Side Dish",
         dietary: "Vegetarian",
         prepTime: "25 mins",
@@ -1263,7 +1264,7 @@ export const statesData: StateCulturalData[] = [
         category: "Handicraft",
         description: "Ancient hand-painted or block-printed cotton textile art using natural dyes.",
         significance: "Historically used to depict mythological tales on temple hangings.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqO1-xs11vtNTfWm5b0lf4PH2pi0Om-Q0V1z3FsiJxnzDBeLaHS4Geqam3&s=10"
       }
     ],
     childhoodGames: [
@@ -1287,7 +1288,8 @@ export const statesData: StateCulturalData[] = [
         location: "Lepakshi, Anantapur district",
         historicalPeriod: "16th Century",
         builtBy: "Virupanna and Veeranna (Vijayanagara Empire)",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Veerabhadra_Temple_Tower.JPG/960px-Veerabhadra_Temple_Tower.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUEOchk6XHthSj8tfGZozzfWD80M2TGH2TSaXmazjNWaZwAm6KlfQYyDA&s=10",
+
         historicalBackground: "Built during the Vijayanagara empire, famous for its hanging pillar and monolith Nandi.",
         architecturalSignificance: "Exquisite Vijayanagara architectural style with intricate stone carvings and ceiling mural paintings.",
         culturalImportance: "Major Shaivite pilgrimage and cultural heritage center.",
@@ -1309,7 +1311,8 @@ export const statesData: StateCulturalData[] = [
         nativeName: "మకర సంక్రాంతి",
         whenCelebrated: "January",
         whereCelebrated: "Statewide",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Makara_face_at_Konark_temple_01.jpg/960px-Makara_face_at_Konark_temple_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ9d-sqa2JxvMrsjj4cCCSmOEGwW-o9ggMFgEBV0qZ7g&s=10",
+
         origins: "Harvest festival celebrating the sun god's transition into Capricorn.",
         culturalSignificance: "Marks harvest, prosperity, and family reunions with Rangoli patterns.",
         traditionalFood: "Ariselu, Pulhora, Bobbatlu",
@@ -1326,7 +1329,7 @@ export const statesData: StateCulturalData[] = [
         name: "Kondapalli Toys",
         category: "Wooden Craft",
         region: "Kondapalli, Vijayawada",
-        image: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Vijayawada-Kondapalli_Quilla.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXgz-IB7DX8D9uktdjJkXN_5yPf5dZv6dkOuh29hu85g&s=10",
         materials: [
           "Tella Poniki wood",
           "Végétal dyes",
@@ -1354,7 +1357,7 @@ export const statesData: StateCulturalData[] = [
         name: "K. Venkateswara Rao",
         craftType: "Kondapalli Toy Making",
         location: "Kondapalli, NTR District",
-        image: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Vijayawada-Kondapalli_Quilla.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_-t5QDtAzImjF7Z1OUb6V1y3a9kyGFTQoqdGocKGPnHcHjBuA-3gJ8nGZ&s=10",
         quote: "Every piece of Poniki wood holds a story of our ancestors waiting to be carved out.",
         story: "Inherited the art form from his grandfather and has preserved traditional natural dye techniques for over 40 years.",
         yearsOfExperience: "42 years",
@@ -1372,7 +1375,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Itanagar",
     zone: "North-East",
     tagline: "Land of the Dawn-Lit Mountains",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/TawangMonastery-ArunachalPradesh-1.jpg/960px-TawangMonastery-ArunachalPradesh-1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJefTOWIj7vU6GZ6oJ9ugMy6Xe3gN392fUAgApC8Z6MnXloO4BwYTZhKyn&s=10",
     languages: {
       nativeLanguage: "Nishi",
       dialects: [
@@ -1408,7 +1411,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Zan",
         nativeName: "ज़ान",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCpm7_w5k8IDYIICIhtYzfOXg1p0SQJvJKre8J1ChW1p_4lM711xHFMTSn&s=10",
         courseType: "Main Course",
         dietary: "Heirloom",
         prepTime: "20 mins",
@@ -1432,7 +1435,7 @@ export const statesData: StateCulturalData[] = [
         category: "Textile",
         description: "Loin-loom textile weaving done traditionally by women using geometric designs.",
         significance: "Reflects tribal identity and marital status through unique color patterns.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Nuranang_Waterfall.jpg/960px-Nuranang_Waterfall.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTTfFccW-7A68RYcrb6Bv5JV_BAENvPst-Np2C8t5OlU5iwImb7RL4zX0&s=10"
       }
     ],
     childhoodGames: [
@@ -1456,7 +1459,7 @@ export const statesData: StateCulturalData[] = [
         location: "Tawang",
         historicalPeriod: "17th Century (1680-1681)",
         builtBy: "Merak Lama Lodre Gyatso",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/TawangMonastery.jpg/960px-TawangMonastery.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3JdyLSZppHkLg2x--NHLA769vM4gCDb6IEOQC-bxxToM5X9F8atSYbyi&s=10",
         historicalBackground: "The largest monastery in India and second largest in the world, belonging to the Gelug school of Mahayana Buddhism.",
         architecturalSignificance: "Fortress-like three-story building constructed on a hilltop with a 28-foot high golden Buddha statue.",
         culturalImportance: "Spiritual center for Mahayana Buddhists across the Eastern Himalayas.",
@@ -1478,7 +1481,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "लोसार",
         whenCelebrated: "February / March",
         whereCelebrated: "Tawang and West Kameng",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Getting_ready_for_Losar.jpg/960px-Getting_ready_for_Losar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZsUliutuPdFsDoZir111adMe7g33g36I8IKFUku5khKAcl5-fNZW3Gkg&s=10",
         origins: "Monpa tribal Tibetan New Year festival.",
         culturalSignificance: "Cleansing the old year's evil spirits and welcoming health, prosperity, and peace.",
         traditionalFood: "Kapse (fried snack), Butter tea",
@@ -1495,7 +1498,7 @@ export const statesData: StateCulturalData[] = [
         name: "Monpa Wooden Mask Making",
         category: "Woodwork",
         region: "Tawang & Bomdila",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Jaapi_of_Assam.jpg/960px-Jaapi_of_Assam.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGiiSae4yPnwpxUP33mUlwgaEOS0cJkCQnJYohePjuZEXEHE4KsJGQbcA&s=10",
         materials: [
           "Local softwood",
           "Natural pigments",
@@ -1522,7 +1525,7 @@ export const statesData: StateCulturalData[] = [
         name: "Dorjee Norbu Monpa",
         craftType: "Mask Carver",
         location: "Tawang",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCoTgMor6GwssOdCb6gpbBj74r4up-k8gDalhQaq7oQPHbABfWXBqEyQDp&s=10",
         quote: "Every mask gives voice to spiritual guardians of the valley.",
         story: "Learned mask making in monastery workshops and has dedicated 35 years to preserving Monpa sacred masks.",
         yearsOfExperience: "35 years",
@@ -1539,7 +1542,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Dispur",
     zone: "North-East",
     tagline: "Land of the Red River and Blue Hills",
-    heroImage: "https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPGSdbXl25ln5pOLmu8yZAn53q8v6HvqbLYP-uyOIJf5CuGFJZV7pZEgf2&s=10",
     languages: {
       nativeLanguage: "Assamese",
       dialects: [
@@ -1575,7 +1578,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Masor Tenga",
         nativeName: "মাছৰ টেঙা",
-        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSltZMMWCJwJPGjAqDwmu7XmZ-zJmK76PLpmUdrvZpkgYjw3OPsoBpy9OM&s=10",
         courseType: "Main Course",
         dietary: "Specialty",
         prepTime: "30 mins",
@@ -1600,7 +1603,7 @@ export const statesData: StateCulturalData[] = [
         category: "Textile",
         description: "Weaving naturally golden-tinted Muga silk unique to Assam.",
         significance: "GI-tagged silk worn during festivals and royal ceremonies since Ahom dynasty.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz3LpcgJX6BUxhdvqc1-WgtDUVcN9Kn14SOpjs1bNTNw&s"
       }
     ],
     childhoodGames: [
@@ -1624,7 +1627,7 @@ export const statesData: StateCulturalData[] = [
         location: "Sivasagar",
         historicalPeriod: "18th Century (1746)",
         builtBy: "Pramatta Singha (Ahom Dynasty)",
-        image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkfPTQiD0R9cksl8pZeYyr9QpX4_I5ytBrGcYX-DfW0jzEt-UdIBsAAEM&s=10",
         historicalBackground: "Two-story royal amphitheater used by Ahom kings to watch traditional sports and buffalo fights.",
         architecturalSignificance: "Roof shaped like an inverted Ahom royal boat, built with indigenous bricks and sticky rice mortar.",
         culturalImportance: "One of Asia's oldest surviving amphitheaters, representing Ahom architectural genius.",
@@ -1646,7 +1649,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "ব'হাগ বিহু",
         whenCelebrated: "Mid-April",
         whereCelebrated: "Statewide",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ3bsd8GEdyEA7LHjRGYlZ3yjVyOQO6j2nj0gxZT3Jrn-8jnXqoO4UPnk&s=10",
         origins: "Agricultural spring harvest festival marking the Assamese New Year.",
         culturalSignificance: "Celebrates life, romance, and agricultural renewal across communities.",
         traditionalFood: "Pitha, Laru, Jolpan with curd",
@@ -1663,7 +1666,7 @@ export const statesData: StateCulturalData[] = [
         name: "Sarthebari Bell Metal Craft",
         category: "Metalwork",
         region: "Sarthebari, Barpeta",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwTNy7RmdXpcBpS8MahRRIr0otJBvo7Ul1H1aqny-wG-oRuF5Q2YJJCj4&s=10",
         materials: [
           "Copper",
           "Tin",
@@ -1690,7 +1693,7 @@ export const statesData: StateCulturalData[] = [
         name: "Hemen Das",
         craftType: "Bell Metal Artisan",
         location: "Sarthebari",
-        image: "https://images.unsplash.com/photo-1555021200-a0808a3d132b?auto=format&fit=crop&w=800&q=80",
+        image: "https://upload.wikimedia.org/wikipedia/as/d/d9/Hemen_Das_Director.jpg?utm_source=as.wikipedia.org&utm_campaign=index&utm_content=original",
         quote: "The rhythmic sound of hammer on bell metal is the heartbeat of Sarthebari.",
         story: "Carrying forward five generations of bell metal crafting in his family atelier.",
         yearsOfExperience: "30 years",
@@ -1707,7 +1710,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Patna",
     zone: "East",
     tagline: "Land of Enlightenment",
-    heroImage: "https://images.unsplash.com/photo-1560002165-802c636f3ebc?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://cdn.britannica.com/12/94612-050-B4EEB84A/temple-Buddhist-Mahabodhi-Bihar-India-Bodh-Gaya.jpg?w=400&h=300&c=crop",
     languages: {
       nativeLanguage: "Hindi",
       dialects: [
@@ -1742,7 +1745,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Litti Chokha",
         nativeName: "लिट्टी चोखा",
-        image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwkjV9G8tYCqvLHgM2l12ilUH0ttTXlBTcLcA4GKcP5tZwyQcvzuaja01e&s=10",
         courseType: "Main Course",
         dietary: "Vegetarian",
         prepTime: "45 mins",
@@ -1768,7 +1771,7 @@ export const statesData: StateCulturalData[] = [
         category: "Visual Art",
         description: "Traditional painting using twigs, fingers, and natural dyes with bold line work.",
         significance: "Practiced by women of Mithila region to decorate mud walls for spiritual occasions.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUfOhnrMtlq4-ng-FFY2w7fikaN8LThDexMYoCITtNPZHj151rwJZco4OD&s=10"
       }
     ],
     childhoodGames: [
@@ -1792,7 +1795,7 @@ export const statesData: StateCulturalData[] = [
         location: "Bodh Gaya",
         historicalPeriod: "3rd Century BCE (Rebuilt 5th-6th Century CE)",
         builtBy: "Emperor Ashoka",
-        image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUP5oClLiSv8D-csaEreciB0fac9i8Fwqqyxqe5dIV-NCghDzUunYb70UU&s=10",
         historicalBackground: "UNESCO World Heritage Site marking the spot where Gautama Buddha attained enlightenment.",
         architecturalSignificance: "One of the earliest brick structures surviving in India, exemplifying classical Indian temple architecture.",
         culturalImportance: "Global epicenter for Buddhist pilgrimage.",
@@ -1814,7 +1817,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "छठ पूजा",
         whenCelebrated: "October / November",
         whereCelebrated: "Statewide along riverbanks",
-        image: "https://images.unsplash.com/photo-1605221943033-0245037e8c33?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW-c12SBVe6rxNjBINuXHnlOCRyN_BwFbwmVOxF8OlT-udrHsxd9vtBco&s=10",
         origins: "Vedic festival dedicated to Surya (Sun God) and Chhathi Maiya.",
         culturalSignificance: "Promotes purity, extreme austerity, gratitude to nature, and non-priestly community devotion.",
         traditionalFood: "Thekua, Rasiya (Jaggery kheer)",
@@ -1831,7 +1834,7 @@ export const statesData: StateCulturalData[] = [
         name: "Sikki Grass Craft",
         category: "Weaving",
         region: "Mithila region",
-        image: "https://images.unsplash.com/photo-1533094602577-198d356ce086?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTltuYz7wSBWkniQ2w2R1EQJ26aGtDpGC7BMUN0YUF1Jw5baD75MwYM4wOV&s=10",
         materials: [
           "Golden Sikki grass",
           "Natural dyes",
@@ -1858,7 +1861,7 @@ export const statesData: StateCulturalData[] = [
         name: "Bua Devi",
         craftType: "Madhubani Painting",
         location: "Jitwarpur, Madhubani",
-        image: "https://images.unsplash.com/photo-1581452481014-a957fc8f7956?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUMpH_Bbc4mzjx7ATKeRh1gKPrLEewENGwLdhnN8xzcA&s=10",
         quote: "Our brush carries lines that connect ancient myths with modern life.",
         story: "Pioneer Madhubani artist who brought wall paintings on canvas to international prominence.",
         yearsOfExperience: "50+ years",
@@ -1876,7 +1879,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Raipur",
     zone: "Central",
     tagline: "Full of Surprises",
-    heroImage: "https://images.unsplash.com/photo-1596422846543-75c6ff416766?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPEtUvtvJvFWY7TWnECSfg6_z7Pww8y1odnIEH9rswPyaWvlf0wbkG7XY&s=10",
     languages: {
       nativeLanguage: "Chhattisgarhi",
       dialects: [
@@ -1910,7 +1913,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Chhela Roti",
         nativeName: "चीला रोटी",
-        image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_G1EG6svaL_MjLAY5A4yhAu_SrK2SQdKIhxOlJw3ag&s=10",
         courseType: "Breakfast",
         dietary: "Vegetarian",
         prepTime: "15 mins",
@@ -1936,7 +1939,7 @@ export const statesData: StateCulturalData[] = [
         category: "Craft",
         description: "Non-ferrous metal casting using lost-wax casting technique.",
         significance: "4,000-year-old continuous metallurgy tradition practiced by tribal artisans.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjvE43FucyLFs8PBSdn5qq7Mwx84UXjYjVmEWa4Kwl5D-ni6wNA4d_MX3x&s=10"
       }
     ],
     childhoodGames: [
@@ -1960,7 +1963,7 @@ export const statesData: StateCulturalData[] = [
         location: "Chauragram, Kabirdham district",
         historicalPeriod: "11th Century (1089 CE)",
         builtBy: "King Gopal Dev (Nagavanshi Dynasty)",
-        image: "https://images.unsplash.com/photo-1621831700684-7a31eb246f68?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC-G0CxkjaegCU4aB3UECtoh47LsDjwbrlWK0_KbnMG-xNgUsBVJu_xG32&s=10",
         historicalBackground: "Dedicated to Lord Shiva, known as the 'Khajuraho of Chhattisgarh'.",
         architecturalSignificance: "Nagara style architecture adorned with detailed erotic and spiritual stone sculptures.",
         culturalImportance: "Key historical temple nestled in the Maikal hills.",
@@ -1982,7 +1985,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "बस्तर दशहरा",
         whenCelebrated: "September / October (75 days)",
         whereCelebrated: "Jagdalpur, Bastar",
-        image: "https://images.unsplash.com/photo-1543330091-272283b050ab?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJuvVuIpk8cgfkMHi_mfJhShfOn8M8HxeolsYTeojf9w&s=10",
         origins: "Initiated in 15th century by King Purushottam Deo of Katiya dynasty.",
         culturalSignificance: "World's longest festival dedicated to Goddess Danteshwari, involving all local tribal clans.",
         traditionalFood: "Mahuwa drink, Poha, Pej",
@@ -1999,7 +2002,7 @@ export const statesData: StateCulturalData[] = [
         name: "Bastar Iron Craft (Loha Shilp)",
         category: "Metalwork",
         region: "Bastar region",
-        image: "https://images.unsplash.com/photo-1584553421349-355b24132049?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLfABZXnpmFO5YltZLj3rj4jO0ma668KY90XkZhxQ1Srd7G9zGS5RnT7vB&s=10",
         materials: [
           "Wrought iron",
           "Scrap metal",
@@ -2026,7 +2029,7 @@ export const statesData: StateCulturalData[] = [
         name: "Teejan Bai",
         craftType: "Pandavani Musician / Performer",
         location: "Ganiari, Durg",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgtTlvFdLsrs7P-31UuGCknzpgV0UUqCNxTLyxl2Q9R_kbXMBz6bznxhavX4TX9ORR8BUWoEQlKlSykJhSGScYisnlsWRU21vVozoFaA&s=10",
         quote: "The Tambura is my companion; through it, the Mahabharata lives in my voice.",
         story: "Broke gender barriers to perform the Kapalik style of Pandavani, gaining global acclaim.",
         yearsOfExperience: "50+ years",
@@ -2045,7 +2048,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Panaji",
     zone: "West",
     tagline: "Pearl of the Orient",
-    heroImage: "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRthOYWGM9e8uz_Un3hkAuSRWSaftY-AJAxcKT23pmHsBJErWeEhI-9mow&s=10",
     languages: {
       nativeLanguage: "Konkani",
       dialects: [
@@ -2080,7 +2083,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Goan Fish Curry",
         nativeName: "शीत कडी",
-        image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+        image: "https://static.toiimg.com/thumb/55224612.cms?imgsize=539861&width=800&height=800",
         courseType: "Main Course",
         dietary: "Specialty",
         prepTime: "30 mins",
@@ -2105,7 +2108,7 @@ export const statesData: StateCulturalData[] = [
         category: "Folk Festival",
         description: "Spring celebration with vibrant street parades, elaborate floats, and traditional folk dances.",
         significance: "Honors home-coming of warriors and welcoming spring harvest.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://seawatersports.com/images/places/shigmo-festival.jpg"
       }
     ],
     childhoodGames: [
@@ -2129,7 +2132,7 @@ export const statesData: StateCulturalData[] = [
         location: "Old Goa",
         historicalPeriod: "16th-17th Century (1605)",
         builtBy: "Portuguese Jesuite Order",
-        image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbx3vW688BGH3BH8QU7F5IFQO_LIlD_wiMwEDlKy8LlJzBV6Wy8DaJul_-&s=10",
         historicalBackground: "UNESCO World Heritage Site housing the mortal remains of St. Francis Xavier.",
         architecturalSignificance: "Masterpiece of Baroque architecture with unplastered black granite facade and gilded altars.",
         culturalImportance: "Global Catholic pilgrimage destination.",
@@ -2151,7 +2154,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "कार्निव्हाल",
         whenCelebrated: "February (before Lent)",
         whereCelebrated: "Panaji, Margao, Vasco",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRloMjKYbQn67uOJdQNBG4Y3RfEYqxtZ0QW9QSsSMuRpiuL_xT6Kt7NIOom&s=10",
         origins: "Introduced by Portuguese rule in 18th century.",
         culturalSignificance: "Four days of music, dance, colorful parade led by King Momo before 40 days of Lent.",
         traditionalFood: "Feijoada, Bebinca, Sorpotel",
@@ -2168,7 +2171,7 @@ export const statesData: StateCulturalData[] = [
         name: "Azulejos Ceramic Tile Painting",
         category: "Pottery",
         region: "Panaji, Goa",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGIXs7B4TvYn7_-iue5DRgYdja3SshGaEEzPgaPGb28Ff0TIhqSylbhAs&s=10",
         materials: [
           "Ceramic tiles",
           "Glaze paints",
@@ -2195,7 +2198,7 @@ export const statesData: StateCulturalData[] = [
         name: "Orlando de Noronha",
         craftType: "Azulejos Tile Artist",
         location: "Panaji",
-        image: "https://images.unsplash.com/photo-1555021200-a0808a3d132b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuwzNiHzkKkF_E3pNAMuqSvrRXT4ZwxPA8iUKC8lB4laazKsH-5dmBH9-d&s=10",
         quote: "Azulejos are the blue memories of Goa painted on clay.",
         story: "Trained in Portugal to revive the dying art of hand-painted ceramic tiles in Goa.",
         yearsOfExperience: "28 years",
@@ -2212,7 +2215,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Chandigarh",
     zone: "North",
     tagline: "Land of Rotis and Reshlma",
-    heroImage: "https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://hblimg.mmtcdn.com/content/hubble/img/destimg/mmt/activities/m_Destinatoin_img_Gurgaon_1_l_689_1034.jpg",
     languages: {
       nativeLanguage: "Haryanvi",
       dialects: [
@@ -2247,7 +2250,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Bajra Roti with White Butter",
         nativeName: "बाजरा रोटी और मक्खन",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6LY7JxpzeTIzLV8HqBv6ivS0zepHXVT8CvuK1WbhuF3f9aMyGsMfUB1Ve&s=10",
         courseType: "Main Course",
         dietary: "Vegetarian",
         prepTime: "20 mins",
@@ -2271,7 +2274,7 @@ export const statesData: StateCulturalData[] = [
         category: "Textile Art",
         description: "Flowered embroidery done with bright silk threads on coarse cotton cloth.",
         significance: "Crafted by women as heirlooms for weddings and birth ceremonies.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCTH8I8rX6Hc6Uf0Oh54ZV0q2XgrUBxQj822KH6cDPfsNZy5DbClV1r6k&s=10"
       }
     ],
     childhoodGames: [
@@ -2295,7 +2298,7 @@ export const statesData: StateCulturalData[] = [
         location: "Panipat",
         historicalPeriod: "16th Century (1526)",
         builtBy: "British Administration / Earlier Memorial rebuilt",
-        image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzIyXo5LsgyuIyiZTsxdg0ngFe5PDHkWcwzzLy_5SbmV-v8xFgHPna2p5J&s=10",
         historicalBackground: "Marks the site of the historic First Battle of Panipat where Babur defeated Ibrahim Lodi.",
         architecturalSignificance: "Simple rectangular red sandstone tomb structure set in a park.",
         culturalImportance: "Historical landmark denoting the beginning of Mughal Empire in India.",
@@ -2317,7 +2320,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "सूरजकुंड मेला",
         whenCelebrated: "February",
         whereCelebrated: "Surajkund, Faridabad",
-        image: "https://images.unsplash.com/photo-1605221943033-0245037e8c33?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfdT9-iKpT6a7SO4g_mrMpYrvoAeCOxKXvzVXyLnRBuvXktpUiHvjvt0Q&s=10",
         origins: "Initiated in 1987 to showcase Indian handicrafts and handlooms.",
         culturalSignificance: "World's largest crafts fair promoting Indian artisan heritage and international cultural exchange.",
         traditionalFood: "Gond laddu, Bajra khichdi, Jalebi",
@@ -2334,7 +2337,7 @@ export const statesData: StateCulturalData[] = [
         name: "Panipat Handloom Durries",
         category: "Weaving",
         region: "Panipat",
-        image: "https://images.unsplash.com/photo-1533094602577-198d356ce086?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt5tpuLRIcM51XXKMVPbc4VtbbAa7gtZpeourKMWtmODEbsAE9__x5QCGQ&s=10",
         materials: [
           "Cotton yarn",
           "Wool",
@@ -2360,7 +2363,7 @@ export const statesData: StateCulturalData[] = [
         name: "Dharambir Singh",
         craftType: "Master Weaver",
         location: "Panipat",
-        image: "https://images.unsplash.com/photo-1581452481014-a957fc8f7956?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ep83ErwdTC9CzsadBIuimGswAMuxyydMO4kYLNFN1ZUxoF7MCPGNIVc&s=10.",
         quote: "Every thread on our loom carries the warp and weft of Haryanvi endurance.",
         story: "Preserving handloom flat-weave technique passed down through 4 generations.",
         yearsOfExperience: "38 years",
@@ -2377,7 +2380,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Shimla",
     zone: "North",
     tagline: "Land of the Gods",
-    heroImage: "https://images.unsplash.com/photo-1560002165-802c636f3ebc?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZDFeIWvWUChTHUheH8NcL6Foam9fv7oh9qE3OjYowv6HdHVEHTXr2QAm0&s=10",
     languages: {
       nativeLanguage: "Pahari",
       dialects: [
@@ -2413,7 +2416,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Dham (Chana Madra)",
         nativeName: "चना मदरा",
-        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt_Cy37kvwPEJB1bQ97gqIUq9-s7_5-2azQZELeJ7bA9cwIUzLVMn3e7M&s=10",
         courseType: "Main Course",
         dietary: "Vegetarian",
         prepTime: "40 mins",
@@ -2439,7 +2442,7 @@ export const statesData: StateCulturalData[] = [
         category: "Embroidery",
         description: "Double-sided embroidery on square silk/cotton fabric with untwisted silk thread.",
         significance: "Historically gifted as royal presents depicting scenes from Raslila and Pahari miniatures.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmRstkXNcv5M_AhFxnqgzls95JitvA465EAVIwIjcpLQ&s=10"
       }
     ],
     childhoodGames: [
@@ -2463,7 +2466,7 @@ export const statesData: StateCulturalData[] = [
         location: "Manali",
         historicalPeriod: "16th Century (1553 CE)",
         builtBy: "Raja Bahadur Singh",
-        image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpM8JS_ffe3cyEpf9Hk7i57gxEne4EcWou2wDVotkhjkKGHxHqNBP8d_x8&s=10",
         historicalBackground: "Dedicated to Hidimbi Devi from Mahabharata, situated inside a dense cedar forest.",
         architecturalSignificance: "Unique four-tiered wooden pagoda style architecture with intricate wood carvings.",
         culturalImportance: "Major spiritual shrine and center for annual Kullu fair rituals.",
@@ -2485,7 +2488,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "कुल्लू दशहरा",
         whenCelebrated: "October (Starts on Vijayadashami)",
         whereCelebrated: "Dhalpur Maidan, Kullu",
-        image: "https://images.unsplash.com/photo-1543330091-272283b050ab?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqm858uEu-KIUAv4S8Sg10SunATH29i3LsH-EzO-BqxRvsy7ktp2n16P6i&s=10",
         origins: "Dates back to 17th century when King Jagat Singh installed Lord Raghunath idol.",
         culturalSignificance: "Over 200 local village deities gather in decorated palanquins for week-long grand assembly.",
         traditionalFood: "Siddu, Babru, Mittha",
@@ -2502,7 +2505,7 @@ export const statesData: StateCulturalData[] = [
         name: "Kullu Shawl Weaving",
         category: "Textile",
         region: "Kullu Valley",
-        image: "https://images.unsplash.com/photo-1584553421349-355b24132049?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5FxH0AJiuvrKOz-cBEE6YwUgKPm0s-z-QUnSQYGas4Q&s=10",
         materials: [
           "Pashmina wool",
           "Angora wool",
@@ -2528,7 +2531,7 @@ export const statesData: StateCulturalData[] = [
         name: "Lalita Vakil",
         craftType: "Chamba Rumal Embroiderer",
         location: "Chamba",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Lalita_Vakil_in_2022.jpg/250px-Lalita_Vakil_in_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
         quote: "The needle moves like a brush, turning simple threads into living Pahari art.",
         story: "Dedicated over fifty years to reviving and teaching the rare double-sided Chamba Rumal embroidery.",
         yearsOfExperience: "50+ years",
@@ -2547,7 +2550,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Ranchi",
     zone: "East",
     tagline: "The Land of Forests",
-    heroImage: "https://images.unsplash.com/photo-1596422846543-75c6ff416766?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdMjYarlrNSuvYFfCx9HcGllqMDRrcxP4AYGpSqcnYRj0mnwPbpJZuHl6i&s=10",
     languages: {
       nativeLanguage: "Santhali",
       dialects: [
@@ -2582,7 +2585,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Dhuska with Aloo Chana Curry",
         nativeName: "धुसका",
-        image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Rv8pWKS_u-YMQPDD7MT32dBH7oQOglNG-4daui8o1A&s=10",
         courseType: "Breakfast",
         dietary: "Heirloom",
         prepTime: "30 mins",
@@ -2608,7 +2611,7 @@ export const statesData: StateCulturalData[] = [
         category: "Mural Art",
         description: "Indigenous ritualistic mud wall arts practiced by tribal women using natural earths.",
         significance: "Sohrai celebrates harvest and cattle; Khovar marks marriage season.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqi9RMhGMQfGVls3mjP78Lgkin5hM0eRtALqiT0XocIMFKeeCDJo_QQVA&s=10"
       }
     ],
     childhoodGames: [
@@ -2632,7 +2635,7 @@ export const statesData: StateCulturalData[] = [
         location: "Deoghar",
         historicalPeriod: "16th Century",
         builtBy: "Raja Puran Mal (Gidhaur Dynasty)",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Baidyanath_temple_and_temple_complex%2C_Deoghar_04.jpg/960px-Baidyanath_temple_and_temple_complex%2C_Deoghar_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4IQziUyaeB0sueH4JCMEA4Xd41xB3gMrigqOyNflGw&s=10",
         historicalBackground: "One of the twelve sacred Jyotirlingas in India.",
         architecturalSignificance: "Lotus-shaped dome spire rising 72 feet high surrounded by 21 accessory temples.",
         culturalImportance: "Hub of annual Shravani Mela pilgrimage where millions bring holy Ganges water.",
@@ -2654,7 +2657,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "सरहुल",
         whenCelebrated: "March / April (Spring)",
         whereCelebrated: "Statewide tribal villages",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY3bVGJucvkMM3oIf4ahUkRgpBfQtUDVYbHT6zh_H0sVqu7a7B3h-XZJK2&s=10",
         origins: "Nature worship festival celebrated by Oraon, Munda, and Santhal tribes.",
         culturalSignificance: "Worship of Sal tree blossoms marking the start of the new agricultural year.",
         traditionalFood: "Handia (Rice beer), Pitha, Fish curry",
@@ -2671,7 +2674,7 @@ export const statesData: StateCulturalData[] = [
         name: "Paitkar Painting",
         category: "Visual Art",
         region: "Amadubi village, East Singhbhum",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhagi_J3wmHRUs8GwD0cNmYRADdo7kioAtH_Lrn0aWm40_LY-9PAnjcMh1&s=10",
         materials: [
           "Natural leaf/stone dyes",
           "Paper scroll",
@@ -2697,7 +2700,7 @@ export const statesData: StateCulturalData[] = [
         name: "Justin Ekka",
         craftType: "Sohrai Mural Artist",
         location: "Hazaribagh",
-        image: "https://images.unsplash.com/photo-1555021200-a0808a3d132b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvAkmGx2Gx4kvyyoyooSD-bqAQten9JrrJ5eNX3z1wdIJAncARpEyIras&s=10",
         quote: "Our mud art connects the soil of our homes with the wild nature outside.",
         story: "Promoted traditional GI-tagged Sohrai-Khovar mud wall paintings onto canvas for museum exhibits globally.",
         yearsOfExperience: "26 years",
@@ -2714,7 +2717,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Bengaluru",
     zone: "South",
     tagline: "One State, Many Worlds",
-    heroImage: "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBLRKGS3AKfbOrauk_CTdjO4_p7L48e20E0c9ekw47ypYG3iOcMwbtcqej&s=10",
     languages: {
       nativeLanguage: "Kannada",
       dialects: [
@@ -2749,7 +2752,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Bisi Bele Bath",
         nativeName: "ಬಿಸಿ ಬೇಳೆ ಭಾತ್",
-        image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbJMjNg6mHj1wDwc07LVpx2CcAPGyzMUZJI96q7FT5EA&s=10",
         courseType: "Main Course",
         dietary: "Vegetarian",
         prepTime: "40 mins",
@@ -2776,7 +2779,7 @@ export const statesData: StateCulturalData[] = [
         category: "Performing Art",
         description: "Traditional dance-drama performance with elaborate face makeup and vibrant headgear.",
         significance: "Depicts epics like Mahabharata and Ramayana throughout coastal Karnataka nights.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTx8vsHzpDn6GdEPW9ftNbADeD2ZsQHBPT0BpBITOVJA&s=10"
       }
     ],
     childhoodGames: [
@@ -2800,7 +2803,7 @@ export const statesData: StateCulturalData[] = [
         location: "Hampi, Vijayanagara",
         historicalPeriod: "16th Century",
         builtBy: "King Krishnadevaraya (Vijayanagara Empire)",
-        image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLB21ufZBPhXhOvX6CRpCJvcVHujknC-t8GJWT_Ikp5vYAw1nvh6AOQpUG&s=10",
         historicalBackground: "Iconic shrine dedicated to Garuda inside the Vittala temple complex in UNESCO World Heritage site Hampi.",
         architecturalSignificance: "Carved from giant granite blocks designed to resemble a moving ceremonial chariot.",
         culturalImportance: "Symbol of South Indian architectural pinnacle during the Vijayanagara Empire.",
@@ -2822,7 +2825,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "ಮೈಸೂರು ದಸರಾ",
         whenCelebrated: "September / October (10 days)",
         whereCelebrated: "Mysuru",
-        image: "https://images.unsplash.com/photo-1605221943033-0245037e8c33?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyMcaFf2ca7FIRoYOccJNnO9OVGOsFdk9Cf5FcG8bwXYnOZU1bgUOIWbCC&s=10",
         origins: "Started by Vijayanagara kings in 15th century, continued by Wodeyar royal dynasty of Mysore.",
         culturalSignificance: "Celebrates victory of Goddess Chamundeshwari over demon Mahishasura; highlights state culture.",
         traditionalFood: "Mysore Pak, Obbattu",
@@ -2839,7 +2842,7 @@ export const statesData: StateCulturalData[] = [
         name: "Channapatna Wooden Toys",
         category: "Woodcraft",
         region: "Channapatna, Ramanagara",
-        image: "https://images.unsplash.com/photo-1533094602577-198d356ce086?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZH3hIg1vlqfwyPjEQllcu5fakzNrtdwzMIExdKoHW9aAFcMUmmiVY4nkj&s=10",
         materials: [
           "Ivory Wood (Aale Mara)",
           "Vegetable dyes",
@@ -2866,7 +2869,7 @@ export const statesData: StateCulturalData[] = [
         name: "C. Ramalingegowda",
         craftType: "Channapatna Toy Craftsman",
         location: "Channapatna",
-        image: "https://images.unsplash.com/photo-1581452481014-a957fc8f7956?auto=format&fit=crop&w=800&q=80",
+        image:" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl6BqxLZoiAu-maqeCoDy5WxyLhdXM4qzFWRYKGAVFEA&s=10",
         quote: "Our lac-turnery ensures children play with natural colors and smooth wooden warmth.",
         story: "Preserved traditional non-toxic lac-turnery techniques for over 3 decades and trained hundreds of artisans.",
         yearsOfExperience: "35 years",
@@ -2883,7 +2886,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Bhopal",
     zone: "Central",
     tagline: "The Heart of Incredible India",
-    heroImage: "https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://cdn.ibpbooks.com/images/sdf/madhya-pradesh-from-above.jpg",
     languages: {
       nativeLanguage: "Hindi",
       dialects: [
@@ -2919,7 +2922,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Bhutte Ka Kees",
         nativeName: "भुट्टे का कीस",
-        image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ50BlZ2tLntKPZlvbmNNqQY6T7EAA8JPZR3oImWJvFQ&s=10",
         courseType: "Snack",
         dietary: "Vegetarian",
         prepTime: "25 mins",
@@ -2945,7 +2948,7 @@ export const statesData: StateCulturalData[] = [
         category: "Tribal Heritage",
         description: "A traditional tribal courtship and harvest festival of the Bhil and Bhilala tribes.",
         significance: "Fosters community bonding and marital alliances among young tribal men and women.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR0uxFoiUuSaMvGfES8-hlOWvqCcllP_s42x-BkPtrpNHoCkaafmJigPQ&s=10"
       }
     ],
     childhoodGames: [
@@ -2969,7 +2972,7 @@ export const statesData: StateCulturalData[] = [
         location: "Chhatarpur",
         historicalPeriod: "950 AD - 1050 AD",
         builtBy: "Chandela Dynasty",
-        image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl7oK8i6fOZP6t2mP0j42APSa3kINYGLWY732iOn4zTg&s=10",
         historicalBackground: "Built by the Chandela rulers, these temples celebrate nagara-style architecture and intricate stone carvings.",
         architecturalSignificance: "Famous for Nagara-style architecture and expressive sculptures depicting human emotions and divine forms.",
         culturalImportance: "UNESCO World Heritage site showcasing classical Indian sculpture art.",
@@ -2992,7 +2995,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "लोकरंग उत्सव",
         whenCelebrated: "January 26-30 annually",
         whereCelebrated: "Bhopal",
-        image: "https://images.unsplash.com/photo-1543330091-272283b050ab?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXMBTkeD41_HgtluUfx8pxpqycMFGmbA2qbTZD7xLoOw&s=10",
         origins: "Organized by Madhya Pradesh Tribal Museum to celebrate folk and tribal arts.",
         culturalSignificance: "Highlights rich tribal cultures, music, dance forms, and handicrafts across India.",
         traditionalFood: "Bafla Roti, Laddu",
@@ -3009,7 +3012,7 @@ export const statesData: StateCulturalData[] = [
         name: "Gond Painting",
         category: "Painting",
         region: "Dindori & Mandla",
-        image: "https://images.unsplash.com/photo-1584553421349-355b24132049?auto=format&fit=crop&w=800&q=80",
+        image: "https://theindiacraftproject.com/cdn/shop/files/WhatsApp_Image_2025-03-07_at_3.52.58_PM_10.jpg?v=1744803901",
         materials: [
           "Natural pigments",
           "Canvas",
@@ -3035,7 +3038,7 @@ export const statesData: StateCulturalData[] = [
         name: "Bhuri Bai",
         craftType: "Pithora & Gond Painting",
         location: "Pitol, Jhabua",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNme7P8R7obecJG_i9Hhx9WK-SCaT6gzCWwlJxXwCeu3m8l-DighKN0is&s=10",
         quote: "Our art is our identity, passed down from wall paintings to modern canvases.",
         story: "Pioneer Bhil artist who transitioned traditional mud-wall Pithora paintings onto paper and acrylic canvas.",
         yearsOfExperience: "40+ years",
@@ -3053,7 +3056,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Mumbai",
     zone: "West",
     tagline: "Unlimited Maharashtra",
-    heroImage: "https://images.unsplash.com/photo-1560002165-802c636f3ebc?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvPSW0IZamHSBWwChedRWLJcWBpoOFaxEEPvN-GULmqQ&s=10",
     languages: {
       nativeLanguage: "Marathi",
       dialects: [
@@ -3089,7 +3092,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Puran Poli",
         nativeName: "पुरणपोळी",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa-tOpvCdIJvlaKS_AZSWC8Yy0QfJanOOSBgP9JOXpEA&s=10",
         courseType: "Dessert",
         dietary: "Vegetarian",
         prepTime: "45 mins",
@@ -3114,7 +3117,7 @@ export const statesData: StateCulturalData[] = [
         category: "Religious Heritage",
         description: "An 800-year-old annual pilgrimage walking to Pandharpur carrying the padukas of Vithoba devotees.",
         significance: "Promotes social equality and devotion through the teachings of Saint Dnyaneshwar and Saint Tukaram.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwMBUsm_T0rBDTJ7qjf7lAg_rSjWYiDJ28R4YYFmquLw&s=10"
       }
     ],
     childhoodGames: [
@@ -3137,7 +3140,7 @@ export const statesData: StateCulturalData[] = [
         location: "Chhatrapati Sambhajinagar (Aurangabad)",
         historicalPeriod: "2nd Century BCE - 480 CE",
         builtBy: "Satavahana and Vakataka Dynasties",
-        image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoc4Q9fBreOSKtXXBo_iGimL3PxmjFubsU7Oc90da7bjR661MkVB87d1U&s=10",
         historicalBackground: "Rock-cut Buddhist cave monuments housing classic masterpieces of Buddhist religious art.",
         architecturalSignificance: "Fresco paintings and rock carvings carved out of a horseshoe-shaped cliff.",
         culturalImportance: "UNESCO World Heritage site celebrating ancient Buddhist art and architecture.",
@@ -3158,7 +3161,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "गणेशोत्सव",
         whenCelebrated: "Bhadrapada (August-September)",
         whereCelebrated: "Statewide",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__2bxtEB8DsDoKDeszo4fnQXyuPe9VSc9wZTfbxk9Tw&s=10",
         origins: "Popularized by Lokmanya Tilak into a public mass festival to unite people during colonial rule.",
         culturalSignificance: "Honors Lord Ganesha with home idols, community pandals, and elaborate immersion processions.",
         traditionalFood: "Modak",
@@ -3175,7 +3178,7 @@ export const statesData: StateCulturalData[] = [
         name: "Warli Tribal Art",
         category: "Painting",
         region: "Palghar",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScE8zUOTHEmwaA4nZGjquFzm93x4k-zvf3ZBvssmmAgA&s=10",
         materials: [
           "Rice paste",
           "Red ochre mud walls",
@@ -3199,7 +3202,7 @@ export const statesData: StateCulturalData[] = [
         name: "Shantaram Gode",
         craftType: "Warli Painting",
         location: "Dahanu, Palghar",
-        image: "https://images.unsplash.com/photo-1555021200-a0808a3d132b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fXTakcFEYiuEfD8bFelAQHWgL5KWKTMK92OmC0qLyLkKh-xXEyOTgGE&s=10",
         quote: "Our shapes are simple, but they hold the harmony of nature.",
         story: "Master artist keeping ancient North Konkan Warli traditions alive through community workshops.",
         yearsOfExperience: "35 years",
@@ -3216,7 +3219,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Imphal",
     zone: "North-East",
     tagline: "Jewel of India",
-    heroImage: "https://images.unsplash.com/photo-1596422846543-75c6ff416766?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWljPdjpJ5I2YxrBqa5JLp_GejoFTFJqRSnkllZDXN8aFj9648JThXj_cfiPlW9061Ubf38JLr1xBwYV9SahwBihpUHbRlY8tLDGF-RjDJcaFr8-Nynucru8-ijeTOC2mvriVEIg=s680-w680-h510-rw",
     languages: {
       nativeLanguage: "Meitei (Manipuri)",
       dialects: [
@@ -3250,7 +3253,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Eromba",
         nativeName: "ꯏꯔꯣꯝꯕꯥ",
-        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7NgRUZquCwnhv8SKehp-g7su_DJ4WLtBB-KaTtuEn6B0IggrARSMJBwpV&s=10",
         courseType: "Main Course",
         dietary: "Specialty",
         prepTime: "30 mins",
@@ -3274,7 +3277,7 @@ export const statesData: StateCulturalData[] = [
         category: "Classical Dance",
         description: "One of the major classical dance forms of India portraying the devotion of Radha and Krishna.",
         significance: "Expresses deep spiritual devotion through graceful, fluid movements and unique cylindrical skirts (Kumil).",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj2L_nfZlP0g7WMA8QId-UBLqT4IZOFFvkYvKFkM3JCWw-wgCyMw4PoiE&s=10"
       }
     ],
     childhoodGames: [
@@ -3298,7 +3301,7 @@ export const statesData: StateCulturalData[] = [
         location: "Imphal",
         historicalPeriod: "33 AD - 1891 AD",
         builtBy: "Meitei Monarchs",
-        image: "https://images.unsplash.com/photo-1621831700684-7a31eb246f68?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ApGSdu9eT43RFokz2dhbGIIcRe2ziJNW9yqd3tmpmQ&s=10",
         historicalBackground: "Ancient seat of Meitei rulers and religious center located in the heart of Imphal.",
         architecturalSignificance: "Houses ancient temples, coronation halls, and sacred coronation sites.",
         culturalImportance: "Heart of Manipuri history, spirituality, and royal heritage.",
@@ -3319,7 +3322,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "ꯌꯥꯎꯁꯪ",
         whenCelebrated: "Lamta month (February-March)",
         whereCelebrated: "Statewide",
-        image: "https://images.unsplash.com/photo-1605221943033-0245037e8c33?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Ff2o364PQw2qlLovVoGUlvauO899HIaT5wtisKMxqg&s=10",
         origins: "Combines traditional Meitei spring customs with Hindu Holi celebrations.",
         culturalSignificance: "Five-day festival marked by moonlight Thabal Chongba dances and sports activities.",
         traditionalFood: "Kheer, Singju",
@@ -3336,7 +3339,7 @@ export const statesData: StateCulturalData[] = [
         name: "Kauna Reed Craft",
         category: "Weaving",
         region: "Imphal East & Thoubal",
-        image: "https://images.unsplash.com/photo-1533094602577-198d356ce086?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2CFHddBdSstwDs9xHCVc7_XJ25FzY426R-B13-sH5TPDK-t9TOq9PpxAp&s=10",
         materials: [
           "Kauna water reed",
           "Natural vegetable dyes"
@@ -3360,7 +3363,7 @@ export const statesData: StateCulturalData[] = [
         name: "Yumlembam Sorojini Devi",
         craftType: "Shaphee Lanphee & Kauna Craft",
         location: "Imphal",
-        image: "https://images.unsplash.com/photo-1581452481014-a957fc8f7956?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxqZCHqfCe4Uf6U4P2UClefAi_lMSXHiJwUf1Nsw05Q&s=10",
         quote: "Our traditional textiles tell stories of bravery and royalty.",
         story: "Renowned weaver preserving traditional royal textiles of Manipur for over four decades.",
         yearsOfExperience: "42 years",
@@ -3377,7 +3380,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Shillong",
     zone: "North-East",
     tagline: "Abode of Clouds",
-    heroImage: "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO34cIbb_epZf99IJ8BrzEktkmuYf_N7v3GUMkSWN2kw&s=10",
     languages: {
       nativeLanguage: "Khasi",
       dialects: [
@@ -3412,7 +3415,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Jadoh",
         nativeName: "Jadoh",
-        image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLxkYmI7KmEK-R-k7c1e5mDlYdjQrdN3NxBrV-TkRdzg&s=10",
         courseType: "Main Course",
         dietary: "Specialty",
         prepTime: "40 mins",
@@ -3437,7 +3440,7 @@ export const statesData: StateCulturalData[] = [
         category: "Bio-engineering",
         description: "Bridges hand-knitted from the aerial roots of Ficus elastica trees across streams.",
         significance: "Demonstrates centuries of harmonious bio-engineering between indigenous tribes and rainforest environments.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdAYVe8gMEQF5a2SnIYFo3cUz8753BudB2rrGlVcErgg&s=10"
       }
     ],
     childhoodGames: [
@@ -3461,7 +3464,7 @@ export const statesData: StateCulturalData[] = [
         location: "West Jaintia Hills",
         historicalPeriod: "1500 AD - 1800 AD",
         builtBy: "Jaintia Kings",
-        image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpv9cV-DYvM9x6fXVXo3XWxVSRc3AZymZvI9kUMNCbt3ECJpyrTPobalKm&s=10",
         historicalBackground: "Largest collection of megalithic stones standing in memory of Jaintia kings and heroes.",
         architecturalSignificance: "Tallest menhir stone standing over 8 meters high.",
         culturalImportance: "Sacred tribal remembrance site.",
@@ -3482,7 +3485,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "Wangala",
         whenCelebrated: "November",
         whereCelebrated: "Asanang, Garo Hills",
-        image: "https://images.unsplash.com/photo-1543330091-272283b050ab?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU014YQVwRYjicFCUptlmrGfnFjjzdwHe_vABOX0CV_gY6GxKKT8611ak&s=10",
         origins: "Post-harvest thanksgiving festival dedicated to Saljong, the Sun God of Garos.",
         culturalSignificance: "Celebrates bountiful harvests with rhythmic drumming and traditional headgear dances.",
         traditionalFood: "Bitchi (rice beer), Minil (sticky rice)",
@@ -3499,7 +3502,7 @@ export const statesData: StateCulturalData[] = [
         name: "Ryndia (Eri) Silk Weaving",
         category: "Weaving",
         region: "Ri-Bhoi",
-        image: "https://images.unsplash.com/photo-1584553421349-355b24132049?auto=format&fit=crop&w=800&q=80",
+        image: "https://ryndia.in/wp-content/uploads/2024/06/Picture51_.png",
         materials: [
           "Eri organic silk yarn",
           "Plant dyes (turmeric, iron slag, leaves)"
@@ -3524,7 +3527,7 @@ export const statesData: StateCulturalData[] = [
         name: "Brak K. Sangma",
         craftType: "Bamboo & Cane Crafts",
         location: "Tura, Garo Hills",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtCynobxg8cADsgU8mXhhw2xjhGbrNrM2tlyX-IVOC65XXSFD5zA8eDjvB&s=10",
         quote: "Bamboo is in our blood; it shelters us and sustains our arts.",
         story: "Garo craftsman preserving tribal bamboo basketry and structural craftsmanship.",
         yearsOfExperience: "28 years",
@@ -3541,7 +3544,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Aizawl",
     zone: "North-East",
     tagline: "Land of the Hill People",
-    heroImage: "https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3xRxiAkS_wkzpKHY7whsmZk_Xt17XF7FuA_pXNw--KR68f3S5GAZHHb8&s=10",
     languages: {
       nativeLanguage: "Mizo",
       dialects: [
@@ -3576,7 +3579,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Mizo Bai",
         nativeName: "Bai",
-        image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.slurrp.com/prod/rich_article/kwxhjwjlwoe.webp?impolicy=slurrp-20210601&width=1200&height=675",
         courseType: "Main Course",
         dietary: "Vegetarian",
         prepTime: "20 mins",
@@ -3601,7 +3604,7 @@ export const statesData: StateCulturalData[] = [
         category: "Folk Dance",
         description: "Rhythmic dance performed by stepping in and out of clapping bamboo poles.",
         significance: "One of the oldest Mizo dances, traditionally performed to ensure safe passage for a deceased soul.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfXWS-h4XszxvEPcVuOaTEOXxu6j301IR7IqTqIw-B7g&s=10"
       }
     ],
     childhoodGames: [
@@ -3624,7 +3627,7 @@ export const statesData: StateCulturalData[] = [
         location: "Tachhip Village",
         historicalPeriod: "1500 AD",
         builtBy: "Chief Sibuta",
-        image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmXDUUl4Qw505PcW2dmRhRRehur12GXp9SjP6il84QDhQYcHB3n_PjUgxd&s=10",
         historicalBackground: "A memorial stone erected by Mizo Chief Sibuta over 500 years ago.",
         architecturalSignificance: "Historic carved stone standing on a elevated hill mound.",
         culturalImportance: "Reflects ancient Mizo chieftain heritage and legendary tales.",
@@ -3645,7 +3648,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "Chapchar Kut",
         whenCelebrated: "First Friday of March",
         whereCelebrated: "Statewide (Aizawl main ground)",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdSC3I3R6EeDyrMbk4Io4Rx09Im5TEkPxuZ9FDYhQOYnMbnrbKWfUrjsA&s=10",
         origins: "Post-jhum clearing festival celebrating the arrival of spring.",
         culturalSignificance: "Unites all Mizo clans through traditional dance, music, and colorful costumes.",
         traditionalFood: "Vawksa Rep (smoked pork), Bai",
@@ -3662,7 +3665,7 @@ export const statesData: StateCulturalData[] = [
         name: "Puan Handloom Weaving",
         category: "Weaving",
         region: "Aizawl & Thenzawl",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80",
+        image: "https://miro.medium.com/0*ztt17bG_6iUgPYXH.jpg",
         materials: [
           "Cotton thread",
           "Natural and synthetic colors"
@@ -3686,7 +3689,7 @@ export const statesData: StateCulturalData[] = [
         name: "Lalrintluangi",
         craftType: "Puanchei Weaving",
         location: "Thenzawl",
-        image: "https://images.unsplash.com/photo-1555021200-a0808a3d132b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSldplTSD_xGyYCl7T5lWSvt4-MLueGMt0J-7Ubjuyj_ADq6zBNtlDWXJc&s=10",
         quote: "Every stripe in a Puanchei represents our cultural pride.",
         story: "Master weaver producing intricate Puanchei patterns for ceremonial wear.",
         yearsOfExperience: "30 years",
@@ -3703,7 +3706,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Kohima",
     zone: "North-East",
     tagline: "Land of Festivals",
-    heroImage: "https://images.unsplash.com/photo-1560002165-802c636f3ebc?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://m.economictimes.com/thumb/msid-104419864,width-1200,height-1200,resizemode-4,imgsize-1785990/nagaland.jpg",
     languages: {
       nativeLanguage: "Tenyidie",
       dialects: [
@@ -3739,7 +3742,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Smoked Pork with Axone",
         nativeName: "Axone Pork",
-        image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ0ROo6Wo2lA3zu0kOoDnsbmn6ba75pflub11CSgIGgg&s=10",
         courseType: "Main Course",
         dietary: "Specialty",
         prepTime: "45 mins",
@@ -3763,7 +3766,7 @@ export const statesData: StateCulturalData[] = [
         category: "Social Structure",
         description: "Traditional village educational dormitories where Naga youth learned oral history, warfare, and crafts.",
         significance: "Preserved tribal laws, music, art, and community leadership through generations.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRExwFYXCd1b-YszospsxJMTnKtbxRMey33f6ElASZZEA&s=10"
       }
     ],
     childhoodGames: [
@@ -3787,7 +3790,7 @@ export const statesData: StateCulturalData[] = [
         location: "Kohima",
         historicalPeriod: "1944 AD",
         builtBy: "Commonwealth War Graves Commission",
-        image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZimuJ9bFSkHtH8XmsOlKB2X-Cf7mzpBNNEWVobIHtf3CS--p51Ax_6js&s=10",
         historicalBackground: "Memorial dedicated to Allied soldiers of WWII who fought in the critical Battle of Kohima.",
         architecturalSignificance: "Built on the slopes of Garrison Hill with manicured terraced gardens.",
         culturalImportance: "Global symbol of peace and remembrance.",
@@ -3808,7 +3811,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "Hornbill Festival",
         whenCelebrated: "December 1-10 annually",
         whereCelebrated: "Kisama Heritage Village, Kohima",
-        image: "https://images.unsplash.com/photo-1605221943033-0245037e8c33?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBVMMBJL-1yrOm4e3oNmRZF0-1AuMoTtjDExTiR2HpvQ&s=10",
         origins: "Initiated by Government of Nagaland in 2000 to promote inter-tribal harmony.",
         culturalSignificance: "Known as 'Festival of Festivals', showcasing music, dances, traditional sports, and food of 17 Naga tribes.",
         traditionalFood: "Smoked meats, Rice beer, Bamboo shoot stir fry",
@@ -3825,7 +3828,7 @@ export const statesData: StateCulturalData[] = [
         name: "Naga Tribal Shawl Weaving",
         category: "Weaving",
         region: "Kohima & Mokokchung",
-        image: "https://images.unsplash.com/photo-1533094602577-198d356ce086?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlPoTlNo3BiQJLYHER9-NeX7bYKhAleZ7VqpH7Kz9WuA&s=10",
         materials: [
           "Cotton thread",
           "Wool",
@@ -3849,7 +3852,7 @@ export const statesData: StateCulturalData[] = [
         name: "Neihunuo Sorhie",
         craftType: "Naga Handloom Weaving",
         location: "Kohima",
-        image: "https://images.unsplash.com/photo-1581452481014-a957fc8f7956?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTvdsCFT76M3-kv26StxhOTevPqimvxWz-BFwMhCx2vg&s=10",
         quote: "Our shawls carry our history; each thread tells a warrior's journey.",
         story: "Master weaver awarded Padma Shri for preserving traditional loin-loom weaving.",
         yearsOfExperience: "35 years",
@@ -3867,7 +3870,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Bhubaneswar",
     zone: "East",
     tagline: "India's Best Kept Secret",
-    heroImage: "https://images.unsplash.com/photo-1596422846543-75c6ff416766?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYFMzl8yT6vOs-J36QCbfXu4UfD74Eq9kGVg_yQhvOWSXoWHYr2fC2gwO1&s=10",
     languages: {
       nativeLanguage: "Odia",
       dialects: [
@@ -3904,7 +3907,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Dalma",
         nativeName: "ଡାଲମା",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgGyNbzp49XkkbH7iQwrdAGgC2gZKKmFUvvkCfZ4jr8g&s=10",
         courseType: "Main Course",
         dietary: "Vegetarian",
         prepTime: "35 mins",
@@ -3930,7 +3933,7 @@ export const statesData: StateCulturalData[] = [
         category: "Folk Art",
         description: "Traditional dance form where young boys dress as women to praise Lord Jagannath with acrobatic poses.",
         significance: "Precursor to Classical Odissi dance, keeping ancient temple dance rituals alive.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCis0a6ds7mHiUBsHlkvgnvqqmWuZXPE8pL-kG61Qe3w&s=10"
       }
     ],
     childhoodGames: [
@@ -3953,7 +3956,7 @@ export const statesData: StateCulturalData[] = [
         location: "Konark, Puri",
         historicalPeriod: "1250 AD",
         builtBy: "King Narasimhadeva I",
-        image: "https://images.unsplash.com/photo-1621831700684-7a31eb246f68?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI26xltG2H9vackbZzrQWIFU5jdsv4RgsZRM749Fk42w7nnzGDhb2l2w4&s=10",
         historicalBackground: "13th-century Sun Temple designed in the shape of a monumental chariot.",
         architecturalSignificance: "Kalinga architecture with 24 carved stone wheels pulled by seven stone horses.",
         culturalImportance: "UNESCO World Heritage site symbolizing classical Indian architectural brilliance.",
@@ -3974,7 +3977,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "ରଥଯାତ୍ରା",
         whenCelebrated: "Ashadha Shukla Dwitiya (June-July)",
         whereCelebrated: "Puri",
-        image: "https://images.unsplash.com/photo-1543330091-272283b050ab?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuEgXvXhknrl6-xebSmAHhYJmBHEvtlrZhGIxpo_9Apg&s=10",
         origins: "Ancient annual chariot procession of Lord Jagannath, Balabhadra, and Subhadra.",
         culturalSignificance: "Millions pull colossal wooden chariots to Gundicha Temple.",
         traditionalFood: "Khaja, Mahaprasad",
@@ -3991,7 +3994,7 @@ export const statesData: StateCulturalData[] = [
         name: "Pattachitra Scroll Painting",
         category: "Painting",
         region: "Raghurajpur, Puri",
-        image: "https://images.unsplash.com/photo-1584553421349-355b24132049?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0W6AgSWhkrU_rWXRO0_-giJy_vRCejWQvRvii5IG-9oChIE2Yby-bi8Y&s=10",
         materials: [
           "Cloth canvas treated with chalk and tamarind gum",
           "Natural mineral colors"
@@ -4016,7 +4019,7 @@ export const statesData: StateCulturalData[] = [
         name: "Bijay Kumar Parida",
         craftType: "Pattachitra Painting",
         location: "Raghurajpur",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDNHN82QmxYxzqRhCb9ytcFB6N6YmmKuN_M2t-NjGwaQ&s=10",
         quote: "Pattachitra is not just art; it is our devotion rendered on canvas.",
         story: "Heritage painter keeping Raghurajpur's master painting traditions vibrant.",
         yearsOfExperience: "32 years",
@@ -4033,7 +4036,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Gangtok",
     zone: "North-East",
     tagline: "Small but Beautiful",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Kangchenjunga_PangPema.JPG/960px-Kangchenjunga_PangPema.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvwkHEwkHhOj0Gk3OqjlKf8M3MvGPVCruGzxsXpiB9lU-9SuNH3TITeI0f&s=10",
     languages: {
       nativeLanguage: "Nepali",
       dialects: [
@@ -4068,7 +4071,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Sel Roti",
         nativeName: "सेल रोटी",
-        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgB-MXjwuGl-KKa-y8WlCSMPGcPSuajdIIp1lb8NJdow&s",
         courseType: "Snack",
         dietary: "Vegetarian",
         prepTime: "30 mins",
@@ -4092,7 +4095,7 @@ export const statesData: StateCulturalData[] = [
         category: "Buddhist Ritual Dance",
         description: "Sacred dance performed by Buddhist monks wearing elaborate wooden masks and robes.",
         significance: "Destroys evil forces and brings peace and spiritual enlightenment.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX0qSHJSJDYtuROYmhx8aGdUnq2NDx1vvRdG-YQqXqRw&s=10"
       }
     ],
     childhoodGames: [
@@ -4116,7 +4119,7 @@ export const statesData: StateCulturalData[] = [
         location: "Pelling",
         historicalPeriod: "1670 AD",
         builtBy: "Tensung Namgyal",
-        image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHTVCqnaG469l1npZm4vvVOfrzDAFd4EK6SPTju74nA&s=10",
         historicalBackground: "Second capital of the former kingdom of Sikkim destroyed during Nepalese invasions.",
         architecturalSignificance: "Stone chortens and palace wall ruins commanding views of Kanchenjunga.",
         culturalImportance: "Historic heart of the Namgyal dynasty.",
@@ -4137,7 +4140,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "Losoong",
         whenCelebrated: "December",
         whereCelebrated: "Monasteries statewide (Rumtek, Phodong)",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHkcKaduqc72o4P9A40pUdzFfAElPubfEAn5K8Pm1MRNUF99ksN2PfmGNv&s=10",
         origins: "Sikkimese New Year marking the end of the harvest season.",
         culturalSignificance: "Monks perform sacred Cham dances to banish evil spirits for the upcoming year.",
         traditionalFood: "Tongba (Millet Beer), Sel Roti",
@@ -4154,7 +4157,7 @@ export const statesData: StateCulturalData[] = [
         name: "Thangka Painting",
         category: "Painting",
         region: "Gangtok & Rumtek",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUuqGe_8A099fm8W6Ak-RePDibPxyUiNZTzroBx6dH_g&s=10",
         materials: [
           "Cotton silk canvas",
           "Gold dust",
@@ -4180,7 +4183,7 @@ export const statesData: StateCulturalData[] = [
         name: "Karchung Lepcha",
         craftType: "Lepcha Handloom & Bamboo Craft",
         location: "Dzongu",
-        image: "https://images.unsplash.com/photo-1555021200-a0808a3d132b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT09rfDbcZbvP1dNYvbEJWCWUKsnQlx7xJAbXQMw32MEQ&s=10",
         quote: "Our weaves reflect the flora of Kanchenjunga.",
         story: "Preserving indigenous Lepcha natural weaving in the Dzongu reserve area.",
         yearsOfExperience: "26 years",
@@ -4197,7 +4200,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Hyderabad",
     zone: "South",
     tagline: "It's All Here",
-    heroImage: "https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGPkPT2MauyWN4EXjwUgH0p_-Rq72i1hBfM3tPtSI-a5NIPNUb9QfNQeU&s=10",
     languages: {
       nativeLanguage: "Telugu",
       dialects: [
@@ -4230,7 +4233,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Sarva Pindi",
         nativeName: "సర్వ పిండి",
-        image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9puxGa45w5RWKzgws121cKZ0hMIo-Hq_YLHCbkKljrg&s=10",
         courseType: "Snack",
         dietary: "Vegetarian",
         prepTime: "30 mins",
@@ -4256,7 +4259,7 @@ export const statesData: StateCulturalData[] = [
         category: "Floral Festival",
         description: "Women arrange seasonal flowers in concentric layers creating conical floral towers.",
         significance: "Honors Nature Goddess Maha Gauri and celebrates ecosystem vitality.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWxsp0naNYrE1lDZRS7F58EE3DPF1hpfdWHWxFvo684pRgKm3NUS5JcQ&s=10"
       }
     ],
     childhoodGames: [
@@ -4279,7 +4282,7 @@ export const statesData: StateCulturalData[] = [
         location: "Hyderabad",
         historicalPeriod: "1591 AD",
         builtBy: "Sultan Muhammad Quli Qutb Shah",
-        image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
+        image: "https://upload.wikimedia.org/wikipedia/commons/7/71/Charminar_Hyderabad_1.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         historicalBackground: "Built to commemorate the end of a deadly plague epidemic in Hyderabad.",
         architecturalSignificance: "Indo-Islamic architectural landmark with four ornate grand arches and 56-meter minarets.",
         culturalImportance: "Global symbol of Hyderabad and Telangana's heritage.",
@@ -4300,7 +4303,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "బోనాలు",
         whenCelebrated: "Ashada month (July-August)",
         whereCelebrated: "Hyderabad and Secunderabad",
-        image: "https://images.unsplash.com/photo-1605221943033-0245037e8c33?auto=format&fit=crop&w=800&q=80",
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsrlTYvZebqzKbGUERygmOdTLzFqk49DjVPih61i6or50b5jEbHT8vP0qp&s=10",
         origins: "Thanksgiving festival dedicated to Goddess Mahakali.",
         culturalSignificance: "Women carry brass pots containing cooked rice, jaggery, and neem leaves decorated with turmeric and vermilion.",
         traditionalFood: "Bonam (Cooked Rice with Milk and Jaggery)",
@@ -4317,7 +4320,7 @@ export const statesData: StateCulturalData[] = [
         name: "Pochampally Ikat Weaving",
         category: "Weaving",
         region: "Bhoodan Pochampally, Yadadri Bhuvanagiri",
-        image: "https://images.unsplash.com/photo-1533094602577-198d356ce086?auto=format&fit=crop&w=800&q=80",
+        image: "https://jrshandlooms.com/wp-content/uploads/2024/08/Handloom.jpg",
         materials: [
           "Silk and cotton yarn",
           "Natural/synthetic dyes"
@@ -4340,7 +4343,7 @@ export const statesData: StateCulturalData[] = [
         name: "Gajam Anthaiah",
         craftType: "Pochampally Ikat",
         location: "Pochampally",
-        image: "https://images.unsplash.com/photo-1581452481014-a957fc8f7956?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt-odZ0D_dBSQtHAkrr4-S2JYlor7FgMKnl8RyLaIhrw&s=10",
         quote: "Every thread is dyed with precision before it touches the loom.",
         story: "Padma Shri winning weaver who revolutionized Telia Rumal and Ikat techniques.",
         yearsOfExperience: "45 years",
@@ -4358,7 +4361,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Agartala",
     zone: "North-East",
     tagline: "Cultural Heritage of the North East",
-    heroImage: "https://images.unsplash.com/photo-1560002165-802c636f3ebc?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://lh3.googleusercontent.com/grass-cs/ACvplmPPS_5IaX_fv6JXx0d67X9QyNZUl9gY6AMKTMASaWhhglHLWyToMZXyp1VAEFf0RtrfCQKDnMKNOqkDlLsb5RtoHCqKlNXalcDJxy5i0s4zDTuSKB93ryZRl9sFITkA27TmqEhkCw=w326-h312-n-k-no",
     languages: {
       nativeLanguage: "Kokborok",
       dialects: [
@@ -4393,7 +4396,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Mui Borok (Berma Dish)",
         nativeName: "Mui Borok",
-        image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhib4ZIkExb-8lLFJy6ojyYw3eFi7vkDpIOdyeVZEioQ&s=10",
         courseType: "Main Course",
         dietary: "Specialty",
         prepTime: "25 mins",
@@ -4417,7 +4420,7 @@ export const statesData: StateCulturalData[] = [
         category: "Folk Dance",
         description: "Acractic dance performed by Reang women balancing pitching pitchers and lamps on their heads.",
         significance: "Demonstrates extraordinary physical balance and grace while worshiping Goddess Mailuma.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://static.wixstatic.com/media/ba2ea9_e54d77e998704bd5990ff9170e12f7ec~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/ba2ea9_e54d77e998704bd5990ff9170e12f7ec~mv2.jpg"
       }
     ],
     childhoodGames: [
@@ -4440,7 +4443,7 @@ export const statesData: StateCulturalData[] = [
         location: "Agartala",
         historicalPeriod: "1901 AD",
         builtBy: "Maharaja Radha Kishore Manikya",
-        image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzNyZ14jBnCRKMY6hixiLGU6aj6fOeWGr75bvcV06PbA&s=10",
         historicalBackground: "Neoclassical palace that served as the royal seat of Manikya kings.",
         architecturalSignificance: "Blends Mughal, Roman, and European architectural elements with manicured Mughal-style gardens.",
         culturalImportance: "Houses the State Museum showcasing Northeast India's heritage.",
@@ -4461,7 +4464,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "खारची पूजा",
         whenCelebrated: "July (Ashadha)",
         whereCelebrated: "Fourteen Gods Temple, Old Agartala",
-        image: "https://images.unsplash.com/photo-1543330091-272283b050ab?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRldNBO2YvC0SbJEfrZbV0lx6hJLwkRRWeNM5mB1-pCFQ&s=10",
         origins: "Royal festival of the Manikya dynasty dedicated to 14 patron deities.",
         culturalSignificance: "Cleanses Mother Earth post-menstruation/monsoon through sacred bathing rituals.",
         traditionalFood: "Peda, Mui Borok",
@@ -4478,7 +4481,7 @@ export const statesData: StateCulturalData[] = [
         name: "Tripura Cane & Bamboo Craft",
         category: "Woodwork",
         region: "Statewide",
-        image: "https://images.unsplash.com/photo-1584553421349-355b24132049?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6zzSbgqytk3rJNzLLkcHxed9NyFYBtSFoqP2UBdnvPg&s=10",
         materials: [
           "Muli Bamboo",
           "Cane strips"
@@ -4503,7 +4506,7 @@ export const statesData: StateCulturalData[] = [
         name: "Paresh Chandra Roy",
         craftType: "Cane & Bamboo Handicrafts",
         location: "Agartala",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr8epXrkbPzxDOamcNoSywDVuEStYl_ZkYRl_b_rXmbw&s=10",
         quote: "Bamboo is versatile; it can form delicate jewelry or strong homes.",
         story: "Master craftsman elevating Tripura bamboo products to international design markets.",
         yearsOfExperience: "38 years",
@@ -4520,7 +4523,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Lucknow",
     zone: "North",
     tagline: "The Heartland of Indian Culture and Heritage",
-    heroImage: "https://images.unsplash.com/photo-1596422846543-75c6ff416766?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKl-pGle2DyPRk98EAkSvSMC0MUM8WOFD8AOmXc4kKsDsPM-eegRpW8q4s&s=10",
     languages: {
       nativeLanguage: "Hindi",
       dialects: [
@@ -4556,7 +4559,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Galouti Kebab",
         nativeName: "गलौटी कबाब",
-        image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoddO6PgHQzpvpUv0C-4zu3_8EOfYsOhXs-JWNOlwjWA&s=10",
         courseType: "Main Course",
         dietary: "Specialty",
         prepTime: "45 mins",
@@ -4579,7 +4582,7 @@ export const statesData: StateCulturalData[] = [
         category: "Spiritual",
         description: "Daily ritual performed on the ghats of Varanasi and Ayodhya honoring the holy river Ganga.",
         significance: "Expresses gratitude to the river for sustaining life and spiritual purity.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6iZnH6dl4ZhhXAk5QodZD0i-EA-FhvLwhACuhdTgpKQ&s=10"
       }
     ],
     childhoodGames: [
@@ -4602,7 +4605,7 @@ export const statesData: StateCulturalData[] = [
         location: "Agra",
         historicalPeriod: "1631–1653 AD",
         builtBy: "Mughal Emperor Shah Jahan",
-        image: "https://images.unsplash.com/photo-1621831700684-7a31eb246f68?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBLMAj2MC-OsougAlHC9G6zxRydrADTf3zOKlorXvypP09oa8dFuY9Lq8&s=10",
         historicalBackground: "Built as a tomb for Shah Jahan's beloved wife Mumtaz Mahal.",
         architecturalSignificance: "Pinnacle of Mughal architecture with pristine white marble inlay work.",
         culturalImportance: "UNESCO World Heritage site and global symbol of love.",
@@ -4624,7 +4627,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "लठमार होली",
         whenCelebrated: "February/March",
         whereCelebrated: "Barsana and Nandgaon",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0mo9J73pmhXDrt1EaABC7uuB_sJcg6A7sfLLKjeFUbg&s=10",
         origins: "Reenacts Lord Krishna visiting Radha's village and getting playfully chased away by women.",
         culturalSignificance: "Unique celebration where women hit men with sticks (lathis) while men protect themselves with shields.",
         traditionalFood: "Thandai, Gujiya",
@@ -4642,7 +4645,7 @@ export const statesData: StateCulturalData[] = [
         name: "Chikankari Embroidery",
         category: "Textile Art",
         region: "Lucknow",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXPuWZm7RJAkvuQhoydqkux5k5e6dCT8e86QIIWHjREg&s=10",
         materials: [
           "Cotton Thread",
           "Muslin",
@@ -4668,7 +4671,7 @@ export const statesData: StateCulturalData[] = [
         name: "Ram Sahai",
         craftType: "Chikankari Master",
         location: "Lucknow",
-        image: "https://images.unsplash.com/photo-1555021200-a0808a3d132b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFcqjlbe6aV9cEicgbkBA_2V5vNzse9sTjRd60UJEk0Q&s=10",
         quote: "Every stitch is a thread connecting us to Awadh's grand heritage.",
         story: "Learned the art of delicate Chikankari from his grandfather at age 12.",
         yearsOfExperience: "42 years",
@@ -4685,7 +4688,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Dehradun",
     zone: "North",
     tagline: "Land of the Gods and Majestic Himalayas",
-    heroImage: "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqVq906IcYG-hei725_lJEMdzZ2LyXbJL_5yX1PvqdLwADIMKl4P3utZwU&s=10",
     languages: {
       nativeLanguage: "Garhwali",
       dialects: [
@@ -4719,7 +4722,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Kafuli",
         nativeName: "काफली",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoXbZwFf4Qj_OGZ287r6I_PAQOz1YTApeFcRJpPiDmXBYuolqOsw3IUEU5&s=10",
         courseType: "Main Course",
         dietary: "Vegetarian",
         prepTime: "30 mins",
@@ -4743,7 +4746,7 @@ export const statesData: StateCulturalData[] = [
         category: "Visual Folk Art",
         description: "Floor and wall paintings made with red clay (Geru) and rice paste (Biswar).",
         significance: "Brings good luck and guards households against negative energy.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuZfmeevp3FIEoXv-xizPWZwmfQGCZpejOcW0GJB28LA&s=10"
       }
     ],
     childhoodGames: [
@@ -4766,7 +4769,7 @@ export const statesData: StateCulturalData[] = [
         location: "Rudraprayag",
         historicalPeriod: "8th Century AD",
         builtBy: "Adi Shankaracharya",
-        image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbf7vnVOIB7UiSIBczCaJt6-rSvFQu8YKRdb8kadEwJQ&s",
         historicalBackground: "One of the 12 Jyotirlingas of Lord Shiva situated high in the Garhwal Himalayas.",
         architecturalSignificance: "Constructed from giant gray granite stone slabs without mortar.",
         culturalImportance: "Premier pilgrimage site in the Char Dham Yatra.",
@@ -4788,7 +4791,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "फूल देई",
         whenCelebrated: "March (First day of Chaitra month)",
         whereCelebrated: "Garhwal and Kumaon regions",
-        image: "https://images.unsplash.com/photo-1605221943033-0245037e8c33?auto=format&fit=crop&w=800&q=80",
+        image: "https://colorsofuttarakhand.com/wp-content/uploads/2025/12/phool-die-festival-celebration.jpg",
         origins: "Harvest festival welcoming the spring season.",
         culturalSignificance: "Children pluck wild flowers and place them at doorsteps to wish prosperity.",
         traditionalFood: "Dei (Pudding made of jaggery, flour, and curd)",
@@ -4805,7 +4808,7 @@ export const statesData: StateCulturalData[] = [
         name: "Ringaal Bamboo Craft",
         category: "Handicrafts",
         region: "Chamoli & Almora",
-        image: "https://images.unsplash.com/photo-1533094602577-198d356ce086?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvS2HOkrTsp-gTFcNbXqCRy_wm84Bp5rNWjqFVTKX8NQ&s=10",
         materials: [
           "Ringaal Bamboo strips"
         ],
@@ -4829,7 +4832,7 @@ export const statesData: StateCulturalData[] = [
         name: "Kamla Devi",
         craftType: "Aipan Folk Artist",
         location: "Almora",
-        image: "https://images.unsplash.com/photo-1581452481014-a957fc8f7956?auto=format&fit=crop&w=800&q=80",
+        image: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Kamaladevi_Chattopadhyay.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         quote: "Aipan is not just paint; it is a sacred prayer painted on earth.",
         story: "Preserving ancient geometric motifs taught by her mother for decades.",
         yearsOfExperience: "35 years",
@@ -4846,7 +4849,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Port Blair",
     zone: "Union Territory",
     tagline: "Emerald Islands of Untouched Beauty",
-    heroImage: "https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKXnI44vRRnhL_T-JDfGBmIXrcwns_SBMEBaeyyI6h8FS0pSSu1ppHhIWR&s=10",
     languages: {
       nativeLanguage: "Bengali",
       dialects: [
@@ -4879,7 +4882,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Island Fish Curry",
         nativeName: "माछेर झोल / Fish Curry",
-        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPD6sHiqEjLgjG_uMvdJOZxvcI_fUK4bMRp_UI3EHsqQ&s=10",
         courseType: "Main Course",
         dietary: "Specialty",
         prepTime: "25 mins",
@@ -4902,7 +4905,7 @@ export const statesData: StateCulturalData[] = [
         category: "Tribal Tradition",
         description: "Unique Nicobarese ritual honoring departed family members.",
         significance: "Strengthens ancestral kinship ties and community solidarity.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDKz238UbQ-DjkSSAOR0eEdQhufpmPzgdQBgJ1gdj9NdkjOWqXerBUtXme&s=10"
       }
     ],
     childhoodGames: [
@@ -4925,7 +4928,7 @@ export const statesData: StateCulturalData[] = [
         location: "Port Blair",
         historicalPeriod: "1896–1906 AD",
         builtBy: "British Colonial Government",
-        image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn-bGwZnfLTNvOaMWVAJ7kjRIUV35t6uFZ4vK5x-RhgFe0h9DV9lLYeAEK&s=10",
         historicalBackground: "Colonial prison used to exile Indian political freedom fighters (Kala Pani).",
         architecturalSignificance: "Radial design with 7 wings emanating from a central watchtower.",
         culturalImportance: "National memorial commemorating the sacrifices of India's freedom fighters.",
@@ -4946,7 +4949,7 @@ export const statesData: StateCulturalData[] = [
         name: "Island Tourism Festival",
         whenCelebrated: "January",
         whereCelebrated: "Port Blair",
-        image: "https://images.unsplash.com/photo-1543330091-272283b050ab?auto=format&fit=crop&w=800&q=80",
+        image: "https://www.swantour.com/blogs/wp-content/uploads/2019/05/Island-Tourism-Festival.jpg",
         origins: "Initiated by the island administration to showcase local culture.",
         culturalSignificance: "Brings together mainland artists, local tribes, and international tourists.",
         traditionalFood: "Seafood Barbecue",
@@ -4963,7 +4966,7 @@ export const statesData: StateCulturalData[] = [
         name: "Ocean Shell Handicrafts",
         category: "Shell Art",
         region: "Port Blair",
-        image: "https://images.unsplash.com/photo-1584553421349-355b24132049?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIyZP1dK3K9L4_kAqYmL3DgnDmVJwO2GEME6ctBTkUZA&s=10",
         materials: [
           "Sea Shells",
           "Mother of Pearl",
@@ -4989,7 +4992,7 @@ export const statesData: StateCulturalData[] = [
         name: "Subhash Chandra",
         craftType: "Shell Carving Artisan",
         location: "Port Blair",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjjtv4u6K3AlBDrsOe_vOnFYKnxGJYSt-RVjAtfjc2-w&s=10",
         quote: "The ocean yields beauty that we carve into timeless art.",
         story: "Crafting intricate decorative lamps and ornaments from discarded sea shells for 25 years.",
         yearsOfExperience: "25 years",
@@ -5006,7 +5009,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Chandigarh",
     zone: "Union Territory",
     tagline: "The City Beautiful",
-    heroImage: "https://images.unsplash.com/photo-1560002165-802c636f3ebc?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF6mzY5vdEnXaGm1L0JMNnOduNX6lt1fvMsN2Gvj9dwnKKYdMcTy0aXF1h&s=10",
     languages: {
       nativeLanguage: "Punjabi",
       dialects: [
@@ -5039,7 +5042,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Chole Bhature",
         nativeName: "ਛੋਲੇ ਭਟੂਰੇ",
-        image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeADLONIUW85GclyAgxqCShJC8oNnRwccJmqC3ImoVpA&s=10",
         courseType: "Main Course",
         dietary: "Vegetarian",
         prepTime: "30 mins",
@@ -5062,7 +5065,7 @@ export const statesData: StateCulturalData[] = [
         category: "Urban Culture",
         description: "City philosophy of peace, openness to give, and openness to receive.",
         significance: "Embodied by Le Corbusier's Open Hand Monument symbolizing international unity.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLEIT9j7Xn6bGqdt1i5vo-xcMQbXYvV4nS4zlTCaxKg&s=10"
       }
     ],
     childhoodGames: [
@@ -5085,7 +5088,7 @@ export const statesData: StateCulturalData[] = [
         location: "Sector 1, Chandigarh",
         historicalPeriod: "1957 AD (Opened 1976)",
         builtBy: "Nek Chand",
-        image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYwF7bHe-lRqgiNBlEgoXupirgBI1kGS512Genfqqti4KfcU3WgistM6u0&s=10",
         historicalBackground: "Built secretively by government official Nek Chand out of industrial and home waste.",
         architecturalSignificance: "Unique eco-sculpture garden spanning 40 acres using recycled tiles and glass.",
         culturalImportance: "Global masterpiece of outsider art and sustainable design.",
@@ -5106,7 +5109,7 @@ export const statesData: StateCulturalData[] = [
         name: "Chandigarh Rose Festival",
         whenCelebrated: "February / March",
         whereCelebrated: "Zakir Hussain Rose Garden",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcVCykzAdK8nwhSct6rjwoIOmifWCTwaEPTQkIL5GB2PvBIUC4qZS6qwMR&s=10",
         origins: "Established to highlight the lush gardens and civic pride of the city.",
         culturalSignificance: "Showcases 1,600 different rose varieties with grand musical performances.",
         traditionalFood: "Amritsari Kulcha, Lassi",
@@ -5123,7 +5126,7 @@ export const statesData: StateCulturalData[] = [
         name: "Phulkari Embroidery",
         category: "Textile Art",
         region: "Chandigarh / Punjab",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU0YMyvhrjUotcByVXJDtBfIGM82xBS-O7rtQlsRJchVCSY3w0R7oZW6c&s=10",
         materials: [
           "Darn Silk Thread",
           "Khaddar Fabric"
@@ -5146,7 +5149,7 @@ export const statesData: StateCulturalData[] = [
         name: "Gurmeet Kaur",
         craftType: "Phulkari Artisan",
         location: "Sector 35, Chandigarh",
-        image: "https://images.unsplash.com/photo-1555021200-a0808a3d132b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzDn-HZ9DrfynaQfJFZahkZeNt7sHz8pVFStoIurU3aQ&s=10",
         quote: "Phulkari is the blossoming of a woman's dreams on cloth.",
         story: "Has taught over 200 young women the intricate traditional darning techniques.",
         yearsOfExperience: "30 years",
@@ -5163,7 +5166,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Daman",
     zone: "Union Territory",
     tagline: "Where Portuguese Heritage Meets Coastal Charm",
-    heroImage: "https://images.unsplash.com/photo-1596422846543-75c6ff416766?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://s7ap1.scene7.com/is/image/incredibleindia/1-baps-swaminarayan-temple-silvassa-dadra-and-nagar-haveli-2-city-hero?qlt=82&ts=1726737660598",
     languages: {
       nativeLanguage: "Gujarati",
       dialects: [
@@ -5196,7 +5199,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Damanese Prawn Balchão",
         nativeName: "Prawn Balchao",
-        image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwrXuMcnzLM-2MXR7AUXQU_0uY3FyHJNrPE9bUno-qXTl8q7ssRsqtNyY&s=10",
         courseType: "Main Course",
         dietary: "Specialty",
         prepTime: "35 mins",
@@ -5219,7 +5222,7 @@ export const statesData: StateCulturalData[] = [
         category: "Folk Art Tradition",
         description: "Monochromatic folk art depicting daily life and harmony with nature.",
         significance: "Celebrates tribal fertility rituals and ancestral beliefs.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://s7ap1.scene7.com/is/image/incredibleindia/warli-art-maharashtra-1-craft-hero?qlt=82&ts=1726674319976"
       }
     ],
     childhoodGames: [
@@ -5242,7 +5245,7 @@ export const statesData: StateCulturalData[] = [
         location: "Diu",
         historicalPeriod: "1535 AD",
         builtBy: "Portuguese Colonial Empire",
-        image: "https://images.unsplash.com/photo-1621831700684-7a31eb246f68?auto=format&fit=crop&w=800&q=80",
+        image: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2020/10/2020102288-scaled-e1603439463808.jpg",
         historicalBackground: "Colonial sea fort constructed after a alliance agreement with Gujarat Sultan Bahadur Shah.",
         architecturalSignificance: "Massive stone fortress surrounded by sea water on three sides with old cannons.",
         culturalImportance: "Key historical landmark reflecting Portuguese maritime domination.",
@@ -5263,7 +5266,7 @@ export const statesData: StateCulturalData[] = [
         name: "Daman Carnival",
         whenCelebrated: "February",
         whereCelebrated: "Daman",
-        image: "https://images.unsplash.com/photo-1605221943033-0245037e8c33?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcBhAOOpcc5RS6VZagBDIARfzKbeX_8EOU4E5nGdQ4NRb6o5xMHBLoCnPK&s=10",
         origins: "Portuguese colonial legacy merged with local Gujarati folk traditions.",
         culturalSignificance: "Vibrant street parades with traditional masks, brass bands, and Portuguese dances.",
         traditionalFood: "Seafood Tamales, Bebinca",
@@ -5280,7 +5283,7 @@ export const statesData: StateCulturalData[] = [
         name: "Warli Tribal Art",
         category: "Folk Painting",
         region: "Dadra & Nagar Haveli",
-        image: "https://images.unsplash.com/photo-1533094602577-198d356ce086?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTngG6aA32x1bzUKlQJNr-ZLyRgghPi_vxfDH4cMvJe3Q&s=10",
         materials: [
           "Rice Paste",
           "Geru (Red Ochre)",
@@ -5303,7 +5306,7 @@ export const statesData: StateCulturalData[] = [
         name: "Ramesh Hengadi",
         craftType: "Warli Painter",
         location: "Silvassa",
-        image: "https://images.unsplash.com/photo-1581452481014-a957fc8f7956?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3bDLtpBLTdpq3nexE3c6kwDlXWCzIxd5nPtvyYFGnoQ&s=10",
         quote: "Our art is our language with the forest and spirits.",
         story: "Promoting indigenous tribal art through international workshops while preserving ancient symbols.",
         yearsOfExperience: "22 years",
@@ -5320,7 +5323,7 @@ export const statesData: StateCulturalData[] = [
     capital: "New Delhi",
     zone: "Union Territory",
     tagline: "The Historic Heart of India",
-    heroImage: "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8V0N69g_iJL_vMYmYXK4GuM4bqVxHg6Wp_Ki9BPt_n0DrTv_7eOgvjk8l&s=10",
     languages: {
       nativeLanguage: "Hindi",
       dialects: [
@@ -5355,7 +5358,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Butter Chicken",
         nativeName: "बटर चिकन",
-        image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+        image: "https://thekitchenpaper.com/wp-content/uploads/2018/01/indian-butter-chicken-recipe-1.jpg",
         courseType: "Main Course",
         dietary: "Specialty",
         prepTime: "40 mins",
@@ -5378,7 +5381,7 @@ export const statesData: StateCulturalData[] = [
         category: "Interfaith Tradition",
         description: "Annual festival of flower-sellers offering floral fans to Sufi shrine and Hindu temple.",
         significance: "Promotes communal harmony and secular unity in Delhi.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2aUZh0G-atcPguxmr5pJq6sxHd0VDew1goK2kfAGJ5VVlIg4v2rMClmLA&s=10"
       }
     ],
     childhoodGames: [
@@ -5401,7 +5404,7 @@ export const statesData: StateCulturalData[] = [
         location: "Mehrauli, New Delhi",
         historicalPeriod: "1192 AD",
         builtBy: "Qutb ud-Din Aibak",
-        image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRasViCu3pMW1Ecbm_v7R4BwL6VRPOk4u_DTPiMnxEsnetOQDvhQgMVm28&s=10",
         historicalBackground: "Built to celebrate victory and mark the start of the Delhi Sultanate.",
         architecturalSignificance: "World's tallest brick minaret standing at 72.5 meters with intricate Quranic inscriptions.",
         culturalImportance: "UNESCO World Heritage landmark in historical Mehrauli complex.",
@@ -5422,7 +5425,7 @@ export const statesData: StateCulturalData[] = [
         name: "Delhi International Arts Festival",
         whenCelebrated: "October / November",
         whereCelebrated: "Across Delhi",
-        image: "https://images.unsplash.com/photo-1543330091-272283b050ab?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ighuzr1FZ-1yKowA40iVsILjzeCo-UmKEk9-KMp7Wg&s=10",
         origins: "Modern initiative to position Delhi as global cultural capital.",
         culturalSignificance: "Brings traditional puppeteers, classical dancers, and international performers.",
         traditionalFood: "Chaat, Parathas, Daulat Ki Chaat",
@@ -5439,7 +5442,7 @@ export const statesData: StateCulturalData[] = [
         name: "Zardozi Metallic Embroidery",
         category: "Textile Art",
         region: "Old Delhi (Chandni Chowk)",
-        image: "https://images.unsplash.com/photo-1584553421349-355b24132049?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgXNIbTyWF2bJsXcyrO4bSQm9GsWWCZ57McKbIEltJ_w&s=10",
         materials: [
           "Gold/Silver Threads",
           "Pearls",
@@ -5464,7 +5467,7 @@ export const statesData: StateCulturalData[] = [
         name: "Mohammad Zaki",
         craftType: "Zardozi Master Craftsman",
         location: "Chandni Chowk, Old Delhi",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTChNal5bJ9zM325DgyNneh4cUkJfAIzwbJ08YI6F2weg&s=10",
         quote: "Zardozi is weaving royalty into every single thread.",
         story: "5th generation Zardozi artist embroidering couture garments for global runways.",
         yearsOfExperience: "38 years",
@@ -5481,7 +5484,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Srinagar",
     zone: "Union Territory",
     tagline: "Paradise on Earth",
-    heroImage: "https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://preview.redd.it/jammu-kashmir-trip-details-v0-6dtocebhgvie1.jpg?width=640&crop=smart&auto=webp&s=cdc7dbdebf9d5f6c50906868200689db7b78f33f",
     languages: {
       nativeLanguage: "Kashmiri",
       dialects: [
@@ -5516,7 +5519,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Kashmiri Wazwan Rogan Josh",
         nativeName: "रोग़न जोश",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhRu-U2H9sJCh29JFYKzioJcUqu3AKwXSqhs2iU2ERdQ&s",
         courseType: "Main Course",
         dietary: "Specialty",
         prepTime: "60 mins",
@@ -5538,7 +5541,7 @@ export const statesData: StateCulturalData[] = [
         category: "Culinary Hospitality",
         description: "Serving green tea infused with saffron, cinnamon, cardamom, and chopped almonds.",
         significance: "Symbol of Kashmiri warmth and welcoming honor for visitors.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8KSb21LswFYI7MRzvdVSMeE0Bg2KHy8hDukvUiD8gbIDp0AdmC9CPkmo&s=10"
       }
     ],
     childhoodGames: [
@@ -5561,7 +5564,7 @@ export const statesData: StateCulturalData[] = [
         location: "Srinagar",
         historicalPeriod: "1619 AD",
         builtBy: "Mughal Emperor Jahangir",
-        image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPt9dglIY1C2tdDdAvETJ94wkCdWiX3QtQ6HGM7NlYfQ&s=10",
         historicalBackground: "Built by Jahangir for his beloved wife Nur Jahan on the shores of Dal Lake.",
         architecturalSignificance: "Classic Mughal garden design with terraced layouts, water channels, and carved fountains.",
         culturalImportance: "High mark of Mughal horticultural and architectural landscape art.",
@@ -5582,7 +5585,7 @@ export const statesData: StateCulturalData[] = [
         name: "Kashmir Tulip Festival",
         whenCelebrated: "April",
         whereCelebrated: "Indira Gandhi Memorial Tulip Garden, Srinagar",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80",
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhRQXYUpkgkycKxmADowEJIhHJpzRUIoI7VsF8rq2kpgBiRGuTpzy7lh5Z&s=10",
         origins: "Celebrates spring bloom in Asia's largest tulip garden.",
         culturalSignificance: "Welcomes tourists and celebrates valley floral spring rebirth.",
         traditionalFood: "Kashmiri Kahwa, Modur Pulao",
@@ -5599,7 +5602,7 @@ export const statesData: StateCulturalData[] = [
         name: "Pashmina & Kani Shawls",
         category: "Textile Art",
         region: "Srinagar",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTtG6hbc4gY9bIRcmzr_evkABzJAQmVGysoh6UCjg-ozgCEd4APizuags&s=10",
         materials: [
           "Changthangi Pashmina Goat Wool",
           "Natural Dyes"
@@ -5623,7 +5626,7 @@ export const statesData: StateCulturalData[] = [
         name: "Ghulam Hasan",
         craftType: "Kani Shawl Weaver",
         location: "Kanihama, Srinagar",
-        image: "https://images.unsplash.com/photo-1555021200-a0808a3d132b?auto=format&fit=crop&w=800&q=80",
+        image: "https://cdnbbsr.s3waas.gov.in/s3ec0490f1f4972d133619a60c30f3559e/uploads/2023/12/2023123052.jpg",
         quote: "A single Kani shawl takes a year of patience and soul.",
         story: "Carrying forward a 300-year-old family legacy of handweaving Kani masterpieces.",
         yearsOfExperience: "40 years",
@@ -5640,7 +5643,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Leh",
     zone: "Union Territory",
     tagline: "Land of High Passes and Sacred Monasteries",
-    heroImage: "https://images.unsplash.com/photo-1560002165-802c636f3ebc?auto=format&fit=crop&w=800&q=80",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnIdO5jAtavyJIJkOphv6tLSn7-A1Miz0jBsFPLcJMxbozezp51Mt1UdN&s=10",
     languages: {
       nativeLanguage: "Ladakhi (Bhoti)",
       dialects: [
@@ -5673,7 +5676,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Ladakhi Thukpa",
         nativeName: "ཐུག་པ།",
-        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBV9Wyopc-GTOVQp-hFsNzk2inHHVqsYPsFgltDUJ1mg&s=10",
         courseType: "Main Course",
         dietary: "Vegetarian",
         prepTime: "30 mins",
@@ -5696,7 +5699,7 @@ export const statesData: StateCulturalData[] = [
         category: "Spiritual Performance",
         description: "Sacred ritual dance performed by Buddhist monks wearing intricate painted deity masks.",
         significance: "Destroys evil forces and brings peace and enlightenment.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBPmLpTcudWBXj24_qQh4VqvpXMb5S1E9P7HCeBd662S3yJ3n7KxlCyO4&s=10"
       }
     ],
     childhoodGames: [
@@ -5719,7 +5722,7 @@ export const statesData: StateCulturalData[] = [
         location: "Hemis, Leh",
         historicalPeriod: "1672 AD",
         builtBy: "King Sengge Namgyal",
-        image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
+        image: "https://discoverlehladakh.in/wp-content/uploads/2020/06/Hemis-monastery-1022x530.jpeg",
         historicalBackground: "Re-established under the patronage of the Namgyal dynasty king.",
         architecturalSignificance: "Tibetan monastic style built on a cliff with sacred thangkas and golden statues.",
         culturalImportance: "Largest and wealthiest Himalayan Buddhist monastery in Ladakh.",
@@ -5739,7 +5742,7 @@ export const statesData: StateCulturalData[] = [
         name: "Hemis Festival",
         whenCelebrated: "June / July",
         whereCelebrated: "Hemis Monastery Courtyard",
-        image: "https://images.unsplash.com/photo-1605221943033-0245037e8c33?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsapeqnAo_yfUm7iLBZ36bXWRm99ulwLUw5QXud_sW0zwwjEsrbJ7idLEn&s=10",
         origins: "Commemorates the birth anniversary of Guru Padmasambhava.",
         culturalSignificance: "Features spectacular Cham masked dances and traditional music.",
         traditionalFood: "Skyu, Butter Tea (Gur Gur Chai)",
@@ -5756,7 +5759,7 @@ export const statesData: StateCulturalData[] = [
         name: "Thangka Scroll Painting",
         category: "Sacred Painting Art",
         region: "Leh",
-        image: "https://images.unsplash.com/photo-1533094602577-198d356ce086?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_HeG3QtLAMZGqrOOWlUwegisY8y0B-CqYP3BYBTXK67qTFH6qv5nsfyAR&s=10",
         materials: [
           "Cotton Canvas",
           "Mineral Pigments",
@@ -5780,7 +5783,7 @@ export const statesData: StateCulturalData[] = [
         name: "Rigzin Namgyal",
         craftType: "Thangka Painter",
         location: "Leh",
-        image: "https://images.unsplash.com/photo-1581452481014-a957fc8f7956?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOxIfjwKhDr0mLy9u-5GvUdhaGFhU8Bbv4_1q4d7eZY1YmBVuH2ANZnxY&s=10",
         quote: "In every brushstroke of a Thangka, the mind finds tranquility.",
         story: "Trained in monastic retreats for 15 years to master gold leaf Thangka art.",
         yearsOfExperience: "28 years",
@@ -5797,7 +5800,7 @@ export const statesData: StateCulturalData[] = [
     capital: "Kavaratti",
     zone: "Union Territory",
     tagline: "Coral Paradise of Coral Reefs and Turquoise Lagoons",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Agatti_Airstrip.jpg/960px-Agatti_Airstrip.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    heroImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdJojkTMfo3Rlr_VNj-JTURC4-6LuDX7B6aYJpGVFeQxz4eWwZrIss5hOo&s=10",
     languages: {
       nativeLanguage: "Malayalam",
       dialects: [
@@ -5829,7 +5832,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Kavaratti Tuna Curry",
         nativeName: "ചൂര കറി",
-        image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPwMW8sV3kXdlbUsFTdg5n6F-OgLHpJiihdQNvtvu_fw&s=10",
         courseType: "Main Course",
         dietary: "Specialty",
         prepTime: "25 mins",
@@ -5852,7 +5855,7 @@ export const statesData: StateCulturalData[] = [
         category: "Folk Dance Tradition",
         description: "Energetic rhythmic dance performed by male islanders clad in traditional attire.",
         significance: "Displays unity, stamina, and festive celebration in Minicoy island.",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXottoMiyRaZ4WgjuOz5696W1EMg5YsQO5PPzWGAeAUg&s=10"
       }
     ],
     childhoodGames: [
@@ -5875,7 +5878,7 @@ export const statesData: StateCulturalData[] = [
         location: "Kavaratti",
         historicalPeriod: "17th Century AD",
         builtBy: "Sheikh Mohammad Kasim",
-        image: "https://images.unsplash.com/photo-1621831700684-7a31eb246f68?auto=format&fit=crop&w=800&q=80",
+        image: "https://lh3.googleusercontent.com/grass-cs/ACvplmNBzBlEue4nCtygVEKBtMwQQTEU6NfYrgfCX-mTLmfbxv2TnhtlOxPcOpE0sHuJvIb84dAz3T56P6dv8C3hawQietnHrpSm1dPJw8bRiaMBfHrRv3cOyoue4KU9tpETzBYfI4th3w=w326-h312-n-k-no",
         historicalBackground: "Built by revered saint Sheikh Mohammad Kasim whose tomb lies inside.",
         architecturalSignificance: "Exquisite carved wooden pillars and ceiling with intricate floral motifs.",
         culturalImportance: "Most prominent spiritual landmark and architectural treasure in Lakshadweep.",
@@ -5896,7 +5899,7 @@ export const statesData: StateCulturalData[] = [
         name: "Eid-ul-Fitr",
         whenCelebrated: "Shawwal (Islamic Calendar)",
         whereCelebrated: "All inhabited Lakshadweep Islands",
-        image: "https://images.unsplash.com/photo-1543330091-272283b050ab?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRioYhYRSUN89_K_F9O_C1LT1y7vE82qp8VaZAg6bY0MA&s=10",
         origins: "Islamic religious festival ending holy month of Ramadan.",
         culturalSignificance: "Mass beach prayers, island feasts, and community Lava dance performances.",
         traditionalFood: "Kiluji, Coconut Sweet dishes, Tuna Biryani",
@@ -5913,7 +5916,7 @@ export const statesData: StateCulturalData[] = [
         name: "Coir & Coconut Shell Crafts",
         category: "Eco-Craft",
         region: "Kavaratti & Kadmat",
-        image: "https://images.unsplash.com/photo-1584553421349-355b24132049?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqPM5YMmUz_HF7ZXYcq9A_63k3vxRYMgmVYgbjclaJ6g&s=10",
         materials: [
           "Coconut Husk Fiber",
           "Polished Shells"
@@ -5937,7 +5940,7 @@ export const statesData: StateCulturalData[] = [
         name: "Koyamma Koya",
         craftType: "Coir Craftsman",
         location: "Kavaratti",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuIu0Ya8G9pGX6-g1qs2Y_HZw4vg3XzpIx6yJoXeZHsw&s=10",
         quote: "The coconut tree gives us everything we need for life and art.",
         story: "Master craftsman making hand-spun coir products and delicate shell crafts for 30 years.",
         yearsOfExperience: "30 years",
@@ -5988,7 +5991,7 @@ export const statesData: StateCulturalData[] = [
       {
         dishName: "Creole Fish Curry",
         nativeName: "புதுச்சேரி மீன் குழம்பு",
-        image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRovmjO7DL3ZWdAEdbYI_CI3N8kItsSjOslp2P4uq-sRQ&s=10",
         courseType: "Main Course",
         dietary: "Specialty",
         prepTime: "30 mins",
@@ -6011,7 +6014,7 @@ export const statesData: StateCulturalData[] = [
         category: "Spiritual Culture",
         description: "Experimental international township dedicated to human unity and sustainable living.",
         significance: "Promotes global harmony beyond nationality, religion, and politics.",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsBqs7abzQQJJa_DxWa67pFL75qr_suuoGYs0yrbJ84w&s=10"
       }
     ],
     childhoodGames: [
@@ -6034,7 +6037,7 @@ export const statesData: StateCulturalData[] = [
         location: "Auroville, Puducherry",
         historicalPeriod: "1971–2008 AD",
         builtBy: "Mirra Alfassa (The Mother)",
-        image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLb7KVXcqTExDHu1M52-8WfWRMcenponqF-dvgdIvKXw&s=10",
         historicalBackground: "Conceived as a symbol of the Divine's answer to man's aspiration for perfection.",
         architecturalSignificance: "Giant golden geodesic dome containing an inner silent meditation chamber with a crystal globe.",
         culturalImportance: "Global beacon for silent meditation, peace, and spiritual consciousness.",
@@ -6056,7 +6059,7 @@ export const statesData: StateCulturalData[] = [
         nativeName: "மாசி மகம்",
         whenCelebrated: "February / March",
         whereCelebrated: "Puducherry Coast",
-        image: "https://images.unsplash.com/photo-1514337227-d07e1127027b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLj5Y2a2qESdu0CoLlGMhZ0O8Yie1fQVj3NYJ4oCbQGw&s=10",
         origins: "Ancient Tamil temple tradition of immersion of deity idols in sea water.",
         culturalSignificance: "Grand holy sea dip ritual involving procession of sixty temple deities.",
         traditionalFood: "Sakarai Pongal, Puliyodarai",
@@ -6073,7 +6076,7 @@ export const statesData: StateCulturalData[] = [
         name: "Cluny Lace & Paper Craft",
         category: "Heritage Craft",
         region: "White Town, Puducherry",
-        image: "https://images.unsplash.com/photo-1600100397608-f010f41cb8ed?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2A5w-L64TUNXy6OowmJ-dOmZkP4ouv8IXV_THxzHbzg&s=10",
         materials: [
           "Cotton Lace Threads",
           "Handmade Paper"
@@ -6096,7 +6099,7 @@ export const statesData: StateCulturalData[] = [
         name: "S. Anandhi",
         craftType: "Handmade Paper & Lace Master",
         location: "Auroville / Puducherry",
-        image: "https://images.unsplash.com/photo-1555021200-a0808a3d132b?auto=format&fit=crop&w=800&q=80",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnXBovbYe3dRfFgK5s4l3dg5_uIAMccG6ENW3vTFmIyg&s=10",
         quote: "In every sheet of handmade paper lies harmony with nature.",
         story: "Preserving sustainable handmade paper art at Sri Aurobindo Ashram for 26 years.",
         yearsOfExperience: "26 years",

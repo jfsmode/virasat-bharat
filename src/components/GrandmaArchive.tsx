@@ -1,9 +1,10 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, Music, Utensils, Languages, Sparkles, Gamepad2, Heart, Volume2, ChevronRight, Clock, Users, Play, Pause, Flame , ChevronDown} from 'lucide-react';
+import { BookOpen, Music, Utensils, Languages, Sparkles, Gamepad2, Heart, Volume2, ChevronRight, Clock, Users, Play, Pause, Flame, ChevronDown, Disc3, Mic2 } from 'lucide-react';
 import { statesData } from '../data/statesData';
 import { LanguageGrandmaAI } from './LanguageGrandmaAI';
-import { StateCulturalData } from '../types';
+import { FolkMusicPlayer } from './FolkMusicPlayer';
+import { StateCulturalData, FolkSong } from '../types';
 
 interface GrandmaArchiveProps {
   selectedStateId: string;
@@ -167,86 +168,115 @@ export const GrandmaArchive: React.FC<GrandmaArchiveProps> = ({
               exit={{ opacity: 0, y: -15 }}
               className="space-y-6"
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {currentState.folkSongs.map((song) => {
-                  const isPlaying = playingSongId === song.songName;
-                  return (
-                    <div
-                      key={song.songName}
-                      className={`rounded-3xl border p-6 transition-all relative overflow-hidden bg-white ${
-                        isPlaying
-                          ? 'border-[#b8501c] ring-2 ring-[#b8501c]/20 shadow-lg'
-                          : 'border-[#e8decb] hover:border-[#b8501c]/40 shadow-xs'
-                      }`}
-                    >
-                      <div className="flex items-start justify-between gap-4 mb-4">
-                        <div>
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-[#8c5225] bg-[#f4ebd9] px-2.5 py-0.5 rounded-full border border-[#e2cca8]">
-                            {song.culturalSignificance}
-                          </span>
-                          <h4 className="font-cinzel text-xl font-bold text-[#23170f] mt-1.5">
-                            {song.songName}
-                          </h4>
-                          {song.nativeScript && (
-                            <div className="text-sm font-serif text-[#b8501c] mt-0.5">
-                              {song.nativeScript}
+              <div className="space-y-6">
+                {/* Active Interactive Folk Music Player Spotlight */}
+                {playingSongId && (
+                  <div className="mb-6">
+                    {(() => {
+                      const activeSong = currentState.folkSongs.find(s => s.songName === playingSongId) || currentState.folkSongs[0];
+                      return (
+                        <FolkMusicPlayer
+                          song={activeSong}
+                          stateName={currentState.name}
+                          isPlaying={true}
+                          onTogglePlay={() => setPlayingSongId(null)}
+                        />
+                      );
+                    })()}
+                  </div>
+                )}
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {currentState.folkSongs.map((song) => {
+                    const isPlaying = playingSongId === song.songName;
+                    return (
+                      <div
+                        key={song.songName}
+                        id={`song-card-${song.songName.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
+                        className={`rounded-3xl border p-6 transition-all relative overflow-hidden bg-white dark:bg-[#1a120c] ${
+                          isPlaying
+                            ? 'border-[#b8501c] ring-2 ring-[#b8501c]/30 shadow-lg'
+                            : 'border-[#e8decb] dark:border-[#38261a] hover:border-[#b8501c]/40 shadow-xs'
+                        }`}
+                      >
+                        <div className="flex items-start justify-between gap-4 mb-4">
+                          <div>
+                            <span className="text-[10px] font-bold uppercase tracking-wider text-[#8c5225] dark:text-[#df9e67] bg-[#f4ebd9] dark:bg-[#301c10] px-2.5 py-0.5 rounded-full border border-[#e2cca8] dark:border-[#422918]">
+                              {song.culturalSignificance}
+                            </span>
+                            <h4 className="font-cinzel text-xl font-bold text-[#23170f] dark:text-[#f5eee4] mt-1.5">
+                              {song.songName}
+                            </h4>
+                            {song.nativeScript && (
+                              <div className="text-sm font-serif text-[#b8501c] dark:text-[#f3a875] mt-0.5">
+                                {song.nativeScript}
+                              </div>
+                            )}
+                          </div>
+
+                          <button
+                            id={`play-song-btn-${song.songName.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
+                            onClick={() => toggleSongPlay(song.songName)}
+                            className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 shadow-md transition-all cursor-pointer ${
+                              isPlaying
+                                ? 'bg-[#b8501c] text-white scale-105 shadow-md animate-[pulse_2s_infinite]'
+                                : 'bg-[#faf6ee] dark:bg-[#281810] text-[#b8501c] dark:text-[#f3a875] hover:bg-[#f3e7d7] hover:scale-105 border border-[#e2d5c3] dark:border-[#3d2719]'
+                            }`}
+                            aria-label={isPlaying ? 'Pause Melody' : 'Play Melody'}
+                          >
+                            {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5 fill-current ml-0.5" />}
+                          </button>
+                        </div>
+
+                        {/* Equalizer animation when playing */}
+                        {isPlaying ? (
+                          <div className="p-3 rounded-2xl bg-[#fdf3e7] dark:bg-[#2e1c12] border border-[#f0cbb0] dark:border-[#4a2e1d] mb-4 flex items-center justify-between">
+                            <div className="flex items-center gap-1.5">
+                              <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.4s_ease-in-out_infinite] h-4"></span>
+                              <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.7s_ease-in-out_infinite] h-6"></span>
+                              <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.5s_ease-in-out_infinite] h-3"></span>
+                              <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.9s_ease-in-out_infinite] h-5"></span>
+                              <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.6s_ease-in-out_infinite] h-4"></span>
                             </div>
-                          )}
-                        </div>
-
-                        <button
-                          onClick={() => toggleSongPlay(song.songName)}
-                          className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 shadow-md transition-all cursor-pointer ${
-                            isPlaying
-                              ? 'bg-[#b8501c] text-white scale-105 shadow-md'
-                              : 'bg-[#faf6ee] text-[#b8501c] hover:bg-[#f3e7d7] hover:scale-105 border border-[#e2d5c3]'
-                          }`}
-                          aria-label={isPlaying ? 'Pause Melody' : 'Play Melody'}
-                        >
-                          {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5 fill-current ml-0.5" />}
-                        </button>
-                      </div>
-
-                      {/* Equalizer animation when playing */}
-                      {isPlaying && (
-                        <div className="p-3 rounded-2xl bg-[#fdf3e7] border border-[#f0cbb0] mb-4 flex items-center justify-between">
-                          <div className="flex items-center gap-1.5">
-                            <span className="w-1 bg-[#b8501c] animate-[pulse_0.4s_ease-in-out_infinite] h-4"></span>
-                            <span className="w-1 bg-[#b8501c] animate-[pulse_0.7s_ease-in-out_infinite] h-6"></span>
-                            <span className="w-1 bg-[#b8501c] animate-[pulse_0.5s_ease-in-out_infinite] h-3"></span>
-                            <span className="w-1 bg-[#b8501c] animate-[pulse_0.9s_ease-in-out_infinite] h-5"></span>
-                            <span className="w-1 bg-[#b8501c] animate-[pulse_0.6s_ease-in-out_infinite] h-4"></span>
+                            <span className="text-xs text-[#b8501c] dark:text-[#f3a875] font-mono font-medium">
+                              Acoustic Heritage Audio Active
+                            </span>
                           </div>
-                          <span className="text-xs text-[#b8501c] font-mono font-medium">
-                            Acoustic Folk Resonance Active
-                          </span>
-                        </div>
-                      )}
+                        ) : (
+                          <button
+                            onClick={() => toggleSongPlay(song.songName)}
+                            className="w-full mb-3 py-2 px-3 rounded-xl bg-[#faf6ee] dark:bg-[#24170f] border border-[#e8decb] dark:border-[#38261a] hover:border-[#b8501c]/40 text-xs font-semibold text-[#8c5225] dark:text-[#df9e67] flex items-center justify-center gap-2 transition-all cursor-pointer"
+                          >
+                            <Music className="w-3.5 h-3.5" />
+                            <span>Play Interactive Folk Melody & Synced Lyrics</span>
+                          </button>
+                        )}
 
-                      <div className="space-y-3 text-xs text-[#5e4d3f]">
-                        <div className="p-3.5 rounded-2xl bg-[#faf6ee] border border-[#ebdcc7]">
-                          <span className="font-semibold text-[#8c5225] block mb-1 text-[11px] uppercase tracking-wide">
-                            When & Why Performed
-                          </span>
-                          <p className="text-[#3b2b20] leading-relaxed">{song.whenPerformed}</p>
-                        </div>
+                        <div className="space-y-3 text-xs text-[#5e4d3f] dark:text-[#c4b3a3]">
+                          <div className="p-3.5 rounded-2xl bg-[#faf6ee] dark:bg-[#22160d] border border-[#ebdcc7] dark:border-[#332014]">
+                            <span className="font-semibold text-[#8c5225] dark:text-[#df9e67] block mb-1 text-[11px] uppercase tracking-wide">
+                              When & Why Performed
+                            </span>
+                            <p className="text-[#3b2b20] dark:text-[#e4d6c7] leading-relaxed">{song.whenPerformed}</p>
+                          </div>
 
-                        <div>
-                          <span className="font-semibold text-[#7c6958] block mb-1.5 text-[11px] uppercase tracking-wide">
-                            Featured Acoustic Instruments
-                          </span>
-                          <div className="flex flex-wrap gap-1.5">
-                            {song.instruments.map(inst => (
-                              <span key={inst} className="px-3 py-1 rounded-full bg-[#faf6ee] border border-[#e2d5c3] text-[#23170f] text-xs font-medium">
-                                {inst}
-                              </span>
-                            ))}
+                          <div>
+                            <span className="font-semibold text-[#7c6958] dark:text-[#a89586] block mb-1.5 text-[11px] uppercase tracking-wide">
+                              Featured Acoustic Instruments
+                            </span>
+                            <div className="flex flex-wrap gap-1.5">
+                              {song.instruments.map(inst => (
+                                <span key={inst} className="px-3 py-1 rounded-full bg-[#faf6ee] dark:bg-[#24170f] border border-[#e2d5c3] dark:border-[#38261a] text-[#23170f] dark:text-[#f5eee4] text-xs font-medium">
+                                  {inst}
+                                </span>
+                              ))}
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
             </motion.div>
           )}

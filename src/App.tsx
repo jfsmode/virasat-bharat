@@ -8,6 +8,7 @@ import { Craftsmanship } from './components/Craftsmanship';
 import { LostWordsChatbot } from './components/LostWordsChatbot';
 import { DidYouKnowSection } from './components/DidYouKnowSection';
 import { GlobalSearchModal } from './components/GlobalSearchModal';
+import { FloatingGrandmaAI } from './components/FloatingGrandmaAI';
 import { Footer } from './components/Footer';
 
 export function App() {
@@ -124,6 +125,12 @@ export function App() {
           onClose={() => setIsSearchOpen(false)}
           onSelectState={(id) => setSelectedStateId(id)}
           onNavigateSection={handleNavigate}
+        />
+
+        {/* Persistent Floating Grandma's AI on Right-Hand Side */}
+        <FloatingGrandmaAI
+          initialStateId={selectedStateId}
+          onNavigateToArchive={() => handleNavigate('grandma-archive')}
         />
       </div>
     </div>

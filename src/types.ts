@@ -162,4 +162,57 @@ export interface TranslationResponse {
   culturalContext?: string;
   grandmaNote?: string;
   literalBreakdown?: string;
+  pureLocalReply?: string;
+  englishMeaning?: string;
+  audioLanguageCode?: string;
 }
+
+export type GrandmaReplyMode = 'bilingual' | 'pure_local' | 'romanized' | 'storytelling';
+export type GrandmaPersona = 'loving' | 'proverbs' | 'kitchen_nuskhe' | 'playful';
+
+export interface GrandmaLanguageConfig {
+  id: string;
+  name: string;
+  nativeName: string;
+  grandmaTitle: string;
+  stateOrRegion: string;
+  langCode: string;
+  sampleGreeting: string;
+  endearment: string;
+}
+
+export interface GrandmaChatMessage {
+  id: string;
+  sender: 'user' | 'grandma';
+  text: string;
+  replyData?: TranslationResponse;
+  timestamp: string;
+}
+
+export type GrandmaKnowledgeDomain = 'monuments' | 'crafts' | 'general';
+
+export interface GrandmaKnowledgeResponse {
+  title: string;
+  nativeGreeting: string;
+  localLanguageExplanation: string;
+  nativeScriptExcerpt?: string;
+  phoneticExcerpt?: string;
+  englishBreakdown: string;
+  grandmaSecretWisdom: string;
+  historicalFact?: string;
+  culturalSignificance?: string;
+  domain: GrandmaKnowledgeDomain;
+  targetLanguage: string;
+  grandmaTitle: string;
+  stateOrRegion: string;
+  verified?: boolean;
+}
+
+export interface GrandmaKnowledgeMessage {
+  id: string;
+  sender: 'user' | 'grandma';
+  question: string;
+  response?: GrandmaKnowledgeResponse;
+  timestamp: string;
+}
+

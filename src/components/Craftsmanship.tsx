@@ -1,9 +1,10 @@
 import React, { useState, useMemo } from 'react';
 import { motion } from 'motion/react';
-import { Scissors, Sparkles, MapPin, Award, ArrowRight, Eye } from 'lucide-react';
+import { Scissors, Sparkles, MapPin, Award, ArrowRight, Eye, Layers, BookOpen } from 'lucide-react';
 import { statesData } from '../data/statesData';
 import { Craft, MasterArtisan } from '../types';
 import { ArtisanModal } from './ArtisanModal';
+import { GrandmasKnowledgeAI } from './GrandmasKnowledgeAI';
 
 export const Craftsmanship: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -12,14 +13,13 @@ export const Craftsmanship: React.FC = () => {
 
   const categories = [
     'All',
-    'Textiles',
-    'Weaving',
+    'Textiles & Weaving',
     'Embroidery',
-    'Pottery',
+    'Pottery & Ceramics',
     'Metalwork',
-    'Painting',
-    'Sculpture',
-    'Wood carving'
+    'Folk & Sacred Painting',
+    'Woodcraft & Toys',
+    'Bamboo & Natural Fiber'
   ];
 
   // Aggregate all crafts
@@ -44,11 +44,39 @@ export const Craftsmanship: React.FC = () => {
     return list;
   }, []);
 
+  const getFilteredListForCategory = (cat: string) => {
+    if (cat === 'All') return allCrafts;
+    const catLow = cat.toLowerCase();
+    return allCrafts.filter(c => {
+      const craftCat = c.category.toLowerCase();
+      const craftName = c.name.toLowerCase();
+      if (catLow.includes('textile') || catLow.includes('weaving')) {
+        return craftCat.includes('textile') || craftCat.includes('weav') || craftCat.includes('silk') || craftCat.includes('ikat') || craftCat.includes('shawl') || craftCat.includes('durrie');
+      }
+      if (catLow.includes('embroidery')) {
+        return craftCat.includes('embroider') || craftCat.includes('needle') || craftName.includes('chikankari') || craftName.includes('phulkari') || craftName.includes('zardozi') || craftName.includes('kantha') || craftName.includes('lace') || craftCat.includes('heritage');
+      }
+      if (catLow.includes('pottery') || catLow.includes('ceramic')) {
+        return craftCat.includes('pottery') || craftCat.includes('ceramic') || craftCat.includes('tile') || craftName.includes('pottery') || craftName.includes('azulejos');
+      }
+      if (catLow.includes('metalwork')) {
+        return craftCat.includes('metal') || craftCat.includes('iron') || craftCat.includes('bell') || craftName.includes('metal') || craftName.includes('iron') || craftName.includes('mirror');
+      }
+      if (catLow.includes('painting') || catLow.includes('sacred')) {
+        return craftCat.includes('paint') || craftCat.includes('art') || craftCat.includes('visual') || craftCat.includes('sacred') || craftName.includes('painting') || craftName.includes('thangka') || craftName.includes('pattachitra') || craftName.includes('warli') || craftName.includes('gond') || craftName.includes('paitkar');
+      }
+      if (catLow.includes('wood') || catLow.includes('toy')) {
+        return craftCat.includes('wood') || craftName.includes('toy') || craftName.includes('mask') || craftName.includes('wood');
+      }
+      if (catLow.includes('bamboo') || catLow.includes('fiber')) {
+        return craftCat.includes('bamboo') || craftCat.includes('reed') || craftCat.includes('grass') || craftCat.includes('coir') || craftCat.includes('shell') || craftCat.includes('eco') || craftCat.includes('handicraft') || craftName.includes('bamboo') || craftName.includes('kauna') || craftName.includes('sikki') || craftName.includes('coir') || craftName.includes('ringaal') || craftName.includes('shell');
+      }
+      return craftCat.includes(catLow);
+    });
+  };
+
   const filteredCrafts = useMemo(() => {
-    if (selectedCategory === 'All') return allCrafts;
-    return allCrafts.filter(c =>
-      c.category.toLowerCase().includes(selectedCategory.toLowerCase())
-    );
+    return getFilteredListForCategory(selectedCategory);
   }, [allCrafts, selectedCategory]);
 
   return (
@@ -77,19 +105,26 @@ export const Craftsmanship: React.FC = () => {
         {/* Category Filters */}
         <div className="mb-10 overflow-x-auto pb-2 scrollbar-thin">
           <div className="flex items-center gap-2 min-w-max">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`px-4 py-2 rounded-full text-xs font-semibold transition-all cursor-pointer ${
-                  selectedCategory === cat
-                    ? 'bg-[#b8501c] text-white shadow-xs'
-                    : 'bg-white text-[#5d4c3f] hover:bg-[#f3e7d7] hover:text-[#23170f] border border-[#e8decb]'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+            {categories.map((cat) => {
+              const count = getFilteredListForCategory(cat).length;
+              return (
+                <button
+                  key={cat}
+                  id={`craft-filter-${cat.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
+                  onClick={() => setSelectedCategory(cat)}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold transition-all cursor-pointer ${
+                    selectedCategory === cat
+                      ? 'bg-[#b8501c] text-white shadow-xs'
+                      : 'bg-white text-[#5d4c3f] hover:bg-[#f3e7d7] hover:text-[#23170f] border border-[#e8decb]'
+                  }`}
+                >
+                  <span>{cat}</span>
+                  <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${selectedCategory === cat ? 'bg-white/25 text-white' : 'bg-[#f0e6d6] text-[#7c6958]'}`}>
+                    {count}
+                  </span>
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -100,18 +135,24 @@ export const Craftsmanship: React.FC = () => {
               key={craft.id}
               id={`craft-card-${craft.id}`}
               onClick={() => setSelectedCraft(craft)}
-              className="group bg-white border border-[#e8decb] hover:border-[#b8501c]/50 rounded-3xl overflow-hidden shadow-xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col justify-between"
+              className="group bg-white dark:bg-[#1a120c] border border-[#e8decb] dark:border-[#38261a] hover:border-[#b8501c]/50 dark:hover:border-[#b8501c]/60 rounded-3xl overflow-hidden shadow-xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col justify-between"
             >
               <div>
-                <div className="h-56 relative overflow-hidden">
+                <div className="h-56 relative overflow-hidden bg-[#faf6ee] dark:bg-[#23170f]">
                   <img
                     src={craft.image}
-                    alt={craft.name}
+                    alt={`${craft.name} - ${craft.category}`}
+                    loading="lazy"
+                    decoding="async"
+                    referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80";
+                    }}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#23170f]/90 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#23170f]/90 via-[#23170f]/20 to-transparent"></div>
 
-                  <span className="absolute top-3 left-3 px-2.5 py-0.5 rounded-full text-[10px] uppercase font-bold tracking-wider bg-black/60 text-white backdrop-blur-xs">
+                  <span className="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-wider bg-black/75 text-white backdrop-blur-xs border border-white/20">
                     {craft.category}
                   </span>
 
@@ -121,23 +162,36 @@ export const Craftsmanship: React.FC = () => {
                 </div>
 
                 <div className="p-5">
-                  <div className="flex items-center gap-1.5 text-xs text-[#8c5225] font-medium mb-1">
-                    <MapPin className="w-3.5 h-3.5" />
-                    <span>{craft.region}</span>
+                  <div className="flex items-center justify-between text-xs text-[#8c5225] dark:text-[#df9e67] font-medium mb-1.5">
+                    <div className="flex items-center gap-1.5">
+                      <MapPin className="w-3.5 h-3.5 text-[#b8501c]" />
+                      <span>{craft.region}</span>
+                    </div>
+                    {craft.giCertified && (
+                      <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded-full bg-[#f4ebd9] dark:bg-[#301c10] text-[#b8501c] dark:text-[#f3a875] border border-[#e2cca8] dark:border-[#422918]">
+                        GI Certified
+                      </span>
+                    )}
                   </div>
 
-                  <h3 className="font-cinzel text-xl font-bold text-[#23170f] group-hover:text-[#b8501c] transition-colors">
+                  <h3 className="font-cinzel text-xl font-bold text-[#23170f] dark:text-[#f5eee4] group-hover:text-[#b8501c] dark:group-hover:text-[#f3a875] transition-colors">
                     {craft.name}
                   </h3>
 
-                  <p className="text-xs text-[#5e4d3f] mt-2 line-clamp-2 leading-relaxed font-light">
+                  <p className="text-xs text-[#5e4d3f] dark:text-[#c4b3a3] mt-2 line-clamp-2 leading-relaxed font-light">
                     {craft.culturalSignificance}
                   </p>
 
-                  {/* Materials & Technique pills */}
-                  <div className="mt-4 flex flex-wrap gap-1.5">
-                    {craft.materials.slice(0, 3).map(m => (
-                      <span key={m} className="px-2.5 py-0.5 rounded-full bg-[#faf6ee] border border-[#e2d5c3] text-[10px] text-[#4a3a2d]">
+                  {/* Materials & Technique pills at the bottom of the content box */}
+                  <div className="mt-4 pt-3 border-t border-[#f0e6d6] dark:border-[#2e1d13] flex flex-wrap items-center gap-1.5">
+                    <span className="text-[9px] uppercase font-bold tracking-wider text-[#8c7a6b] dark:text-[#9e8c7e] mr-1">
+                      TAGS:
+                    </span>
+                    <span className="px-2.5 py-0.5 rounded-full bg-[#f4ebd9] dark:bg-[#2c1c12] border border-[#e2cca8] dark:border-[#422918] text-[10px] font-bold text-[#b8501c] dark:text-[#f3a875]">
+                      {craft.category}
+                    </span>
+                    {craft.materials.slice(0, 2).map(m => (
+                      <span key={m} className="px-2.5 py-0.5 rounded-full bg-[#faf6ee] dark:bg-[#24170f] border border-[#e2d5c3] dark:border-[#38261a] text-[10px] text-[#4a3a2d] dark:text-[#d1c2b4]">
                         {m}
                       </span>
                     ))}
@@ -145,7 +199,7 @@ export const Craftsmanship: React.FC = () => {
                 </div>
               </div>
 
-              <div className="px-5 pb-5 pt-2 border-t border-[#ebdcc7] flex items-center justify-between text-xs text-[#b8501c] font-semibold group-hover:translate-x-1 transition-transform">
+              <div className="px-5 pb-5 pt-2 border-t border-[#ebdcc7] dark:border-[#2e1d13] flex items-center justify-between text-xs text-[#b8501c] dark:text-[#f3a875] font-semibold group-hover:translate-x-1 transition-transform">
                 <span className="flex items-center gap-1">
                   <Eye className="w-3.5 h-3.5" /> View Process & Challenges
                 </span>
@@ -185,6 +239,12 @@ export const Craftsmanship: React.FC = () => {
                     <img
                       src={artisan.image}
                       alt={artisan.name}
+                      loading="lazy"
+                      decoding="async"
+                      referrerPolicy="no-referrer"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80";
+                      }}
                       className="w-16 h-16 rounded-2xl object-cover border border-[#e8decb] shadow-xs group-hover:scale-105 transition-transform"
                     />
                     <div>
@@ -224,6 +284,29 @@ export const Craftsmanship: React.FC = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* ========================================================================= */}
+        {/* GRANDMA'S KNOWLEDGE AI: SACRED CRAFTS, WEAVING & ARTISAN SECRETS PORTAL */}
+        {/* ========================================================================= */}
+        <div className="mt-16 pt-12 border-t border-[#ebdcc7]">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f4ebd9] border border-[#e2cca8] text-[#8c5225] text-xs font-semibold uppercase tracking-wider mb-2">
+              <BookOpen className="w-3.5 h-3.5 text-[#b8501c]" />
+              <span>28-State Craft & Handloom Knowledge AI</span>
+            </div>
+            <h3 className="font-cinzel text-2xl sm:text-3xl font-bold text-[#23170f]">
+              Grandma's Knowledge: Master Crafts & Living Traditions
+            </h3>
+            <p className="text-xs sm:text-sm text-[#5e4d3f] mt-1 font-light">
+              Ask Grandma about natural botanical dye formulas, thousand-year-old lost-wax bronze casting, handloom weave mathematics, and GI-tag secrets across all 28 states in your local language!
+            </p>
+          </div>
+
+          <GrandmasKnowledgeAI
+            defaultDomain="crafts"
+            initialStateName="India"
+          />
         </div>
 
         {/* Modal */}

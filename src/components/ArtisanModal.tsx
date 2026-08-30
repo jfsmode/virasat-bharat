@@ -27,13 +27,19 @@ export const ArtisanModal: React.FC<ArtisanModalProps> = ({
           className="w-full max-w-3xl bg-[#faf7f2] border border-[#e8decb] rounded-3xl overflow-hidden shadow-2xl my-8 relative max-h-[90vh] flex flex-col"
         >
           {/* Top Banner */}
-          <div className="relative h-64 sm:h-72 shrink-0">
+          <div className="relative h-64 sm:h-72 shrink-0 bg-[#faf6ee] dark:bg-[#23170f]">
             <img
               src={artisan ? artisan.image : craft?.image}
-              alt={artisan ? artisan.name : craft?.name}
+              alt={artisan ? artisan.name : (craft ? `${craft.name} - ${craft.category}` : 'Craft Detail')}
+              loading="lazy"
+              decoding="async"
+              referrerPolicy="no-referrer"
+              onError={(e) => {
+                (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80";
+              }}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#23170f]/90 via-[#23170f]/30 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#23170f]/90 via-[#23170f]/40 to-transparent"></div>
 
             <button
               onClick={onClose}
@@ -65,9 +71,16 @@ export const ArtisanModal: React.FC<ArtisanModalProps> = ({
                 </>
               ) : craft ? (
                 <>
-                  <span className="px-3 py-0.5 rounded-full text-[10px] uppercase font-bold bg-[#b8501c] text-white shadow-xs">
-                    {craft.category}
-                  </span>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="px-3 py-0.5 rounded-full text-[10px] uppercase font-bold bg-[#b8501c] text-white shadow-xs">
+                      {craft.category}
+                    </span>
+                    {craft.giCertified && (
+                      <span className="px-2.5 py-0.5 rounded-full text-[10px] uppercase font-bold bg-amber-500/80 text-white border border-amber-300/40">
+                        GI Certified
+                      </span>
+                    )}
+                  </div>
                   <h3 className="font-cinzel text-2xl sm:text-3xl md:text-4xl font-bold text-white mt-1">
                     {craft.name}
                   </h3>

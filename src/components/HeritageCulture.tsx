@@ -1,10 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import { motion } from 'motion/react';
-import { Landmark, Sparkles, MapPin, Search, ArrowRight, Eye } from 'lucide-react';
+import { Landmark, Sparkles, MapPin, Search, ArrowRight, Eye, BookOpen, HelpCircle } from 'lucide-react';
 import { statesData } from '../data/statesData';
 import { Monument, Festival } from '../types';
 import { MonumentModal } from './MonumentModal';
 import { FestivalModal } from './FestivalModal';
+import { GrandmasKnowledgeAI } from './GrandmasKnowledgeAI';
 
 export const HeritageCulture: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'monuments' | 'festivals'>('monuments');
@@ -238,6 +239,29 @@ export const HeritageCulture: React.FC = () => {
             ))}
           </div>
         )}
+
+        {/* ========================================================================= */}
+        {/* GRANDMA'S KNOWLEDGE AI: HERITAGE BUILDINGS & ANCIENT ARCHITECTURE PORTAL */}
+        {/* ========================================================================= */}
+        <div className="mt-16 pt-12 border-t border-[#ebdcc7]">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f4ebd9] border border-[#e2cca8] text-[#8c5225] text-xs font-semibold uppercase tracking-wider mb-2">
+              <BookOpen className="w-3.5 h-3.5 text-[#b8501c]" />
+              <span>Interactive 28-State Heritage AI</span>
+            </div>
+            <h3 className="font-cinzel text-2xl sm:text-3xl font-bold text-[#23170f]">
+              Grandma's Knowledge: Ancient Monuments & Architecture
+            </h3>
+            <p className="text-xs sm:text-sm text-[#5e4d3f] mt-1 font-light">
+              Ask Grandma any question about temple acoustics, earthquake-resistant stone engineering, stepwell cooling, or dynastic legends in your state's local language!
+            </p>
+          </div>
+
+          <GrandmasKnowledgeAI
+            defaultDomain="monuments"
+            initialStateName="India"
+          />
+        </div>
 
         {/* Modals */}
         <MonumentModal
