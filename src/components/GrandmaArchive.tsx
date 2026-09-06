@@ -1,10 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, Music, Utensils, Languages, Sparkles, Gamepad2, Heart, Volume2, ChevronRight, Clock, Users, Play, Pause, Flame, ChevronDown, Disc3, Mic2 } from 'lucide-react';
+import { BookOpen, Music, Utensils, Languages, Sparkles, Gamepad2, Heart, Volume2, ChevronRight, Clock, Users, Play, Pause, Flame, ChevronDown, Disc3, Mic2, Video, ShieldCheck } from 'lucide-react';
 import { statesData } from '../data/statesData';
 import { LanguageGrandmaAI } from './LanguageGrandmaAI';
 import { FolkMusicPlayer } from './FolkMusicPlayer';
 import { StateCulturalData, FolkSong } from '../types';
+import { enrichFolkSongWithOfficialLibrary, getOfficialFolkSong } from '../data/officialFolkMusicRegistry';
 
 interface GrandmaArchiveProps {
   selectedStateId: string;
@@ -173,11 +174,13 @@ export const GrandmaArchive: React.FC<GrandmaArchiveProps> = ({
                 {playingSongId && (
                   <div className="mb-6">
                     {(() => {
-                      const activeSong = currentState.folkSongs.find(s => s.songName === playingSongId) || currentState.folkSongs[0];
+                      const baseSong = currentState.folkSongs.find(s => s.songName === playingSongId) || currentState.folkSongs[0];
+                      const activeSong = enrichFolkSongWithOfficialLibrary(currentState.id, baseSong);
                       return (
                         <FolkMusicPlayer
                           song={activeSong}
                           stateName={currentState.name}
+                          stateId={currentState.id}
                           isPlaying={true}
                           onTogglePlay={() => setPlayingSongId(null)}
                         />
@@ -187,7 +190,8 @@ export const GrandmaArchive: React.FC<GrandmaArchiveProps> = ({
                 )}
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {currentState.folkSongs.map((song) => {
+                  {currentState.folkSongs.map((baseSong) => {
+                    const song = enrichFolkSongWithOfficialLibrary(currentState.id, baseSong);
                     const isPlaying = playingSongId === song.songName;
                     return (
                       <div
@@ -199,12 +203,19 @@ export const GrandmaArchive: React.FC<GrandmaArchiveProps> = ({
                             : 'border-[#e8decb] dark:border-[#38261a] hover:border-[#b8501c]/40 shadow-xs'
                         }`}
                       >
-                        <div className="flex items-start justify-between gap-4 mb-4">
+                        <div className="flex items-start justify-between gap-4 mb-3">
                           <div>
-                            <span className="text-[10px] font-bold uppercase tracking-wider text-[#8c5225] dark:text-[#df9e67] bg-[#f4ebd9] dark:bg-[#301c10] px-2.5 py-0.5 rounded-full border border-[#e2cca8] dark:border-[#422918]">
-                              {song.culturalSignificance}
-                            </span>
-                            <h4 className="font-cinzel text-xl font-bold text-[#23170f] dark:text-[#f5eee4] mt-1.5">
+                            <div className="flex flex-wrap items-center gap-1.5 mb-1.5">
+                              <span className="text-[10px] font-bold uppercase tracking-wider text-[#8c5225] dark:text-[#df9e67] bg-[#f4ebd9] dark:bg-[#301c10] px-2.5 py-0.5 rounded-full border border-[#e2cca8] dark:border-[#422918]">
+                                {song.culturalSignificance}
+                              </span>
+                              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-[10px] font-semibold">
+                                <ShieldCheck className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
+                                <span>Verified {currentState.name} Folk Heritage</span>
+                              </span>
+                            </div>
+
+                            <h4 className="font-cinzel text-xl font-bold text-[#23170f] dark:text-[#f5eee4]">
                               {song.songName}
                             </h4>
                             {song.nativeScript && (
@@ -228,6 +239,19 @@ export const GrandmaArchive: React.FC<GrandmaArchiveProps> = ({
                           </button>
                         </div>
 
+                        {/* Official Archival Badges */}
+                        <div className="flex flex-wrap items-center gap-2 mb-3 text-[11px] text-[#6b5849] dark:text-[#c4b3a3]">
+                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-[#faf6ee] dark:bg-[#261810] border border-[#ebdcc7] dark:border-[#382518]">
+                            <Video className="w-3 h-3 text-[#b8501c]" />
+                            <span>Archive: <strong>{song.officialSource || "National Cultural Archives"}</strong></span>
+                          </span>
+                          {song.performer && (
+                            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-[#faf6ee] dark:bg-[#261810] border border-[#ebdcc7] dark:border-[#382518]">
+                              <span>🎙️ {song.performer}</span>
+                            </span>
+                          )}
+                        </div>
+
                         {/* Equalizer animation when playing */}
                         {isPlaying ? (
                           <div className="p-3 rounded-2xl bg-[#fdf3e7] dark:bg-[#2e1c12] border border-[#f0cbb0] dark:border-[#4a2e1d] mb-4 flex items-center justify-between">
@@ -239,16 +263,16 @@ export const GrandmaArchive: React.FC<GrandmaArchiveProps> = ({
                               <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.6s_ease-in-out_infinite] h-4"></span>
                             </div>
                             <span className="text-xs text-[#b8501c] dark:text-[#f3a875] font-mono font-medium">
-                              Acoustic Heritage Audio Active
+                              Official Performance & Audio Active in Player Above
                             </span>
                           </div>
                         ) : (
                           <button
                             onClick={() => toggleSongPlay(song.songName)}
-                            className="w-full mb-3 py-2 px-3 rounded-xl bg-[#faf6ee] dark:bg-[#24170f] border border-[#e8decb] dark:border-[#38261a] hover:border-[#b8501c]/40 text-xs font-semibold text-[#8c5225] dark:text-[#df9e67] flex items-center justify-center gap-2 transition-all cursor-pointer"
+                            className="w-full mb-3 py-2.5 px-3 rounded-xl bg-gradient-to-r from-[#b8501c] to-[#9c3f12] hover:from-[#a04214] hover:to-[#85340d] text-white text-xs font-bold flex items-center justify-center gap-2 shadow-xs transition-all cursor-pointer"
                           >
-                            <Music className="w-3.5 h-3.5" />
-                            <span>Play Interactive Folk Melody & Synced Lyrics</span>
+                            <Video className="w-3.5 h-3.5" />
+                            <span>Play Official YouTube Performance & Heritage Lore</span>
                           </button>
                         )}
 

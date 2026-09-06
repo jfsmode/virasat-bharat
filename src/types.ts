@@ -7,6 +7,21 @@ export interface FolkSong {
   whenPerformed: string;
   instruments: string[];
   audioScale?: string;
+  youtubeId?: string;
+  youtubeTitle?: string;
+  officialSource?: string;
+  performer?: string;
+  historicalEra?: string;
+  originCommunity?: string;
+  musicalForm?: string;
+  officialSearchQuery?: string;
+  lyricExcerpts?: {
+    original: string;
+    transliteration?: string;
+    english: string;
+    timestamp?: string;
+    raag?: string;
+  }[];
 }
 
 export interface TraditionalRecipe {

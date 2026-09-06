@@ -3,6 +3,7 @@ import path from "path";
 import { GoogleGenAI } from "@google/genai";
 import { createServer as createViteServer } from "vite";
 import dotenv from "dotenv";
+import { getOfficialFolkSong } from "./src/data/officialFolkMusicRegistry";
 
 dotenv.config();
 
@@ -341,6 +342,75 @@ Ensure high accuracy, warmth, regional idioms, and respectful elder authority. R
   } catch (error: any) {
     console.error("Grandma Knowledge API error:", error);
     res.status(500).json({ error: "Failed to query Grandma's Knowledge", message: error.message });
+  }
+});
+
+// Official YouTube Folk Music Library & State Cultural Context endpoint
+app.post("/api/folk-songs/youtube", async (req, res) => {
+  try {
+    const { stateId, stateName, songName } = req.body;
+    const targetState = stateId || stateName || "rajasthan";
+    const officialRecord = getOfficialFolkSong(targetState);
+
+    // If Gemini client is available, verify and enrich context
+    const ai = getAIClient();
+    if (ai) {
+      try {
+        const prompt = `You are a world-renowned ethnomusicologist and senior cultural archivist for Sangeet Natak Akademi, Prasar Bharati, and Indian Council for Cultural Relations (ICCR).
+Verify and provide cultural context for the authentic traditional folk song of the Indian state: "${officialRecord.stateName}".
+Song Name: "${officialRecord.songName}"
+Current Archival Source: "${officialRecord.officialSource}"
+Official Performer: "${officialRecord.performer}"
+Origin Community: "${officialRecord.originCommunity}"
+
+Return a JSON object:
+{
+  "stateName": "${officialRecord.stateName}",
+  "songName": "${officialRecord.songName}",
+  "verifiedBelongsToState": true,
+  "regionalAuthenticityStatement": "A strong, precise scholarly statement confirming why and how this folk music specifically belongs to ${officialRecord.stateName}.",
+  "officialArchiveContext": "Historical context detailing which cultural institution (Sangeet Natak Akademi, Prasar Bharati, All India Radio, UNESCO) preserves it.",
+  "performerLegacy": "Short summary of the master exponent, gharana, or bardic community.",
+  "listeningGuide": "What to listen for (rhythms, instruments, vocal nuances, emotional rasa).",
+  "recommendedOfficialSearch": "Search term for official YouTube recordings (e.g. Sangeet Natak Akademi / Prasar Bharati / AIR archives)"
+}`;
+
+        const response = await ai.models.generateContent({
+          model: "gemini-2.5-flash",
+          contents: prompt,
+          config: {
+            responseMimeType: "application/json"
+          }
+        });
+
+        const aiContext = JSON.parse(response.text || "{}");
+        return res.json({
+          ...officialRecord,
+          aiVerified: true,
+          regionalAuthenticityStatement: aiContext.regionalAuthenticityStatement || `This folk music is an authentic living tradition indigenous to ${officialRecord.stateName}.`,
+          officialArchiveContext: aiContext.officialArchiveContext || officialRecord.historyAndContext,
+          performerLegacy: aiContext.performerLegacy || officialRecord.performer,
+          listeningGuide: aiContext.listeningGuide || `Listen to the interplay of ${officialRecord.instruments.join(', ')}.`,
+          recommendedOfficialSearch: aiContext.recommendedOfficialSearch || officialRecord.officialSearchQuery
+        });
+      } catch (aiErr) {
+        console.warn("Gemini folk song verification fallback:", aiErr);
+      }
+    }
+
+    // Fallback to verified official library record
+    res.json({
+      ...officialRecord,
+      aiVerified: false,
+      regionalAuthenticityStatement: `Verified authentic indigenous folk song of ${officialRecord.stateName}, cataloged in national cultural preservation archives.`,
+      officialArchiveContext: officialRecord.historyAndContext,
+      performerLegacy: officialRecord.performer,
+      listeningGuide: `Traditional performance in ${officialRecord.musicalForm || "authentic folk raga"} featuring ${officialRecord.instruments.join(', ')}.`,
+      recommendedOfficialSearch: officialRecord.officialSearchQuery
+    });
+  } catch (error: any) {
+    console.error("Folk song YouTube API error:", error);
+    res.status(500).json({ error: "Failed to fetch folk song library context", message: error.message });
   }
 });
 

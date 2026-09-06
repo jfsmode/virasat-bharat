@@ -5,7 +5,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.14-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Express](https://img.shields.io/badge/Express-4.21.2-000000?logo=express&logoColor=white)](https://expressjs.com/)
-[![Google Gemini AI](https://img.shields.io/badge/Gemini_API-3.7_Flash-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
+[![Google Gemini AI](https://img.shields.io/badge/Google_Gemini_AI-Enabled-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6.2.3-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
@@ -15,7 +15,7 @@
 
 **Virasat Bharat** is an interactive, full-stack cultural-tech platform celebrating the intangible oral heritage, ancient architecture, GI-tagged indigenous crafts, festivals, folk music, and linguistic diversity across **all 28 States and 8 Union Territories of India**.
 
-Combining rich curated archival research with **Google Gemini 3.7 Flash**, Virasat Bharat brings ancient knowledge to life through conversational AI grandmothers (*Dadi, Ammachi, Aaji, Thamma, Paati*), authentic dialect transliterators, an interactive geographic atlas, lost colloquialism engines, and procedural folk synthesizers.
+Combining rich curated archival research with **Google Gemini**, Virasat Bharat brings ancient knowledge to life through conversational AI grandmothers (*Dadi, Ammachi, Aaji, Thamma, Paati*), authentic dialect transliterators, an interactive geographic atlas, lost colloquialism engines, and procedural folk synthesizers.
 
 ---
 
@@ -40,7 +40,7 @@ Combining rich curated archival research with **Google Gemini 3.7 Flash**, Viras
 - Profiles of GI-tagged crafts such as *Kanchipuram Silk, Dhokra Metallurgy, Blue Pottery, Madhubani Painting, Pashmina, and Channapatna Toys*.
 - Step-by-step artisanal processes, material sourcing, and master artisan profiles (*Meet the Makers*).
 
-### 🤖 5. AI Cultural Agents & Translators (Powered by Gemini 3.7 Flash)
+### 🤖 5. AI Cultural Agents & Translators (Powered by Google Gemini)
 - **Grandma Language Chatbot**: Converse with regional grandmothers in their native script (Devanagari, Tamil, Telugu, Bengali, Kannada, Malayalam, Odia, Gurmukhi, Gujarati) with Romanized phonetic transliteration and English translations.
 - **Grandma's Knowledge AI**: Discover ancient architectural secrets (e.g., herbal lime mortars, earthquake resistance) and craft metallurgy.
 - **Lost Everyday Words Engine**: Discover rare, nostalgic colloquialisms, slang, and village idioms that textbooks omit, complete with humor punchlines.
@@ -82,7 +82,7 @@ Combining rich curated archival research with **Google Gemini 3.7 Flash**, Viras
 | **Styling & Animation** | Tailwind CSS v4, Motion (`motion/react`), Canvas Confetti |
 | **Mapping & Visuals** | `@svg-maps/india`, `d3-geo`, Lucide React |
 | **Backend & Routing** | Express 4, Node.js, `tsx`, `esbuild` |
-| **AI & LLM Services** | Google Gen AI SDK (`@google/genai` v2.4.0), Gemini 3.7 Flash |
+| **AI & LLM Services** | Google Gen AI SDK (`@google/genai` v2.4.0), Google Gemini |
 | **Audio Synthesis** | HTML5 Web Audio API (Sine/Triangle oscillators & custom scales) |
 
 ---
