@@ -74,6 +74,10 @@ export interface Monument {
   culturalImportance: string;
   interestingFacts: string[];
   tags: string[];
+  architecturalStyle?: string;
+  significance?: string;
+  hiddenLegend?: string;
+  preservationStatus?: string;
 }
 
 export interface Festival {
@@ -89,6 +93,11 @@ export interface Festival {
   traditionalClothing: string;
   musicAndDance: string;
   interestingFacts: string[];
+  mythologicalOrigin?: string;
+  rituals?: string;
+  traditionalFoods?: string[] | string;
+  traditionalAttire?: string;
+  uniqueTradition?: string;
 }
 
 export interface Craft {
@@ -102,6 +111,9 @@ export interface Craft {
   culturalSignificance: string;
   processSteps?: string[];
   challengesFaced?: string;
+  giCertified?: boolean;
+  challenges?: string;
+  revivalEfforts?: string;
 }
 
 export interface MasterArtisan {
@@ -114,6 +126,7 @@ export interface MasterArtisan {
   story: string;
   yearsOfExperience: string;
   awards: string[];
+  bio?: string;
 }
 
 export interface StateCulturalData {

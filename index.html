@@ -13,6 +13,12 @@
     <script>
       (function() {
         try {
+          if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+          }
+          if (window.location.pathname === '/' || window.location.pathname === '' || !window.location.hash) {
+            window.scrollTo(0, 0);
+          }
           const theme = localStorage.getItem('vb_theme');
           if (theme === 'dark') {
             document.documentElement.classList.add('dark');

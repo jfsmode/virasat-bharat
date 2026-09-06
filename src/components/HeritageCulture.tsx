@@ -6,12 +6,31 @@ import { Monument, Festival } from '../types';
 import { MonumentModal } from './MonumentModal';
 import { FestivalModal } from './FestivalModal';
 import { GrandmasKnowledgeAI } from './GrandmasKnowledgeAI';
+import { SectionHeritageBackground } from './SectionHeritageBackground';
 
-export const HeritageCulture: React.FC = () => {
+interface HeritageCultureProps {
+  targetTab?: 'monuments' | 'festivals';
+  onTabChange?: (tab: 'monuments' | 'festivals') => void;
+}
+
+export const HeritageCulture: React.FC<HeritageCultureProps> = ({ targetTab, onTabChange }) => {
   const [activeTab, setActiveTab] = useState<'monuments' | 'festivals'>('monuments');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedMonument, setSelectedMonument] = useState<Monument | null>(null);
   const [selectedFestival, setSelectedFestival] = useState<Festival | null>(null);
+
+  React.useEffect(() => {
+    if (targetTab) {
+      setActiveTab(targetTab);
+    }
+  }, [targetTab]);
+
+  const handleSelectTab = (tab: 'monuments' | 'festivals') => {
+    setActiveTab(tab);
+    if (onTabChange) {
+      onTabChange(tab);
+    }
+  };
 
   // Aggregate all monuments from all states
   const allMonuments = useMemo(() => {
@@ -60,27 +79,47 @@ export const HeritageCulture: React.FC = () => {
   }, [allFestivals, searchQuery]);
 
   return (
-    <section id="heritage-culture" className="py-20 sm:py-24 bg-[#faf7f2] relative overflow-hidden border-b border-[#ebdcc7]">
-      {/* Ambient background */}
-      <div className="absolute inset-0 pointer-events-none opacity-40">
+    <section id="heritage-culture" className="py-20 sm:py-24 bg-[#faf7f2] dark:bg-[#0c0805] relative overflow-hidden border-b border-[#ebdcc7] dark:border-[#2e1d13]">
+      <div id="heritage" className="relative -top-24 pointer-events-none" />
+      <div id="festivals-section" className="relative -top-24 pointer-events-none" />
+      {/* Dynamic Faded Heritage Background: Monument Architecture vs Festival Celebrations */}
+      <SectionHeritageBackground
+        imageUrl={
+          activeTab === 'monuments'
+            ? "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1920&q=80"
+            : "https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1920&q=80"
+        }
+        alt="Indian Heritage Architecture & Living Celebrations"
+        opacity="opacity-[0.08] dark:opacity-[0.05]"
+        speed={45}
+      />
+
+      {/* Ambient background glow */}
+      <div className="absolute inset-0 pointer-events-none opacity-40 dark:opacity-15">
         <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-[#f9e9d9] rounded-full blur-[140px]"></div>
         <div className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-[#f5e3d0] rounded-full blur-[140px]"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f4ebd9] border border-[#e2cca8] text-[#8c5225] text-xs font-semibold uppercase tracking-wider mb-3">
+        {/* Section Header with Reveal Animation */}
+        <motion.div 
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5 }}
+          className="text-center max-w-3xl mx-auto mb-10"
+        >
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f4ebd9] dark:bg-[#251810] border border-[#e2cca8] dark:border-[#3d2719] text-[#8c5225] dark:text-[#df945b] text-xs font-semibold uppercase tracking-wider mb-3">
             <Landmark className="w-3.5 h-3.5 text-[#b8501c]" />
             <span>Monuments & Living Celebrations</span>
           </div>
-          <h2 className="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold text-[#23170f] tracking-tight">
-            Heritage & Culture
+          <h2 className="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold text-[#23170f] dark:text-[#f7efe6] tracking-tight">
+            Heritage & Architecture
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-[#5e4d3f] font-light leading-relaxed">
-            From millennia-old rock-cut sanctums and royal stepwells to ecstatic harvest festivals, discover the timeless stone and spirit of the subcontinent.
+          <p className="mt-3 text-sm sm:text-base text-[#5e4d3f] dark:text-[#bead9f] font-light leading-relaxed">
+            From millennia-old rock-cut sanctums and royal stepwells to ecstatic seasonal harvest festivals, explore the timeless monuments and living celebrations of Bharat.
           </p>
-        </div>
+        </motion.div>
 
         {/* Tab & Filter Controls */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-10 bg-white p-3.5 sm:p-4 rounded-3xl border border-[#e8decb] shadow-xs">
@@ -88,7 +127,7 @@ export const HeritageCulture: React.FC = () => {
           <div className="flex items-center gap-2 w-full sm:w-auto">
             <button
               id="heritage-tab-monuments"
-              onClick={() => setActiveTab('monuments')}
+              onClick={() => handleSelectTab('monuments')}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold transition-all flex-1 sm:flex-none justify-center cursor-pointer ${
                 activeTab === 'monuments'
                   ? 'bg-[#b8501c] text-white shadow-xs'
@@ -100,8 +139,8 @@ export const HeritageCulture: React.FC = () => {
             </button>
 
             <button
-              id="heritage-tab-festivals"
-              onClick={() => setActiveTab('festivals')}
+              id="festivals"
+              onClick={() => handleSelectTab('festivals')}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold transition-all flex-1 sm:flex-none justify-center cursor-pointer ${
                 activeTab === 'festivals'
                   ? 'bg-[#b8501c] text-white shadow-xs'

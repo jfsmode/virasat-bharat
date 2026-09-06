@@ -5,6 +5,7 @@ import { statesData } from '../data/statesData';
 import { Craft, MasterArtisan } from '../types';
 import { ArtisanModal } from './ArtisanModal';
 import { GrandmasKnowledgeAI } from './GrandmasKnowledgeAI';
+import { SectionHeritageBackground } from './SectionHeritageBackground';
 
 export const Craftsmanship: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -80,27 +81,42 @@ export const Craftsmanship: React.FC = () => {
   }, [allCrafts, selectedCategory]);
 
   return (
-    <section id="craftsmanship" className="py-20 sm:py-24 bg-[#faf7f2] relative overflow-hidden border-b border-[#ebdcc7]">
+    <section id="craftsmanship" className="py-20 sm:py-24 bg-[#faf7f2] dark:bg-[#0c0805] relative overflow-hidden border-b border-[#ebdcc7] dark:border-[#2e1d13]">
+      <div id="crafts" className="relative -top-24 pointer-events-none" />
+      {/* Subtle Faded Heritage Background: Master Weaver & Traditional Loom */}
+      <SectionHeritageBackground
+        imageUrl="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1920&q=80"
+        alt="Indian Master Artisan Craftsmanship & Handloom Weaving"
+        opacity="opacity-[0.08] dark:opacity-[0.05]"
+        speed={42}
+      />
+
       {/* Background glow */}
-      <div className="absolute inset-0 pointer-events-none opacity-40">
+      <div className="absolute inset-0 pointer-events-none opacity-40 dark:opacity-15">
         <div className="absolute top-1/3 -right-24 w-[500px] h-[500px] bg-[#f9e9d9] rounded-full blur-[140px]"></div>
         <div className="absolute bottom-1/3 -left-24 w-[500px] h-[500px] bg-[#f5e3d0] rounded-full blur-[140px]"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f4ebd9] border border-[#e2cca8] text-[#8c5225] text-xs font-semibold uppercase tracking-wider mb-3">
+        {/* Section Header with Reveal Animation */}
+        <motion.div 
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5 }}
+          className="text-center max-w-3xl mx-auto mb-12"
+        >
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f4ebd9] dark:bg-[#251810] border border-[#e2cca8] dark:border-[#3d2719] text-[#8c5225] dark:text-[#df945b] text-xs font-semibold uppercase tracking-wider mb-3">
             <Scissors className="w-3.5 h-3.5 text-[#b8501c]" />
             <span>Living Artisans & Sacred Craftsmanship</span>
           </div>
-          <h2 className="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold text-[#23170f] tracking-tight">
+          <h2 className="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold text-[#23170f] dark:text-[#f7efe6] tracking-tight">
             Indian Craftsmanship & Master Hands
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-[#5e4d3f] font-light leading-relaxed">
+          <p className="mt-3 text-sm sm:text-base text-[#5e4d3f] dark:text-[#bead9f] font-light leading-relaxed">
             Every thread woven on a handloom and every drop of lost-wax bronze metal poured carries thousand-year-old wisdom. Explore India's indigenous crafts and the living legends keeping them alive.
           </p>
-        </div>
+        </motion.div>
 
         {/* Category Filters */}
         <div className="mb-10 overflow-x-auto pb-2 scrollbar-thin">

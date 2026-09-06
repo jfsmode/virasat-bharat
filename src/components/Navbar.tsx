@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { motion, LayoutGroup } from 'motion/react';
 import { Search, Menu, X, Compass, BookOpen, Landmark, Scissors, Sparkles, Map, Sun, Moon } from 'lucide-react';
 import { AmbientSoundPlayer } from './AmbientSoundPlayer';
+import { GRANDMA_AI_AVATAR } from '../data/assets';
 
 interface NavbarProps {
   activeSection: string;
@@ -29,13 +31,25 @@ export const Navbar: React.FC<NavbarProps> = ({
   }, []);
 
   const navLinks = [
-    { id: 'hero', label: 'Home' },
-    { id: 'interactive-map', label: 'States' },
-    { id: 'heritage-culture', label: 'Heritage Buildings' },
-    { id: 'grandma-archive', label: "Grandma's Archive" },
-    { id: 'craftsmanship', label: 'Crafts' },
-    { id: 'lost-words', label: 'Lost Words' }
+    { id: 'home', label: 'Home' },
+    { id: 'heritage', label: 'Heritage & Architecture' },
+    { id: 'crafts', label: 'Crafts' },
+    { id: 'folk-music', label: "Grandma's Archive" },
+    { id: 'grandmas-ai', label: "Grandma’s AI" },
+    { id: 'more', label: 'More' }
   ];
+
+  const isLinkActive = (linkId: string) => {
+    if (activeSection === linkId) return true;
+    if (linkId === 'home' && (activeSection === 'hero' || !activeSection)) return true;
+    if (linkId === 'states' && activeSection === 'interactive-map') return true;
+    if (linkId === 'heritage' && (activeSection === 'heritage-culture' || activeSection === 'festivals' || activeSection === 'monuments')) return true;
+    if (linkId === 'crafts' && activeSection === 'craftsmanship') return true;
+    if (linkId === 'folk-music' && (activeSection === 'grandma-archive' || activeSection === 'folk-melodies')) return true;
+    if (linkId === 'grandmas-ai' && activeSection === 'grandmas-ai') return true;
+    if (linkId === 'more' && (activeSection === 'more' || activeSection === 'lost-words' || activeSection === 'did-you-know')) return true;
+    return false;
+  };
 
   const handleNavClick = (id: string) => {
     onNavigate(id);
@@ -54,7 +68,8 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo matching Reference Image: VB circle + Virasat Bharat */}
         <div
-          onClick={() => handleNavClick('hero')}
+          id="navbar-brand-logo"
+          onClick={() => handleNavClick('home')}
           className="flex items-center gap-3 cursor-pointer group select-none"
         >
           {/* Terracotta Circular Emblem with "VB" */}
@@ -73,25 +88,46 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         {/* Desktop Nav Items matching reference */}
-        <nav className="hidden md:flex items-center gap-1.5 lg:gap-2">
-          {navLinks.map((link) => {
-            const isActive = activeSection === link.id;
-            return (
-              <button
-                key={link.id}
-                id={`nav-link-${link.id}`}
-                onClick={() => handleNavClick(link.id)}
-                className={`px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-medium tracking-wide transition-all cursor-pointer ${
-                  isActive
-                    ? 'bg-[#eddcc7] dark:bg-[#2b1d14] text-[#241810] dark:text-[#f5eee4] font-semibold shadow-xs'
-                    : 'text-[#5d4c3f] dark:text-[#c4b3a3] hover:text-[#241810] dark:hover:text-[#f5eee4] hover:bg-[#f2e7d8]/60 dark:hover:bg-[#23170f]'
-                }`}
-              >
-                {link.label}
-              </button>
-            );
-          })}
-        </nav>
+        <LayoutGroup id="navbar-nav-group">
+          <nav className="hidden md:flex items-center gap-0.5 lg:gap-1.5">
+            {navLinks.map((link) => {
+              const isActive = isLinkActive(link.id);
+              return (
+                <button
+                  key={link.id}
+                  id={`nav-link-${link.id}`}
+                  onClick={() => handleNavClick(link.id)}
+                  className={`relative px-2.5 lg:px-3.5 py-1.5 rounded-full text-xs lg:text-sm font-medium tracking-wide whitespace-nowrap transition-colors duration-200 cursor-pointer select-none ${
+                    isActive
+                      ? 'text-[#241810] dark:text-[#f5eee4] font-semibold'
+                      : 'text-[#5d4c3f] dark:text-[#c4b3a3] hover:text-[#241810] dark:hover:text-[#f5eee4] hover:bg-[#f2e7d8]/60 dark:hover:bg-[#23170f]'
+                  }`}
+                >
+                  {isActive && (
+                    <motion.div
+                      layoutId="activeNavIndicator"
+                      className="absolute inset-0 rounded-full bg-[#eddcc7] dark:bg-[#2b1d14] shadow-xs pointer-events-none"
+                      transition={{ type: 'spring', stiffness: 500, damping: 35, mass: 0.6 }}
+                    />
+                  )}
+                  <span className="relative z-10 flex items-center gap-1.5">
+                    {link.id === 'grandmas-ai' && (
+                      <span className="w-4 h-4 rounded-full overflow-hidden shrink-0 ring-1 ring-[#b8501c]/40 inline-block">
+                        <img
+                          src={GRANDMA_AI_AVATAR}
+                          alt="Grandma AI"
+                          className="w-full h-full object-cover"
+                          referrerPolicy="no-referrer"
+                        />
+                      </span>
+                    )}
+                    <span>{link.label}</span>
+                  </span>
+                </button>
+              );
+            })}
+          </nav>
+        </LayoutGroup>
 
         {/* Right Controls: Ambient Tanpura Audio, Search, Theme Toggle, Mobile Menu */}
         <div className="flex items-center gap-2 sm:gap-3">
@@ -140,18 +176,29 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="md:hidden px-4 pt-3 pb-5 bg-[#faf7f2] dark:bg-[#140e09] border-b border-[#e8decb] dark:border-[#2e1d13] shadow-xl animate-in slide-in-from-top-2 duration-200">
           <nav className="flex flex-col gap-1">
             {navLinks.map((link) => {
-              const isActive = activeSection === link.id;
+              const isActive = isLinkActive(link.id);
               return (
                 <button
                   key={link.id}
+                  id={`mobile-nav-link-${link.id}`}
                   onClick={() => handleNavClick(link.id)}
-                  className={`px-4 py-2.5 rounded-xl text-sm font-medium transition-all text-left ${
+                  className={`px-4 py-2.5 rounded-xl text-sm font-medium transition-all text-left flex items-center gap-2.5 ${
                     isActive
                       ? 'bg-[#eddcc7] dark:bg-[#2b1d14] text-[#241810] dark:text-[#f5eee4] font-semibold'
                       : 'text-[#5d4c3f] dark:text-[#c4b3a3] hover:bg-[#f2e7d8]/60 dark:hover:bg-[#1f150f]'
                   }`}
                 >
-                  {link.label}
+                  {link.id === 'grandmas-ai' && (
+                    <span className="w-5 h-5 rounded-full overflow-hidden shrink-0 ring-1 ring-[#b8501c]/40 inline-block">
+                      <img
+                        src={GRANDMA_AI_AVATAR}
+                        alt="Grandma AI"
+                        className="w-full h-full object-cover"
+                        referrerPolicy="no-referrer"
+                      />
+                    </span>
+                  )}
+                  <span>{link.label}</span>
                 </button>
               );
             })}

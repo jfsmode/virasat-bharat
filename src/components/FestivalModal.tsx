@@ -100,7 +100,7 @@ export const FestivalModal: React.FC<FestivalModalProps> = ({
                   <span className="text-[10px] uppercase font-bold text-[#8c5225] flex items-center gap-1 mb-1">
                     <Utensils className="w-3 h-3 text-[#b8501c]" /> Festive Delicacies
                   </span>
-                  <p className="text-xs text-[#3b2b20]">{festival.traditionalFoods.join(', ')}</p>
+                  <p className="text-xs text-[#3b2b20]">{Array.isArray(festival.traditionalFoods) ? festival.traditionalFoods.join(', ') : festival.traditionalFoods}</p>
                 </div>
               )}
 

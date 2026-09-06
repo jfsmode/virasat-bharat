@@ -54,7 +54,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <ul className="space-y-2 text-xs">
               <li>
                 <button
-                  onClick={() => onNavigate('hero')}
+                  onClick={() => onNavigate('home')}
                   className="hover:text-[#b8501c] transition-colors flex items-center gap-2 cursor-pointer"
                 >
                   <Compass className="w-3.5 h-3.5 text-[#b8501c]" />
@@ -63,34 +63,25 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('interactive-map')}
+                  onClick={() => onNavigate('states')}
                   className="hover:text-[#b8501c] transition-colors flex items-center gap-2 cursor-pointer"
                 >
                   <MapPin className="w-3.5 h-3.5 text-[#b8501c]" />
-                  <span>28 States & 8 UTs Interactive Atlas</span>
+                  <span>28 States & 8 UTs Atlas</span>
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('grandma-archive')}
-                  className="hover:text-[#b8501c] transition-colors flex items-center gap-2 cursor-pointer"
-                >
-                  <BookOpen className="w-3.5 h-3.5 text-[#b8501c]" />
-                  <span>Grandma’s Memory Chest & Recipes</span>
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => onNavigate('heritage-culture')}
+                  onClick={() => onNavigate('heritage')}
                   className="hover:text-[#b8501c] transition-colors flex items-center gap-2 cursor-pointer"
                 >
                   <Landmark className="w-3.5 h-3.5 text-[#b8501c]" />
-                  <span>Monuments & Living Celebrations</span>
+                  <span>Heritage, Architecture & Festivals</span>
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('craftsmanship')}
+                  onClick={() => onNavigate('crafts')}
                   className="hover:text-[#b8501c] transition-colors flex items-center gap-2 cursor-pointer"
                 >
                   <Scissors className="w-3.5 h-3.5 text-[#b8501c]" />
@@ -99,11 +90,29 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('lost-words')}
+                  onClick={() => onNavigate('folk-music')}
+                  className="hover:text-[#b8501c] transition-colors flex items-center gap-2 cursor-pointer"
+                >
+                  <BookOpen className="w-3.5 h-3.5 text-[#b8501c]" />
+                  <span>Grandma’s Archive: Folk Melodies</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onNavigate('grandmas-ai')}
                   className="hover:text-[#b8501c] transition-colors flex items-center gap-2 cursor-pointer"
                 >
                   <Sparkles className="w-3.5 h-3.5 text-[#b8501c]" />
-                  <span>Lost Everyday Words Chatbot</span>
+                  <span>Grandma’s AI Cultural Guide</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onNavigate('more')}
+                  className="hover:text-[#b8501c] transition-colors flex items-center gap-2 cursor-pointer"
+                >
+                  <BookOpen className="w-3.5 h-3.5 text-[#b8501c]" />
+                  <span>More: Lost Words & Did You Know</span>
                 </button>
               </li>
             </ul>

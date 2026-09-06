@@ -1,8 +1,10 @@
 import React, { useState, useMemo } from 'react';
+import { motion } from 'motion/react';
 import indiaMap from '@svg-maps/india';
 import { MapPin, Search, Sparkles, Filter, ChevronRight, Compass, Building2, BookOpen } from 'lucide-react';
 import { allIndiaEntities } from '../data/allStatesRegistry';
 import { RegionZone } from '../types';
+import { SectionHeritageBackground } from './SectionHeritageBackground';
 
 interface InteractiveMapProps {
   selectedStateId: string;
@@ -145,27 +147,42 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
   }, [hoveredNodeId, selectedStateId]);
 
   return (
-    <section id="interactive-map" className="py-20 sm:py-24 bg-[#faf7f2] relative overflow-hidden border-b border-[#ebdcc7]">
+    <section id="interactive-map" className="py-20 sm:py-24 bg-[#faf7f2] dark:bg-[#0c0805] relative overflow-hidden border-b border-[#ebdcc7] dark:border-[#2e1d13]">
+      <div id="states" className="relative -top-24 pointer-events-none" />
+      {/* Subtle Faded Heritage Background with Parallax */}
+      <SectionHeritageBackground
+        imageUrl="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1920&q=80"
+        alt="Varanasi River Ghats & Indian Cultural Landscape"
+        opacity="opacity-[0.07] dark:opacity-[0.045]"
+        speed={40}
+      />
+
       {/* Background Heritage Canvas Atmosphere */}
-      <div className="absolute inset-0 pointer-events-none opacity-40">
+      <div className="absolute inset-0 pointer-events-none opacity-40 dark:opacity-15">
         <div className="absolute top-1/3 left-10 w-[500px] h-[500px] bg-[#f9e9d9] rounded-full blur-[140px]"></div>
         <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-[#f5e3d0] rounded-full blur-[140px]"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f4ebd9] border border-[#e2cca8] text-[#8c5225] text-xs font-semibold uppercase tracking-wider mb-3">
+        {/* Section Heading with smooth reveal animation */}
+        <motion.div 
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5 }}
+          className="text-center max-w-3xl mx-auto mb-12"
+        >
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f4ebd9] dark:bg-[#251810] border border-[#e2cca8] dark:border-[#3d2719] text-[#8c5225] dark:text-[#df945b] text-xs font-semibold uppercase tracking-wider mb-3">
             <Compass className="w-3.5 h-3.5 text-[#b8501c]" />
             <span>Official Sovereign Living Atlas</span>
           </div>
-          <h2 className="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold text-[#23170f] tracking-tight">
+          <h2 className="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold text-[#23170f] dark:text-[#f7efe6] tracking-tight">
             Discover the India Within India
           </h2>
-          <p className="mt-4 text-sm sm:text-base text-[#5e4d3f] font-light leading-relaxed">
+          <p className="mt-4 text-sm sm:text-base text-[#5e4d3f] dark:text-[#bead9f] font-light leading-relaxed">
             From the Himalayan crown of Ladakh and Kashmir to Kanyakumari, and from the salt flats of Kutch to the dawn-lit mountains of Arunachal Pradesh—explore all 28 States & 8 Union Territories.
           </p>
-        </div>
+        </motion.div>
 
         {/* Filters and Search Bar */}
         <div className="bg-white border border-[#e8decb] rounded-3xl p-4 sm:p-5 mb-10 shadow-[0_4px_20px_rgba(70,40,15,0.04)]">

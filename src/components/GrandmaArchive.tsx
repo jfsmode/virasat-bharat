@@ -1,24 +1,34 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { BookOpen, Music, Utensils, Languages, Sparkles, Gamepad2, Heart, Volume2, ChevronRight, Clock, Users, Play, Pause, Flame, ChevronDown, Disc3, Mic2, Video, ShieldCheck } from 'lucide-react';
+import { BookOpen, Music, Utensils, Languages, Sparkles, Gamepad2, Heart, Volume2, ChevronRight, Clock, Users, Flame, ChevronDown, Disc3, Mic2, Video, ShieldCheck } from 'lucide-react';
 import { statesData } from '../data/statesData';
-import { LanguageGrandmaAI } from './LanguageGrandmaAI';
+import { GrandmaAICulturalGuide } from './GrandmaAICulturalGuide';
 import { FolkMusicPlayer } from './FolkMusicPlayer';
 import { StateCulturalData, FolkSong } from '../types';
 import { enrichFolkSongWithOfficialLibrary, getOfficialFolkSong } from '../data/officialFolkMusicRegistry';
+import { SectionHeritageBackground } from './SectionHeritageBackground';
 
 interface GrandmaArchiveProps {
   selectedStateId: string;
   onSelectState: (stateId: string) => void;
+  targetTab?: 'songs' | 'recipes' | 'languages' | 'traditions' | 'games' | 'ai';
 }
 
 export const GrandmaArchive: React.FC<GrandmaArchiveProps> = ({
   selectedStateId,
-  onSelectState
+  onSelectState,
+  targetTab
 }) => {
   const [activeTab, setActiveTab] = useState<'songs' | 'recipes' | 'languages' | 'traditions' | 'games' | 'ai'>('songs');
   const [playingSongId, setPlayingSongId] = useState<string | null>(null);
   const [selectedRecipeIndex, setSelectedRecipeIndex] = useState<number>(0);
+
+  // Sync targetTab if passed from parent
+  React.useEffect(() => {
+    if (targetTab) {
+      setActiveTab(targetTab);
+    }
+  }, [targetTab]);
 
   // Find active state data or fallback
   const currentState: StateCulturalData = useMemo(() => {
@@ -52,27 +62,42 @@ export const GrandmaArchive: React.FC<GrandmaArchiveProps> = ({
   };
 
   return (
-    <section id="grandma-archive" className="py-20 sm:py-24 bg-[#faf7f2] relative overflow-hidden border-b border-[#ebdcc7]">
+    <section id="grandma-archive" className="py-20 sm:py-24 bg-[#faf7f2] dark:bg-[#0c0805] relative overflow-hidden border-b border-[#ebdcc7] dark:border-[#2e1d13]">
+      <div id="folk-music" className="relative -top-24 pointer-events-none" />
+      {/* Subtle Faded Heritage Background: Traditional Indian Musical Instruments & Heritage Lore */}
+      <SectionHeritageBackground
+        imageUrl="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1920&q=80"
+        alt="Indian Folk Melodies & Traditional Musical Heritage"
+        opacity="opacity-[0.08] dark:opacity-[0.05]"
+        speed={42}
+      />
+
       {/* Background Lighting */}
-      <div className="absolute inset-0 pointer-events-none opacity-40">
+      <div className="absolute inset-0 pointer-events-none opacity-40 dark:opacity-15">
         <div className="absolute top-10 left-1/4 w-[600px] h-[600px] bg-[#f9e9d9] rounded-full blur-[140px]"></div>
         <div className="absolute bottom-10 right-1/4 w-[600px] h-[600px] bg-[#f5e3d0] rounded-full blur-[140px]"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f4ebd9] border border-[#e2cca8] text-[#8c5225] text-xs font-semibold uppercase tracking-wider mb-3">
+        {/* Header with Reveal Animation */}
+        <motion.div 
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5 }}
+          className="text-center max-w-3xl mx-auto mb-10"
+        >
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f4ebd9] dark:bg-[#251810] border border-[#e2cca8] dark:border-[#3d2719] text-[#8c5225] dark:text-[#df945b] text-xs font-semibold uppercase tracking-wider mb-3">
             <BookOpen className="w-3.5 h-3.5 text-[#b8501c]" />
             <span>Intangible Heritage Repository</span>
           </div>
-          <h2 className="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold text-[#23170f] tracking-tight">
+          <h2 className="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold text-[#23170f] dark:text-[#f7efe6] tracking-tight">
             Grandma’s Archive: The Living Memory Chest
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-[#5e4d3f] font-light leading-relaxed">
+          <p className="mt-3 text-sm sm:text-base text-[#5e4d3f] dark:text-[#bead9f] font-light leading-relaxed">
             India’s soul lives in the lullabies sung at dusk, the secret spice blends crushed on stone, the playground games that united villages, and the timeless words passed down across generations.
           </p>
-        </div>
+        </motion.div>
 
         {/* State Selector Dropdown */}
         <div className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-center gap-4">
@@ -163,6 +188,7 @@ export const GrandmaArchive: React.FC<GrandmaArchiveProps> = ({
           {/* TAB 1: FOLK SONGS */}
           {activeTab === 'songs' && (
             <motion.div
+              id="folk-melodies"
               key="songs"
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -203,40 +229,25 @@ export const GrandmaArchive: React.FC<GrandmaArchiveProps> = ({
                             : 'border-[#e8decb] dark:border-[#38261a] hover:border-[#b8501c]/40 shadow-xs'
                         }`}
                       >
-                        <div className="flex items-start justify-between gap-4 mb-3">
-                          <div>
-                            <div className="flex flex-wrap items-center gap-1.5 mb-1.5">
-                              <span className="text-[10px] font-bold uppercase tracking-wider text-[#8c5225] dark:text-[#df9e67] bg-[#f4ebd9] dark:bg-[#301c10] px-2.5 py-0.5 rounded-full border border-[#e2cca8] dark:border-[#422918]">
-                                {song.culturalSignificance}
-                              </span>
-                              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-[10px] font-semibold">
-                                <ShieldCheck className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
-                                <span>Verified {currentState.name} Folk Heritage</span>
-                              </span>
-                            </div>
-
-                            <h4 className="font-cinzel text-xl font-bold text-[#23170f] dark:text-[#f5eee4]">
-                              {song.songName}
-                            </h4>
-                            {song.nativeScript && (
-                              <div className="text-sm font-serif text-[#b8501c] dark:text-[#f3a875] mt-0.5">
-                                {song.nativeScript}
-                              </div>
-                            )}
+                        <div className="mb-3">
+                          <div className="flex flex-wrap items-center gap-1.5 mb-1.5">
+                            <span className="text-[10px] font-bold uppercase tracking-wider text-[#8c5225] dark:text-[#df9e67] bg-[#f4ebd9] dark:bg-[#301c10] px-2.5 py-0.5 rounded-full border border-[#e2cca8] dark:border-[#422918]">
+                              {song.culturalSignificance}
+                            </span>
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-[10px] font-semibold">
+                              <ShieldCheck className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
+                              <span>Verified {currentState.name} Folk Heritage</span>
+                            </span>
                           </div>
 
-                          <button
-                            id={`play-song-btn-${song.songName.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
-                            onClick={() => toggleSongPlay(song.songName)}
-                            className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 shadow-md transition-all cursor-pointer ${
-                              isPlaying
-                                ? 'bg-[#b8501c] text-white scale-105 shadow-md animate-[pulse_2s_infinite]'
-                                : 'bg-[#faf6ee] dark:bg-[#281810] text-[#b8501c] dark:text-[#f3a875] hover:bg-[#f3e7d7] hover:scale-105 border border-[#e2d5c3] dark:border-[#3d2719]'
-                            }`}
-                            aria-label={isPlaying ? 'Pause Melody' : 'Play Melody'}
-                          >
-                            {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5 fill-current ml-0.5" />}
-                          </button>
+                          <h4 className="font-cinzel text-xl font-bold text-[#23170f] dark:text-[#f5eee4]">
+                            {song.songName}
+                          </h4>
+                          {song.nativeScript && (
+                            <div className="text-sm font-serif text-[#b8501c] dark:text-[#f3a875] mt-0.5">
+                              {song.nativeScript}
+                            </div>
+                          )}
                         </div>
 
                         {/* Official Archival Badges */}
@@ -252,22 +263,31 @@ export const GrandmaArchive: React.FC<GrandmaArchiveProps> = ({
                           )}
                         </div>
 
-                        {/* Equalizer animation when playing */}
+                        {/* Play Official YouTube Performance & Heritage Lore Action */}
                         {isPlaying ? (
-                          <div className="p-3 rounded-2xl bg-[#fdf3e7] dark:bg-[#2e1c12] border border-[#f0cbb0] dark:border-[#4a2e1d] mb-4 flex items-center justify-between">
-                            <div className="flex items-center gap-1.5">
-                              <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.4s_ease-in-out_infinite] h-4"></span>
-                              <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.7s_ease-in-out_infinite] h-6"></span>
-                              <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.5s_ease-in-out_infinite] h-3"></span>
-                              <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.9s_ease-in-out_infinite] h-5"></span>
-                              <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.6s_ease-in-out_infinite] h-4"></span>
+                          <div className="p-3 rounded-2xl bg-[#fdf3e7] dark:bg-[#2e1c12] border border-[#f0cbb0] dark:border-[#4a2e1d] mb-4 flex items-center justify-between gap-2">
+                            <div className="flex items-center gap-2">
+                              <div className="flex items-center gap-1.5">
+                                <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.4s_ease-in-out_infinite] h-4"></span>
+                                <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.7s_ease-in-out_infinite] h-6"></span>
+                                <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.5s_ease-in-out_infinite] h-3"></span>
+                                <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.9s_ease-in-out_infinite] h-5"></span>
+                                <span className="w-1 bg-[#b8501c] dark:bg-[#f3a875] animate-[pulse_0.6s_ease-in-out_infinite] h-4"></span>
+                              </div>
+                              <span className="text-xs text-[#b8501c] dark:text-[#f3a875] font-semibold">
+                                Official YouTube Performance Active in Player Above
+                              </span>
                             </div>
-                            <span className="text-xs text-[#b8501c] dark:text-[#f3a875] font-mono font-medium">
-                              Official Performance & Audio Active in Player Above
-                            </span>
+                            <button
+                              onClick={() => toggleSongPlay(song.songName)}
+                              className="text-xs font-semibold text-[#8c5225] dark:text-[#df9e67] hover:underline px-2.5 py-1 rounded-lg hover:bg-white/60 dark:hover:bg-[#1a120c] cursor-pointer shrink-0"
+                            >
+                              Close Player
+                            </button>
                           </div>
                         ) : (
                           <button
+                            id={`play-official-btn-${song.songName.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
                             onClick={() => toggleSongPlay(song.songName)}
                             className="w-full mb-3 py-2.5 px-3 rounded-xl bg-gradient-to-r from-[#b8501c] to-[#9c3f12] hover:from-[#a04214] hover:to-[#85340d] text-white text-xs font-bold flex items-center justify-center gap-2 shadow-xs transition-all cursor-pointer"
                           >
@@ -611,17 +631,17 @@ export const GrandmaArchive: React.FC<GrandmaArchiveProps> = ({
             </motion.div>
           )}
 
-          {/* TAB 6: GRANDMA AI TRANSLATOR */}
+          {/* TAB 6: GRANDMA AI CULTURAL GUIDE */}
           {activeTab === 'ai' && (
             <motion.div
+              id="grandmas-ai"
               key="ai"
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -15 }}
             >
-              <LanguageGrandmaAI
-                stateName={currentState.name}
-                nativeLanguageName={currentState.languages.nativeLanguage}
+              <GrandmaAICulturalGuide
+                initialStateName={currentState.name}
               />
             </motion.div>
           )}
