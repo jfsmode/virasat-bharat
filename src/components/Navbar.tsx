@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { motion, LayoutGroup } from 'motion/react';
 import { Search, Menu, X, Compass, BookOpen, Landmark, Scissors, Sparkles, Map, Sun, Moon } from 'lucide-react';
 import { AmbientSoundPlayer } from './AmbientSoundPlayer';
-import { GRANDMA_AI_AVATAR } from '../data/assets';
 
 interface NavbarProps {
   activeSection: string;
@@ -110,18 +109,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                       transition={{ type: 'spring', stiffness: 500, damping: 35, mass: 0.6 }}
                     />
                   )}
-                  <span className="relative z-10 flex items-center gap-1.5">
-                    {link.id === 'grandmas-ai' && (
-                      <span className="w-4 h-4 rounded-full overflow-hidden shrink-0 ring-1 ring-[#b8501c]/40 inline-block">
-                        <img
-                          src={GRANDMA_AI_AVATAR}
-                          alt="Grandma AI"
-                          className="w-full h-full object-cover"
-                          referrerPolicy="no-referrer"
-                        />
-                      </span>
-                    )}
-                    <span>{link.label}</span>
+                  <span className="relative z-10">
+                    {link.label}
                   </span>
                 </button>
               );
@@ -188,16 +177,6 @@ export const Navbar: React.FC<NavbarProps> = ({
                       : 'text-[#5d4c3f] dark:text-[#c4b3a3] hover:bg-[#f2e7d8]/60 dark:hover:bg-[#1f150f]'
                   }`}
                 >
-                  {link.id === 'grandmas-ai' && (
-                    <span className="w-5 h-5 rounded-full overflow-hidden shrink-0 ring-1 ring-[#b8501c]/40 inline-block">
-                      <img
-                        src={GRANDMA_AI_AVATAR}
-                        alt="Grandma AI"
-                        className="w-full h-full object-cover"
-                        referrerPolicy="no-referrer"
-                      />
-                    </span>
-                  )}
                   <span>{link.label}</span>
                 </button>
               );
